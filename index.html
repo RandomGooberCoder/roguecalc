@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171d1a">
+  <meta name="description" content="Build a Ratwood character and compare race, job, statpack, and area buff stats.">
+  <title>Ratwood | Stat Calculator</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" type="module"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <a class="brand" href="./" aria-label="Ratwood calculator home"><span class="sigil" aria-hidden="true">R</span> RATWOOD <span class="brand-sub">CHARACTER TOOLS</span></a>
+      <a class="repo-link" href="https://github.com/Rotwood-Vale/Ratwood-2.0" target="_blank" rel="noopener noreferrer">Source repository <span aria-hidden="true">&#8599;</span></a>
+    </header>
+    <main>
+      <div class="intro"><p class="eyebrow">PLAN YOUR NEXT CHARACTER</p><h1>Know your strengths.</h1><p class="lead">A little foresight goes a long way. Combine your race, calling, and statpack to see where you stand.</p></div>
+      <p id="status" class="status" role="status">Loading repository data...</p>
+      <noscript><p>This calculator needs JavaScript enabled.</p></noscript>
+      <div id="calculator" hidden>
+        <section class="builder" aria-labelledby="build-title">
+          <div class="section-head"><h2 id="build-title"><span class="step">01</span> Your build</h2><button id="reset" class="text-button" type="button">Reset build</button></div>
+          <div class="selectors">
+            <div class="field"><label for="job">Job / subclass</label><input id="job-search" type="search" placeholder="Filter jobs..." aria-label="Filter jobs"><select id="job"></select><a id="job-source" class="field-source" target="_blank" rel="noopener noreferrer">View job definition &#8599;</a></div>
+            <div class="field"><label for="race">Race</label><select id="race"></select><a id="race-source" class="field-source" target="_blank" rel="noopener noreferrer">View race definition &#8599;</a></div>
+            <div class="field"><label for="statpack">Statpack</label><select id="statpack"></select><a id="statpack-source" class="field-source" target="_blank" rel="noopener noreferrer">View statpack definition &#8599;</a></div>
+          </div>
+          <p id="pack-description" class="pack-description"></p>
+          <div class="build-actions"><span class="formula">10 base <span>+</span> race <span>+</span> job <span>+</span> statpack</span><button id="share" class="button secondary" type="button">Copy build link</button></div>
+        </section>
+        <section class="results" aria-labelledby="result-title">
+          <div class="section-head"><h2 id="result-title"><span class="step">02</span> Your stats</h2><span class="badge">LIVE CALCULATION</span></div>
+          <div class="table-wrap"><table class="stats-table"><caption class="sr-only">Base stats and separate area buff comparisons</caption><thead><tr><th scope="col">ATTRIBUTE</th><th scope="col">Base <small>No area buff</small></th><th scope="col" class="vigilant">Vigilant <small>Guardsman buff</small></th><th scope="col" class="warden">Warden <small>Woodsman buff</small></th></tr></thead><tbody id="stats-body"></tbody></table></div>
+          <div class="results-note"><span class="dot"></span><p>Buff columns are separate scenarios. Their bonuses are not stacked. Eligibility and area restrictions still apply in game.</p></div>
+        </section>
+        <details class="breakdown"><summary>See the stat breakdown <span aria-hidden="true">+</span></summary><div class="table-wrap"><table><caption class="sr-only">Individual contributions for each attribute</caption><thead><tr><th>Attribute</th><th>Starting</th><th>Race</th><th>Job</th><th>Statpack</th><th>Total</th></tr></thead><tbody id="breakdown-body"></tbody></table></div></details>
+        <aside class="notes"><p><strong>A note on names.</strong> Endurance in the spreadsheet is <code>STAT_WILLPOWER</code> in the current repository. Human is listed as <strong>Humen</strong> in the source.</p><p>Fated shows the possible range for each stat. This calculator uses the declared <code>race_bonus</code>, <code>subclass_stats</code>, and <code>stat_array</code> lists. Other in-game changes, virtues, age, equipment, and custom outfit logic are not included. Definitions without these lists are omitted, except statpacks with no bonuses.</p><p id="buff-sources"></p></aside>
+      </div>
+    </main>
+    <footer><span>RATWOOD <span class="footer-divider">/</span> STAT CALCULATOR</span><span id="data-info">Static site. No account needed.</span></footer>
+  </div>
+</body>
+</html>

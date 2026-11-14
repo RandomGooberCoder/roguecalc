@@ -1,0 +1,154 @@
+import { LABELS, calculate, display } from './calc.mjs';
+
+const $ = id => document.getElementById(id);
+const groups = { race: 'races', job: 'jobs', statpack: 'statpacks' };
+let data;
+let chosen = {};
+
+function defaults() {
+  return {
+    race: data.races.find(x => x.name === 'Humen')?.id ?? data.races[0].id,
+    job: data.jobs.find(x => x.name === 'Foot Knight')?.id ?? data.jobs[0].id,
+    statpack: data.statpacks.find(x => x.name === 'Foresighted')?.id ?? data.statpacks[0].id
+  };
+}
+function readHash() {
+  const params = new URLSearchParams(location.hash.slice(1));
+  chosen = defaults();
+  for (const [key, group] of Object.entries(groups)) {
+    if (data[group].some(item => item.id === params.get(key))) chosen[key] = params.get(key);
+  }
+}
+function options(key) {
+  const select = $(key);
+  const filter = key === 'job' ? $('job-search').value.toLowerCase().trim() : '';
+  const items = data[groups[key]].filter(item => `${item.name} ${item.id}`.toLowerCase().includes(filter));
+  const names = new Map();
+  for (const item of data[groups[key]]) names.set(item.name, (names.get(item.name) || 0) + 1);
+  select.replaceChildren();
+  for (const item of items) {
+    const label = names.get(item.name) > 1 ? `${item.name} (${item.id.split('/').slice(3).join(' / ')})` : item.name;
+    select.add(new Option(label, item.id, false, item.id === chosen[key]));
+  }
+  // Filtering never changes the active build until the user chooses an option.
+  if (items.length && !items.some(x => x.id === chosen[key])) select.selectedIndex = -1;
+  if (!items.length) select.add(new Option('No matching jobs', ''));
+  select.disabled = !items.length;
+}
+function cell(tag, value, className = '') {
+  const el = document.createElement(tag);
+  el.textContent = value;
+  if (className) el.className = className;
+  return el;
+}
+function render() {
+  const selected = Object.fromEntries(Object.entries(groups).map(([key, group]) => [key, data[group].find(x => x.id === chosen[key])]));
+  for (const key of Object.keys(groups)) $(key + '-source').href = selected[key].source;
+  $('pack-description').textContent = selected.statpack.description || 'No fixed stat bonuses for this statpack.';
+  const rows = calculate(data, selected.race, selected.job, selected.statpack);
+  $('stats-body').replaceChildren();
+  $('breakdown-body').replaceChildren();
+  for (const row of rows) {
+    const [code, name] = LABELS[row.stat];
+    const tr = document.createElement('tr');
+    const heading = document.createElement('th');
+    heading.scope = 'row';
+    const label = cell('span', '', 'stat-label');
+    label.append(cell('span', code, 'stat-code'), cell('span', name));
+    heading.append(label);
+    tr.append(heading);
+    // Reserve the same badge space in each scenario to align the numbers.
+    const base = cell('td', display(row.base));
+    const placeholder = cell('span', '+0', 'delta empty');
+    placeholder.setAttribute('aria-hidden', 'true');
+    base.append(placeholder);
+    tr.append(base);
+    row.buffs.forEach((value, i) => {
+      const td = cell('td', display(value));
+      const bonus = data.buffs[i].stats[row.stat] ?? 0;
+      const badge = cell('span', display(bonus, true), `delta ${i === 1 ? 'warden-delta' : ''} ${bonus ? '' : 'empty'}`);
+      if (bonus) badge.setAttribute('aria-label', `${display(bonus, true)} from area buff`);
+      else badge.setAttribute('aria-hidden', 'true');
+      td.append(badge);
+      tr.append(td);
+    });
+    $('stats-body').append(tr);
+    const detail = document.createElement('tr');
+    const detailHeading = cell('th', name);
+    detailHeading.scope = 'row';
+    detail.append(detailHeading);
+    row.parts.forEach((part, i) => detail.append(cell('td', display(part, i !== 0))));
+    detail.append(cell('td', display(row.base)));
+    $('breakdown-body').append(detail);
+  }
+}
+function writeHash() {
+  history.replaceState(null, '', '#' + new URLSearchParams(chosen).toString());
+}
+
+async function init() {
+  try {
+    const response = await fetch('./data/stats.json', { cache: 'no-cache' });
+    if (!response.ok) throw new Error(`Data request failed (${response.status})`);
+    data = await response.json();
+    if (!['races', 'jobs', 'statpacks', 'buffs', 'stats'].every(k => Array.isArray(data[k]) && data[k].length)) throw new Error('The data snapshot is incomplete.');
+    readHash();
+    for (const key of Object.keys(groups)) {
+      options(key);
+      $(key).addEventListener('change', () => {
+        if (!$(key).value) return;
+        chosen[key] = $(key).value;
+        writeHash();
+        render();
+      });
+    }
+    $('job-search').addEventListener('input', () => options('job'));
+    $('reset').addEventListener('click', () => {
+      chosen = defaults();
+      $('job-search').value = '';
+      Object.keys(groups).forEach(options);
+      writeHash();
+      render();
+    });
+    $('share').addEventListener('click', async () => {
+      writeHash();
+      try {
+        await navigator.clipboard.writeText(location.href);
+        $('share').textContent = 'Link copied';
+        setTimeout(() => { $('share').textContent = 'Copy build link'; }, 2200);
+      } catch {
+        // The URL is updated even when clipboard access is unavailable.
+        $('status').textContent = 'Your build is saved in the address bar. Copy that URL to share it.';
+        $('status').hidden = false;
+      }
+    });
+    addEventListener('hashchange', () => {
+      readHash();
+      $('job-search').value = '';
+      Object.keys(groups).forEach(options);
+      render();
+    });
+    const commit = document.createElement('a');
+    commit.href = `${data.repository}/commit/${data.commit}`;
+    commit.textContent = data.commit.slice(0, 7);
+    commit.target = '_blank';
+    commit.rel = 'noopener noreferrer';
+    $('data-info').replaceChildren(document.createTextNode(`Data: ${new Date(data.generatedAt).toISOString().slice(0, 10)} / `), commit);
+    $('buff-sources').append(document.createTextNode('Buff definitions: '));
+    data.buffs.forEach((buff, i) => {
+      const link = cell('a', buff.name);
+      link.href = buff.source;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      if (i) $('buff-sources').append(document.createTextNode(' / '));
+      $('buff-sources').append(link);
+    });
+    render();
+    $('status').hidden = true;
+    $('calculator').hidden = false;
+  } catch (error) {
+    $('status').textContent = `Could not load calculator data. ${error.message}. For local use, serve this folder with "python -m http.server 8000" and open http://localhost:8000.`;
+    console.error(error);
+  }
+}
+init();

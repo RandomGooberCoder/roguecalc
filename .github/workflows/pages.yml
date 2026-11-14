@@ -1,0 +1,67 @@
+name: Refresh data and deploy Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '23 6 * * *'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out calculator
+        uses: actions/checkout@v4
+      - name: Check out upstream data
+        uses: actions/checkout@v4
+        with:
+          repository: Rotwood-Vale/Ratwood-2.0
+          ref: main
+          path: upstream
+          sparse-checkout: |
+            code/modules/mob/living/carbon/human/species_types
+            code/modules/jobs/job_types/roguetown
+            modular_azurepeak/statpacks
+            code/datums/status_effects/rogue
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Extract current repository stats
+        run: python scripts/build_data.py upstream
+      - name: Check extraction and calculator
+        run: |
+          python -m unittest discover -s tests -p 'test_*.py'
+          node --test tests/calc.test.mjs
+      - name: Assemble static site
+        run: |
+          mkdir -p _site/data
+          cp index.html style.css app.js calc.mjs icon.svg .nojekyll _site/
+          cp data/stats.json _site/data/
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Publish GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
