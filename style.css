@@ -31,3 +31,15 @@
 }
 
 @media(max-width:760px){.intro{padding:6px 0}.stats-table td,.stats-table tbody th{padding:6px 8px}.results-note{margin-top:5px}.section-head{margin-bottom:10px}footer{font-size:7px}}
+
+/* Visible breakdown action. No animation or spotlight. */
+.breakdown-section{margin-top:10px}
+.breakdown-toggle{display:flex;align-items:center;justify-content:center;gap:14px;width:100%;min-height:42px;padding:9px 18px;border:2px solid var(--gold);border-radius:6px;background:var(--gold);color:#172018;font-size:14px;font-weight:700;line-height:1.25;cursor:pointer;box-shadow:0 2px 6px #0003;transition:none;animation:none}
+.breakdown-toggle:hover{background:#e6cf9d;border-color:#e6cf9d}
+.breakdown-toggle:focus-visible{outline:3px solid #f6e4b8;outline-offset:3px}
+.breakdown-toggle .chev{font-size:18px;line-height:1}
+.breakdown-toggle[aria-expanded="true"] .chev{transform:rotate(180deg)}
+.breakdown-panel{padding-top:10px}
+.breakdown-panel td{font-size:13px}
+.breakdown-panel th{font-size:11px}
+@media(max-width:760px){.breakdown-section{margin-top:8px}.breakdown-toggle{min-height:40px;padding:8px 12px;font-size:13px}}

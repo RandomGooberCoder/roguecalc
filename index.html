@@ -7,8 +7,8 @@
   <meta name="description" content="Build a Ratwood character and compare race, job, statpack, and area buff stats.">
   <title>Ratwood | Stat Calculator</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js" type="module"></script>
+  <link rel="stylesheet" href="style.css?v=breakdown-2">
+  <script src="app.js?v=breakdown-2" type="module"></script>
 </head>
 <body>
   <div class="page">
@@ -38,7 +38,7 @@
           <div class="table-wrap"><table class="stats-table"><caption class="sr-only">Base stats and separate area buff comparisons</caption><thead><tr><th scope="col">ATTRIBUTE</th><th scope="col">Base <small>No area buff</small></th><th scope="col" class="vigilant">Vigilant <small>Guardsman buff</small></th><th scope="col" class="warden">Warden <small>Woodsman buff</small></th></tr></thead><tbody id="stats-body"></tbody></table></div>
           <div class="results-note"><span class="dot"></span><p>Buff columns are separate scenarios. Their bonuses are not stacked. Eligibility and area restrictions still apply in game.</p></div>
         </section>
-        <details class="breakdown"><summary>See the stat breakdown <span aria-hidden="true">+</span></summary><div class="table-wrap"><table><caption class="sr-only">Individual contributions for each attribute</caption><thead><tr><th>Attribute</th><th>Starting</th><th>Race</th><th>Job</th><th>Statpack</th><th>Age</th><th>Species choice</th><th>Total</th></tr></thead><tbody id="breakdown-body"></tbody></table></div></details>
+        <section class="breakdown-section"><button id="breakdown-toggle" class="breakdown-toggle" type="button" aria-expanded="false" aria-controls="breakdown-panel"><span id="breakdown-label">See the stat breakdown</span><span class="chev" aria-hidden="true">&#9662;</span></button><div id="breakdown-panel" class="breakdown-panel" role="region" aria-labelledby="breakdown-label" hidden><div class="table-wrap"><table><caption class="sr-only">Individual contributions for each attribute</caption><thead><tr><th>Attribute</th><th>Starting</th><th>Race</th><th>Job</th><th>Statpack</th><th>Age</th><th>Species choice</th><th>Total</th></tr></thead><tbody id="breakdown-body"></tbody></table></div></div></section>
       </div>
     </main>
     <footer><span id="buff-sources"></span><span>RATWOOD <span class="footer-divider">/</span> STAT CALCULATOR</span><span id="data-info">Static site. No account needed.</span></footer>

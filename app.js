@@ -106,6 +106,12 @@ function writeHash() {
 }
 
 async function init() {
+  $('breakdown-toggle').addEventListener('click', () => {
+    const open = $('breakdown-panel').hidden;
+    $('breakdown-panel').hidden = !open;
+    $('breakdown-toggle').setAttribute('aria-expanded', String(open));
+    $('breakdown-label').textContent = open ? 'Hide the stat breakdown' : 'See the stat breakdown';
+  });
   try {
     const response = await fetch('./data/stats.json', { cache: 'no-cache' });
     if (!response.ok) throw new Error(`Data request failed (${response.status})`);
