@@ -1,7 +1,7 @@
 {
   "repository": "https://github.com/Rotwood-Vale/Ratwood-2.0",
   "commit": "667702e7445add96422ac86518acea5a23861444",
-  "generatedAt": "2026-11-14T18:28:14.663518+00:00",
+  "generatedAt": "2026-11-14T18:39:42.777863+00:00",
   "base": 10,
   "stats": [
     "strength",
@@ -5213,13 +5213,34 @@
       "id": "/datum/statpack/wildcard/fated",
       "name": "Fated",
       "stats": {
-        "strength": [-2, 2],
-        "perception": [-2, 2],
-        "intelligence": [-2, 2],
-        "constitution": [-2, 2],
-        "willpower": [-2, 2],
-        "speed": [-2, 2],
-        "fortune": [-2, 2]
+        "strength": [
+          -2,
+          2
+        ],
+        "perception": [
+          -2,
+          2
+        ],
+        "intelligence": [
+          -2,
+          2
+        ],
+        "constitution": [
+          -2,
+          2
+        ],
+        "willpower": [
+          -2,
+          2
+        ],
+        "speed": [
+          -2,
+          2
+        ],
+        "fortune": [
+          -2,
+          2
+        ]
       },
       "choices": [],
       "description": "The first or the last - let destiny's fickle loom decree what your fate shall be.",
