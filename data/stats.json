@@ -5213,34 +5213,13 @@
       "id": "/datum/statpack/wildcard/fated",
       "name": "Fated",
       "stats": {
-        "strength": [
-          -2,
-          2
-        ],
-        "perception": [
-          -2,
-          2
-        ],
-        "intelligence": [
-          -2,
-          2
-        ],
-        "constitution": [
-          -2,
-          2
-        ],
-        "willpower": [
-          -2,
-          2
-        ],
-        "speed": [
-          -2,
-          2
-        ],
-        "fortune": [
-          -2,
-          2
-        ]
+        "strength": [-2, 2],
+        "perception": [-2, 2],
+        "intelligence": [-2, 2],
+        "constitution": [-2, 2],
+        "willpower": [-2, 2],
+        "speed": [-2, 2],
+        "fortune": [-2, 2]
       },
       "choices": [],
       "description": "The first or the last - let destiny's fickle loom decree what your fate shall be.",
