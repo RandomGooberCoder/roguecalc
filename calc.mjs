@@ -12,9 +12,9 @@ export function display(value, signed = false) {
   const fmt = n => signed && n > 0 ? `+${n}` : String(n);
   return lo === hi ? fmt(lo) : `${fmt(lo)} to ${fmt(hi)}`;
 }
-export function calculate(data, race, job, pack) {
+export function calculate(data, race, job, pack, age = { stats: {} }, choice = null) {
   return data.stats.map(stat => {
-    const parts = [data.base, race.stats[stat] ?? 0, job.stats[stat] ?? 0, pack.stats[stat] ?? 0];
+    const parts = [data.base, race.stats[stat] ?? 0, job.stats[stat] ?? 0, pack.stats[stat] ?? 0, age.stats[stat] ?? 0, choice?.stats[stat] ?? 0];
     const base = add(...parts);
     return { stat, parts, base, buffs: data.buffs.map(buff => add(base, buff.stats[stat] ?? 0)) };
   });

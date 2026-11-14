@@ -40,7 +40,7 @@ Requires Python 3.10+ and Git. The site itself has no build requirement.
 
 ```sh
 git clone --depth 1 --filter=blob:none --sparse https://github.com/Rotwood-Vale/Ratwood-2.0.git ../ratwood-source
-git -C ../ratwood-source sparse-checkout set code/modules/mob/living/carbon/human/species_types code/modules/jobs/job_types/roguetown modular_azurepeak/statpacks code/datums/status_effects/rogue
+git -C ../ratwood-source sparse-checkout set code/modules/mob/living/carbon/human/species_types code/modules/jobs/job_types/roguetown modular_azurepeak/statpacks code/datums/status_effects/rogue code/modules/mob/living/stats.dm
 python scripts/build_data.py ../ratwood-source
 ```
 
@@ -57,7 +57,7 @@ Buff values are extracted from `code/datums/status_effects/rogue/roguebuff.dm`:
 
 The columns represent separate scenarios. This site does not decide whether a character qualifies for a buff or is standing in an eligible area.
 
-The importer reads declarative type definitions and follows type path or explicit `parent_type` inheritance within the supplied directories. A child's declared list replaces its inherited list, matching DM assignment. Named races and subclasses without a resolvable stats list are omitted because some use bespoke runtime modifications. Named zero-bonus statpacks such as Austere and Virtuous are retained. Virtue choices are not calculated. The site is a list-based planner, not a full simulation of BYOND: age, traits, equipment, special outfit logic, role restrictions, and any runtime stat changes are outside its scope. It lists source definitions without enforcing player availability.
+The importer reads declarative type definitions and follows type path or explicit `parent_type` inheritance within the supplied directories. A child's declared list replaces its inherited list, matching DM assignment. Named races and subclasses without a resolvable stats list are omitted because some use bespoke runtime modifications. Named zero-bonus statpacks such as Austere and Virtuous are retained. Virtue choices are not calculated. The site is a list-based planner, not a full simulation of BYOND: traits, equipment, special outfit logic, role restrictions, and any runtime stat changes are outside its scope. It lists source definitions without enforcing player availability.
 
 Fated's `list(-2, 2)` values represent an inclusive randomized range for each stat. The site displays each minimum and maximum rather than inventing a roll.
 
@@ -93,3 +93,15 @@ Tests cover the screenshot example, independent buffs, negative modifiers, rando
 - `tests/`: extraction and calculator checks.
 
 Unofficial fan tool. Upstream names, descriptions, and numerical data originate from the linked Ratwood repository; its licensing and attribution terms continue to apply to upstream material. This project is not endorsed by its maintainers.
+
+## Species choices and age
+
+Species `custom_selection` stat options are imported from source and shown only for applicable races (currently Aasimar). Choose one +1 stat, or leave it unselected. The bonus clears when switching to a race without that option.
+
+The age dropdown uses the game's life stages, not invented numerical age thresholds. Modifiers are extracted from the age switch in `code/modules/mob/living/stats.dm` on every refresh:
+
+- Adult: no modifier.
+- Middle-Aged: Speed -1, Willpower +1, Fortune +1.
+- Old: Strength -1, Speed -2, Perception -1, Constitution -2, Intelligence +3, Fortune +1.
+
+Age branches are alternatives, not cumulative. Job-specific age-related skills and bespoke outfit logic remain outside the stat-list calculator. Age and species choice are included in shared URLs and the expandable breakdown. The default compact dashboard is designed for one-screen laptop use; the expanded breakdown and smaller screens may scroll.

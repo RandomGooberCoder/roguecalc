@@ -60,6 +60,36 @@ def parse_stats(body):
     return result
 
 
+def parse_choices(body):
+    choices = []
+    for label, token in re.findall(r'"([^"]+)"\s*=\s*(STATKEY_[A-Z]+|STAT_[A-Z]+)', body):
+        stat = KEYS[token[8:]] if token.startswith('STATKEY_') else token[5:].lower()
+        if stat not in STATS:
+            raise ValueError(f'Unknown choice stat: {token}')
+        choices.append({'id': stat, 'name': label, 'stats': {stat: 1}})
+    if not choices and body.strip():
+        raise ValueError('Unsupported species custom_selection')
+    return choices
+
+
+def extract_ages(text):
+    text = strip_comments(text)
+    match = re.search(r'^\t\tswitch\(H.age\)\n((?:\t{3,}[^\n]*\n|[ \t]*\n)+)', text, re.M)
+    if not match:
+        raise ValueError('Age stat switch not found')
+    result = [{'id': 'adult', 'name': 'Adult', 'stats': {}}]
+    for token, name, key in [('AGE_MIDDLEAGED', 'Middle-Aged', 'middleaged'), ('AGE_OLD', 'Old', 'old')]:
+        block = re.search(r'\t{3}if\(' + token + r'\)\n((?:\t{4,}[^\n]*\n|[ \t]*\n)+)', match[1])
+        if not block:
+            raise ValueError(f'Age branch missing: {token}')
+        calls = re.findall(r'change_stat\((STATKEY_[A-Z]+),\s*(-?\d+)\)', block[1])
+        rest = re.sub(r'change_stat\(STATKEY_[A-Z]+,\s*-?\d+\)', '', block[1]).strip()
+        if rest or not calls:
+            raise ValueError(f'Unsupported age changes: {token}')
+        result.append({'id': key, 'name': name, 'stats': parse_stats(','.join(f'{k}={v}' for k,v in calls))})
+    return result
+
+
 def read_definitions(root):
     definitions = {}
     files = sorted({f for directory in ROOTS.values() for f in (root / directory).rglob('*.dm')})
@@ -84,6 +114,9 @@ def read_definitions(root):
                 m = re.search(r'^\t' + field + r'\s*=\s*(list\s*\(|null)', body, re.M)
                 if m:
                     entry[field] = {} if m[1] == 'null' else parse_stats(list_body(body, body.index('(', m.start())))
+            m = re.search(r'^\tcustom_selection\s*=\s*list\s*\(', body, re.M)
+            if m:
+                entry['choices'] = parse_choices(list_body(body, body.index('(', m.start())))
     return definitions
 
 
@@ -120,13 +153,20 @@ def build(root):
             if stats is None and group != 'statpacks':
                 continue
             stats = stats or {}
+            choices = (resolve(definitions, path, 'choices') or []) if group == 'races' else []
             items.append({'id': path, 'name': entry['name'], 'stats': stats,
+                          'choices': choices,
                           'description': re.sub('<[^>]+>', '', entry.get('desc', '')),
                           'source': f"{REPO}/blob/{sha}/{entry['source']}#L{entry['line']}",
                           'group': path.split('/')[3] if len(path.split('/')) > 3 else ''})
         data[group] = sorted(items, key=lambda item: (item['name'].casefold(), item['id']))
         if not items:
             raise ValueError(f'No {group} extracted')
+    age_file = 'code/modules/mob/living/stats.dm'
+    age_text = (root / age_file).read_text(encoding='utf-8-sig')
+    data['ages'] = extract_ages(age_text)
+    for age in data['ages']:
+        age['source'] = f'{REPO}/blob/{sha}/{age_file}'
     data['buffs'] = []
     for key, name, path in [
         ('vigilant', 'Vigilant Guardsman', '/datum/status_effect/buff/guardbuffone'),

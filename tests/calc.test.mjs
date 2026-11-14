@@ -37,3 +37,21 @@ test('data has unique type IDs and valid source links', () => {
     }
   }
 });
+
+
+test('age categories apply their own modifiers, not cumulative aging', () => {
+  const empty = {stats:{}};
+  const middle = calculate(data, empty, empty, empty, data.ages.find(x => x.id === 'middleaged'));
+  const old = calculate(data, empty, empty, empty, data.ages.find(x => x.id === 'old'));
+  assert.deepEqual(middle.map(x=>x.base[0]), [10,10,10,10,11,9,11]);
+  assert.deepEqual(old.map(x=>x.base[0]), [9,9,13,8,10,8,11]);
+});
+
+test('every Aasimar choice adds exactly one to the selected stat', () => {
+  const race = byName('races','Aasimar');
+  assert.equal(race.choices.length, 7);
+  for (const choice of race.choices) {
+    const rows = calculate(data,race,{stats:{}},{stats:{}}, {stats:{}},choice);
+    for(const row of rows) assert.equal(row.base[0],row.stat===choice.id ? 11:10);
+  }
+});

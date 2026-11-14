@@ -9,7 +9,8 @@ function defaults() {
   return {
     race: data.races.find(x => x.name === 'Humen')?.id ?? data.races[0].id,
     job: data.jobs.find(x => x.name === 'Foot Knight')?.id ?? data.jobs[0].id,
-    statpack: data.statpacks.find(x => x.name === 'Foresighted')?.id ?? data.statpacks[0].id
+    statpack: data.statpacks.find(x => x.name === 'Foresighted')?.id ?? data.statpacks[0].id,
+    age: 'adult', choice: ''
   };
 }
 function readHash() {
@@ -18,6 +19,20 @@ function readHash() {
   for (const [key, group] of Object.entries(groups)) {
     if (data[group].some(item => item.id === params.get(key))) chosen[key] = params.get(key);
   }
+  if (data.ages.some(x => x.id === params.get('age'))) chosen.age = params.get('age');
+  chosen.choice = params.get('choice') ?? '';
+}
+function raceChoices() {
+  return data.races.find(x => x.id === chosen.race)?.choices ?? [];
+}
+function syncExtra() {
+  const choices = raceChoices();
+  if (!choices.some(x => x.id === chosen.choice)) chosen.choice = '';
+  $('choice-field').hidden = !choices.length;
+  $('choice').replaceChildren(new Option('No bonus selected', ''));
+  for (const item of choices) $('choice').add(new Option(item.name, item.id));
+  $('choice').value = chosen.choice;
+  $('age').value = chosen.age;
 }
 function options(key) {
   const select = $(key);
@@ -45,7 +60,11 @@ function render() {
   const selected = Object.fromEntries(Object.entries(groups).map(([key, group]) => [key, data[group].find(x => x.id === chosen[key])]));
   for (const key of Object.keys(groups)) $(key + '-source').href = selected[key].source;
   $('pack-description').textContent = selected.statpack.description || 'No fixed stat bonuses for this statpack.';
-  const rows = calculate(data, selected.race, selected.job, selected.statpack);
+  syncExtra();
+  const age = data.ages.find(x => x.id === chosen.age);
+  const choice = raceChoices().find(x => x.id === chosen.choice);
+  $('age-source').href = age.source;
+  const rows = calculate(data, selected.race, selected.job, selected.statpack, age, choice);
   $('stats-body').replaceChildren();
   $('breakdown-body').replaceChildren();
   for (const row of rows) {
@@ -91,22 +110,29 @@ async function init() {
     const response = await fetch('./data/stats.json', { cache: 'no-cache' });
     if (!response.ok) throw new Error(`Data request failed (${response.status})`);
     data = await response.json();
-    if (!['races', 'jobs', 'statpacks', 'buffs', 'stats'].every(k => Array.isArray(data[k]) && data[k].length)) throw new Error('The data snapshot is incomplete.');
+    if (!['races', 'jobs', 'statpacks', 'buffs', 'stats', 'ages'].every(k => Array.isArray(data[k]) && data[k].length)) throw new Error('The data snapshot is incomplete.');
     readHash();
     for (const key of Object.keys(groups)) {
       options(key);
       $(key).addEventListener('change', () => {
         if (!$(key).value) return;
         chosen[key] = $(key).value;
-        writeHash();
         render();
+        writeHash();
       });
     }
+    for (const age of data.ages) $('age').add(new Option(age.name, age.id));
+    for (const key of ['age', 'choice']) $(key).addEventListener('change', () => {
+      chosen[key] = $(key).value;
+      render();
+      writeHash();
+    });
     $('job-search').addEventListener('input', () => options('job'));
     $('reset').addEventListener('click', () => {
       chosen = defaults();
       $('job-search').value = '';
       Object.keys(groups).forEach(options);
+      syncExtra();
       writeHash();
       render();
     });

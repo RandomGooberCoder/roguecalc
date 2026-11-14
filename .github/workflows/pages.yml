@@ -69,6 +69,7 @@ jobs:
             code/modules/jobs/job_types/roguetown
             modular_azurepeak/statpacks
             code/datums/status_effects/rogue
+            code/modules/mob/living/stats.dm
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'

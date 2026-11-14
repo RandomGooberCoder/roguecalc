@@ -1,7 +1,7 @@
 {
   "repository": "https://github.com/Rotwood-Vale/Ratwood-2.0",
   "commit": "667702e7445add96422ac86518acea5a23861444",
-  "generatedAt": "2026-11-14T17:44:58.636641+00:00",
+  "generatedAt": "2026-11-14T18:28:14.663518+00:00",
   "base": 10,
   "stats": [
     "strength",
@@ -17,6 +17,57 @@
       "id": "/datum/species/aasimar",
       "name": "Aasimar",
       "stats": {},
+      "choices": [
+        {
+          "id": "strength",
+          "name": "+1 STR",
+          "stats": {
+            "strength": 1
+          }
+        },
+        {
+          "id": "fortune",
+          "name": "+1 FOR",
+          "stats": {
+            "fortune": 1
+          }
+        },
+        {
+          "id": "intelligence",
+          "name": "+1 INT",
+          "stats": {
+            "intelligence": 1
+          }
+        },
+        {
+          "id": "constitution",
+          "name": "+1 CON",
+          "stats": {
+            "constitution": 1
+          }
+        },
+        {
+          "id": "willpower",
+          "name": "+1 WIL",
+          "stats": {
+            "willpower": 1
+          }
+        },
+        {
+          "id": "perception",
+          "name": "+1 PER",
+          "stats": {
+            "perception": 1
+          }
+        },
+        {
+          "id": "speed",
+          "name": "+1 SPD",
+          "stats": {
+            "speed": 1
+          }
+        }
+      ],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/roguetown/other/aasimar.dm#L4",
       "group": "aasimar"
@@ -28,6 +79,7 @@
         "strength": 1,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/furry/arachnid.dm#L4",
       "group": "arachnid"
@@ -39,6 +91,7 @@
         "willpower": 1,
         "constitution": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/furry/akula.dm#L4",
       "group": "akula"
@@ -49,6 +102,7 @@
       "stats": {
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/furry/anthromorphsmall.dm#L4",
       "group": "anthromorphsmall"
@@ -60,6 +114,7 @@
         "perception": 1,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/roguetown/elf/elfd.dm#L4",
       "group": "elf"
@@ -72,6 +127,7 @@
         "speed": 1,
         "strength": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/roguetown/construct/doll.dm#L5",
       "group": "construct"
@@ -82,6 +138,7 @@
       "stats": {
         "strength": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/furry/dracon.dm#L4",
       "group": "dracon"
@@ -93,6 +150,7 @@
         "constitution": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/roguetown/dwarf/dwarfm.dm#L4",
       "group": "dwarf"
@@ -103,6 +161,7 @@
       "stats": {
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/roguetown/elf/elfs.dm#L4",
       "group": "elf"
@@ -113,6 +172,7 @@
       "stats": {
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/furry/moth.dm#L4",
       "group": "moth"
@@ -124,6 +184,7 @@
         "intelligence": 1,
         "perception": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/roguetown/dwarf/gnome.dm#L4",
       "group": "dwarf"
@@ -134,6 +195,7 @@
       "stats": {
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/roguetown/goblin/goblinp.dm#L4",
       "group": "goblinp"
@@ -144,6 +206,7 @@
       "stats": {
         "strength": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/roguetown/other/halforc.dm#L4",
       "group": "halforc"
@@ -155,6 +218,7 @@
         "perception": 1,
         "constitution": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/roguetown/other/halfelf.dm#L4",
       "group": "human"
@@ -166,6 +230,7 @@
         "perception": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/furry/demihuman.dm#L4",
       "group": "demihuman"
@@ -180,6 +245,7 @@
         "intelligence": 1,
         "speed": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/furry/harpy.dm#L4",
       "group": "harpy"
@@ -191,6 +257,7 @@
         "intelligence": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/roguetown/human/humen.dm#L4",
       "group": "human"
@@ -201,6 +268,7 @@
       "stats": {
         "fortune": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/furry/kobold.dm#L4",
       "group": "kobold"
@@ -212,6 +280,7 @@
         "strength": 1,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/furry/lamia.dm#L4",
       "group": "lamia"
@@ -223,6 +292,7 @@
         "intelligence": 1,
         "constitution": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/furry/lupian.dm#L4",
       "group": "lupian"
@@ -234,6 +304,7 @@
         "willpower": 1,
         "speed": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/roguetown/construct/constructm.dm#L5",
       "group": "construct"
@@ -246,6 +317,7 @@
         "willpower": 1,
         "intelligence": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/roguetown/other/ooze.dm#L1",
       "group": "ooze"
@@ -259,6 +331,7 @@
         "intelligence": -1,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/roguetown/other/orc.dm#L1",
       "group": "orc"
@@ -270,6 +343,7 @@
         "constitution": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/furry/lizardfolk.dm#L4",
       "group": "lizardfolk"
@@ -280,6 +354,7 @@
       "stats": {
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/furry/tabaxi.dm#L4",
       "group": "tabaxi"
@@ -291,6 +366,7 @@
         "intelligence": 1,
         "constitution": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/roguetown/other/tiefling.dm#L4",
       "group": "tieberian"
@@ -302,6 +378,7 @@
         "perception": 1,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/furry/vulpkanin.dm#L4",
       "group": "vulpkanin"
@@ -313,6 +390,7 @@
         "perception": 1,
         "constitution": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/species_types/furry/anthromorph.dm#L4",
       "group": "anthromorph"
@@ -327,6 +405,7 @@
         "constitution": 2,
         "strength": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_mercenary.dm#L4",
       "group": "slaver"
@@ -339,6 +418,7 @@
         "constitution": 2,
         "strength": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_slave.dm#L1",
       "group": "slaver"
@@ -350,6 +430,7 @@
         "perception": 3,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/avar.dm#L3",
       "group": "foreigner"
@@ -362,6 +443,7 @@
         "willpower": 3,
         "speed": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/Inquisition/absolutionist.dm#L42",
       "group": "absolver"
@@ -374,6 +456,7 @@
         "willpower": 2,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/church/monk.dm#L90",
       "group": "acolyte"
@@ -387,6 +470,7 @@
         "strength": 2,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/adjudicator.dm#L4",
       "group": "psydoniantemplar"
@@ -401,6 +485,7 @@
         "willpower": 1,
         "fortune": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/hand.dm#L171",
       "group": "hand"
@@ -413,6 +498,7 @@
         "perception": 3,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfelthand.dm#L184",
       "group": "heartfelt"
@@ -421,6 +507,7 @@
       "id": "/datum/advclass/sfighter/amazon",
       "name": "Amazon",
       "stats": {},
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L686",
       "group": "sfighter"
@@ -433,6 +520,7 @@
         "speed": 2,
         "constitution": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/courier.dm#L1",
       "group": "vagabond_courier"
@@ -448,6 +536,7 @@
         "willpower": 2,
         "speed": -3
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/ancient.dm#L1",
       "group": "wretch"
@@ -460,6 +549,7 @@
         "perception": 2,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/courtier/apothecary.dm#L31",
       "group": "apothecary"
@@ -472,6 +562,7 @@
         "strength": 2,
         "willpower": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/arbalist.dm#L6",
       "group": "arbalist"
@@ -486,6 +577,7 @@
         "speed": 1,
         "perception": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/Inquisition/puritanclasses/arbiter.dm#L5",
       "group": "puritan"
@@ -500,6 +592,7 @@
         "intelligence": 1,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/builder.dm#L1",
       "group": "builder"
@@ -512,6 +605,7 @@
         "constitution": -1,
         "strength": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/yeomen/archivist.dm#L38",
       "group": "archivist"
@@ -526,6 +620,7 @@
         "speed": 1,
         "fortune": 5
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfeltlord.dm#L102",
       "group": "heartfelt"
@@ -538,6 +633,7 @@
         "constitution": 2,
         "strength": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_slave.dm#L155",
       "group": "slaver"
@@ -550,6 +646,7 @@
         "speed": 2,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/mage.dm#L273",
       "group": "mage"
@@ -563,6 +660,7 @@
         "strength": 1,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/noble.dm#L1",
       "group": "noble"
@@ -577,6 +675,7 @@
         "strength": 1,
         "constitution": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/grenzelhoft.dm#L133",
       "group": "mercenary"
@@ -593,6 +692,7 @@
         "intelligence": 1,
         "fortune": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/antag/assassin/poisoner.dm#L1",
       "group": "assassin_poisoner"
@@ -609,6 +709,7 @@
         "intelligence": 1,
         "fortune": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/antag/assassin/hitman.dm#L1",
       "group": "assassin_hitman"
@@ -623,6 +724,7 @@
         "willpower": 1,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/antag/assassin/ranger.dm#L1",
       "group": "assassin_ranger"
@@ -637,6 +739,7 @@
         "perception": 1,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/atgervi.dm#L1",
       "group": "mercenary"
@@ -649,6 +752,7 @@
         "perception": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/rookie.dm#L119",
       "group": "rookie"
@@ -662,6 +766,7 @@
         "willpower": 1,
         "intelligence": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L208",
       "group": "sfighter"
@@ -673,6 +778,7 @@
         "intelligence": 3,
         "fortune": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/barbersurgeon.dm#L1",
       "group": "barbersurgeon"
@@ -685,6 +791,7 @@
         "speed": 2,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/rogue.dm#L124",
       "group": "rogue"
@@ -697,6 +804,7 @@
         "willpower": 2,
         "strength": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/peasants/bathmaid.dm#L39",
       "group": "nightmaiden"
@@ -710,6 +818,7 @@
         "constitution": 1,
         "intelligence": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/yeomen/nightmaster.dm#L32",
       "group": "bathmaster"
@@ -723,6 +832,7 @@
         "willpower": 3,
         "fortune": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_slave.dm#L63",
       "group": "slaver"
@@ -735,6 +845,7 @@
         "willpower": 1,
         "constitution": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L1",
       "group": "sfighter"
@@ -748,6 +859,7 @@
         "willpower": -3,
         "intelligence": -4
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/beggar.dm#L1",
       "group": "vagabond_beggar"
@@ -762,6 +874,7 @@
         "speed": 1,
         "intelligence": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/berserker.dm#L1",
       "group": "wretch"
@@ -776,6 +889,7 @@
         "willpower": 1,
         "speed": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_squire.dm#L227",
       "group": "kj_squire_bidower"
@@ -788,6 +902,7 @@
         "willpower": 2,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/ranger.dm#L167",
       "group": "ranger"
@@ -802,6 +917,7 @@
         "constitution": -1,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/church/priest.dm#L72",
       "group": "bishop"
@@ -816,6 +932,7 @@
         "constitution": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/blackoak.dm#L2",
       "group": "wretch"
@@ -830,6 +947,7 @@
         "perception": 1,
         "intelligence": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/blackoak.dm#L2",
       "group": "mercenary"
@@ -843,6 +961,7 @@
         "perception": 2,
         "constitution": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/blackoak.dm#L85",
       "group": "mercenary"
@@ -857,6 +976,7 @@
         "constitution": 1,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/unknightly_heretic_journey/ukj_varlet.dm#L3",
       "group": "ukj_varlet"
@@ -872,6 +992,7 @@
         "fortune": 1,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/blacksmith.dm#L1",
       "group": "blacksmith"
@@ -885,6 +1006,7 @@
         "strength": 2,
         "fortune": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/hand.dm#L51",
       "group": "hand"
@@ -897,6 +1019,7 @@
         "intelligence": 2,
         "constitution": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/ranger.dm#L121",
       "group": "ranger"
@@ -909,6 +1032,7 @@
         "intelligence": 1,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/hunter.dm#L1",
       "group": "hunter"
@@ -922,6 +1046,7 @@
         "constitution": 1,
         "strength": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/trader/brewer.dm#L1",
       "group": "trader"
@@ -937,6 +1062,7 @@
         "fortune": 1,
         "intelligence": -4
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/antag/brigand.dm#L1",
       "group": "brigand"
@@ -950,6 +1076,7 @@
         "constitution": -2,
         "strength": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/busker.dm#L1",
       "group": "vagabond_busker"
@@ -962,6 +1089,7 @@
         "intelligence": 1,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/courtier/servant.dm#L121",
       "group": "servant"
@@ -976,6 +1104,7 @@
         "intelligence": 1,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_followers/kj_campwright.dm#L1",
       "group": "kj_follower"
@@ -988,6 +1117,7 @@
         "willpower": 1,
         "speed": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/cleric.dm#L447",
       "group": "cleric"
@@ -1002,6 +1132,7 @@
         "intelligence": -2,
         "speed": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/manorguard/gormless.dm#L5",
       "group": "manorguard"
@@ -1015,6 +1146,7 @@
         "strength": 1,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/manorguard/cavalry.dm#L3",
       "group": "manorguard"
@@ -1027,6 +1159,7 @@
         "constitution": 2,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/cheesemaker.dm#L1",
       "group": "cheesemaker"
@@ -1040,6 +1173,7 @@
         "fortune": 1,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/courtier/butler.dm#L117",
       "group": "seneschal"
@@ -1056,6 +1190,7 @@
         "intelligence": -1,
         "fortune": 5
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfeltlord.dm#L183",
       "group": "heartfelt"
@@ -1070,6 +1205,7 @@
         "strength": -1,
         "constitution": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_followers/kj_chirurgeon.dm#L1",
       "group": "kj_follower"
@@ -1081,6 +1217,7 @@
         "speed": 2,
         "perception": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/youngfolk/churchling.dm#L33",
       "group": "churchling"
@@ -1094,6 +1231,7 @@
         "willpower": 1,
         "perception": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/townguard.dm#L63",
       "group": "guardsman"
@@ -1107,6 +1245,7 @@
         "speed": 1,
         "strength": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/clerk.dm#L30",
       "group": "clerk"
@@ -1120,6 +1259,7 @@
         "constitution": 1,
         "intelligence": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/homesteader.dm#L1",
       "group": "homesteader"
@@ -1132,6 +1272,7 @@
         "willpower": 2,
         "strength": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/peasants/bathmaid.dm#L91",
       "group": "nightmaiden"
@@ -1145,6 +1286,7 @@
         "speed": 2,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/condottiero.dm#L1",
       "group": "mercenary"
@@ -1158,6 +1300,7 @@
         "perception": 2,
         "strength": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/confessor.dm#L3",
       "group": "confessor"
@@ -1170,6 +1313,7 @@
         "strength": 1,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/peasants/cook.dm#L30",
       "group": "cook"
@@ -1184,6 +1328,7 @@
         "strength": -1,
         "constitution": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/courtier/councillor.dm#L30",
       "group": "councillor"
@@ -1197,6 +1342,7 @@
         "perception": 2,
         "constitution": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/courtier/chaplain.dm#L33",
       "group": "chaplain"
@@ -1211,6 +1357,7 @@
         "strength": -1,
         "constitution": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/courtier/magician.dm#L34",
       "group": "courtmage"
@@ -1223,6 +1370,7 @@
         "willpower": 2,
         "perception": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/peasants/bathmaid.dm#L229",
       "group": "nightmaiden"
@@ -1235,6 +1383,7 @@
         "constitution": 2,
         "strength": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_slave.dm#L206",
       "group": "slaver"
@@ -1249,6 +1398,7 @@
         "speed": 3,
         "strength": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/crocs.dm#L172",
       "group": "mercenary"
@@ -1262,6 +1412,7 @@
         "willpower": 2,
         "perception": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/crocs.dm#L1",
       "group": "mercenary"
@@ -1272,6 +1423,7 @@
       "stats": {
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/drow.dm#L1",
       "group": "foreigner"
@@ -1286,6 +1438,7 @@
         "perception": 1,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/special/crusader.dm#L1",
       "group": "crusader"
@@ -1299,6 +1452,7 @@
         "constitution": 1,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/trader/cuisiner.dm#L1",
       "group": "trader"
@@ -1313,6 +1467,7 @@
         "speed": 1,
         "fortune": 3
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/czwarteki/czwartekiheir.dm#L1",
       "group": "czwarteki"
@@ -1328,6 +1483,7 @@
         "constitution": 3,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/czwarteki/czwartekihussar.dm#L1",
       "group": "czwarteki"
@@ -1343,6 +1499,7 @@
         "speed": 1,
         "fortune": 5
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/czwarteki/czwartekilord.dm#L1",
       "group": "czwarteki"
@@ -1356,6 +1513,7 @@
         "constitution": 2,
         "perception": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/czwarteki/czwartekiretainer.dm#L1",
       "group": "czwarteki"
@@ -1369,6 +1527,7 @@
         "willpower": 2,
         "speed": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/czwarteki/czwartekiservant.dm#L1",
       "group": "czwarteki"
@@ -1383,6 +1542,7 @@
         "speed": 1,
         "fortune": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/prince.dm#L38",
       "group": "heir"
@@ -1393,6 +1553,7 @@
       "stats": {
         "fortune": 3
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/deprived.dm#L1",
       "group": "vagabond_deprived"
@@ -1406,6 +1567,7 @@
         "intelligence": 2,
         "perception": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/desertrider.dm#L160",
       "group": "mercenary"
@@ -1419,6 +1581,7 @@
         "speed": 1,
         "constitution": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/desertrider.dm#L1",
       "group": "mercenary"
@@ -1431,6 +1594,7 @@
         "willpower": 2,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/desertrider.dm#L83",
       "group": "mercenary"
@@ -1445,6 +1609,7 @@
         "constitution": 2,
         "perception": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/deserter.dm#L210",
       "group": "wretch"
@@ -1457,6 +1622,7 @@
         "constitution": -1,
         "willpower": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/destitute_scholar.dm#L1",
       "group": "vagabond_scholar"
@@ -1471,6 +1637,7 @@
         "intelligence": -1,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/disciple.dm#L3",
       "group": "disciple"
@@ -1484,6 +1651,7 @@
         "strength": 2,
         "perception": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/deserter.dm#L1",
       "group": "wretch"
@@ -1497,6 +1665,7 @@
         "strength": 1,
         "constitution": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/trader/doomsayer.dm#L1",
       "group": "trader"
@@ -1511,6 +1680,7 @@
         "perception": 1,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/grenzelhoft.dm#L1",
       "group": "mercenary"
@@ -1524,6 +1694,7 @@
         "speed": 1,
         "perception": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/church/druid.dm#L33",
       "group": "druid"
@@ -1536,6 +1707,7 @@
         "willpower": 1,
         "speed": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L114",
       "group": "sfighter"
@@ -1547,6 +1719,7 @@
         "constitution": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/zybantu.dm#L3",
       "group": "foreigner"
@@ -1559,6 +1732,7 @@
         "constitution": 2,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/dungeoneer.dm#L53",
       "group": "dungeoneer"
@@ -1571,6 +1745,7 @@
         "perception": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/eastern.dm#L65",
       "group": "foreigner"
@@ -1583,6 +1758,7 @@
         "constitution": 2,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/eastern.dm#L3",
       "group": "foreigner"
@@ -1597,6 +1773,7 @@
         "speed": 1,
         "fortune": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/suitor.dm#L29",
       "group": "suitor"
@@ -1608,6 +1785,7 @@
         "speed": 1,
         "intelligence": 3
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/etrusca.dm#L5",
       "group": "foreigner"
@@ -1622,6 +1800,7 @@
         "speed": 3,
         "strength": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/veteran.dm#L582",
       "group": "veteran"
@@ -1634,6 +1813,7 @@
         "constitution": -1,
         "willpower": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/excommunicado.dm#L1",
       "group": "vagabond_excommunicated"
@@ -1647,6 +1827,7 @@
         "willpower": -2,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/failed_apprentice.dm#L1",
       "group": "vagabond_mage"
@@ -1659,6 +1840,7 @@
         "perception": 2,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L470",
       "group": "sfighter"
@@ -1673,6 +1855,7 @@
         "speed": 1,
         "intelligence": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/peasant.dm#L1",
       "group": "peasant"
@@ -1685,6 +1868,7 @@
         "fortune": 2,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/fisher.dm#L1",
       "group": "fisher"
@@ -1698,6 +1882,7 @@
         "constitution": 3,
         "willpower": 3
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/knight/knight_foot.dm#L1",
       "group": "knight"
@@ -1711,6 +1896,7 @@
         "constitution": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/manorguard/footman.dm#L2",
       "group": "manorguard"
@@ -1725,6 +1911,7 @@
         "constitution": 1,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/squire.dm#L103",
       "group": "squire"
@@ -1736,6 +1923,7 @@
         "intelligence": 2,
         "perception": 3
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/grenzelhoft.dm#L75",
       "group": "foreigner"
@@ -1749,6 +1937,7 @@
         "willpower": 1,
         "perception": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/warden.dm#L142",
       "group": "warden"
@@ -1761,6 +1950,7 @@
         "strength": 2,
         "constitution": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/forlorn.dm#L1",
       "group": "mercenary"
@@ -1775,6 +1965,7 @@
         "constitution": 1,
         "strength": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/veteran.dm#L474",
       "group": "veteran"
@@ -1790,6 +1981,7 @@
         "willpower": 2,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/unknightly_heretic_journey/ukj_dark_itinerant.dm#L3",
       "group": "ukj_dark_itinerant"
@@ -1802,6 +1994,7 @@
         "perception": 3,
         "willpower": 3
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/freifechter.dm#L1",
       "group": "mercenary"
@@ -1815,6 +2008,7 @@
         "strength": 1,
         "willpower": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/freifechter.dm#L65",
       "group": "mercenary"
@@ -1827,6 +2021,7 @@
         "perception": 3,
         "speed": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/freifechter.dm#L126",
       "group": "mercenary"
@@ -1839,6 +2034,7 @@
         "constitution": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/rookie.dm#L46",
       "group": "rookie"
@@ -1855,6 +2051,7 @@
         "speed": 1,
         "fortune": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/suitor.dm#L138",
       "group": "suitor"
@@ -1867,6 +2064,7 @@
         "constitution": 1,
         "strength": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/drunkard.dm#L1",
       "group": "drunkard"
@@ -1881,6 +2079,7 @@
         "perception": 3,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/grenzelhoft.dm#L199",
       "group": "mercenary"
@@ -1896,6 +2095,7 @@
         "intelligence": -3,
         "perception": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/antag/gnoll/gnoll_berserker.dm#L1",
       "group": "gnoll"
@@ -1909,6 +2109,7 @@
         "speed": 2,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/antag/gnoll/gnoll_knight.dm#L1",
       "group": "gnoll"
@@ -1923,6 +2124,7 @@
         "intelligence": 2,
         "constitution": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/antag/gnoll/gnoll_shaman.dm#L1",
       "group": "gnoll"
@@ -1936,6 +2138,7 @@
         "willpower": 2,
         "speed": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/antag/gnoll/gnoll_templar.dm#L1",
       "group": "gnoll"
@@ -1949,6 +2152,7 @@
         "willpower": 1,
         "perception": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/grenzelhoft.dm#L4",
       "group": "foreigner"
@@ -1961,6 +2165,7 @@
         "speed": 3,
         "perception": 4
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/retainer.dm#L172",
       "group": "baron_retainer"
@@ -1972,6 +2177,7 @@
         "willpower": 2,
         "intelligence": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/gronn.dm#L3",
       "group": "foreigner"
@@ -1986,6 +2192,7 @@
         "strength": 1,
         "speed": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/grudgebearer.dm#L2",
       "group": "mercenary"
@@ -1999,6 +2206,7 @@
         "strength": 2,
         "speed": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/grudgebearer.dm#L70",
       "group": "mercenary"
@@ -2011,6 +2219,7 @@
         "willpower": 1,
         "constitution": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/youngfolk/smith_apprentice.dm#L30",
       "group": "gapprentice"
@@ -2025,6 +2234,7 @@
         "intelligence": 1,
         "fortune": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/yeomen/guildsman.dm#L32",
       "group": "guildsman"
@@ -2039,6 +2249,7 @@
         "constitution": 1,
         "perception": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/yeomen/guildsman.dm#L108",
       "group": "guildsman"
@@ -2052,6 +2263,7 @@
         "willpower": 2,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/yeomen/guildmaster.dm#L36",
       "group": "guildmaster"
@@ -2064,6 +2276,7 @@
         "intelligence": 3,
         "strength": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/rare/heartfelthand.dm#L1",
       "group": "heartfelthand"
@@ -2077,6 +2290,7 @@
         "willpower": 2,
         "perception": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/hangyaku.dm#L102",
       "group": "mercenary"
@@ -2092,6 +2306,7 @@
         "perception": 2,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/hangyaku.dm#L1",
       "group": "mercenary"
@@ -2105,6 +2320,7 @@
         "willpower": 1,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/trader/harlequin.dm#L1",
       "group": "trader"
@@ -2118,6 +2334,7 @@
         "constitution": 1,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/unknightly_heretic_journey/ukj_varlet.dm#L258",
       "group": "ukj_varlet_harrier"
@@ -2131,6 +2348,7 @@
         "constitution": 1,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/scavenger.dm#L1",
       "group": "scavenger"
@@ -2144,6 +2362,7 @@
         "fortune": 1,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/courtier/butler.dm#L82",
       "group": "seneschal"
@@ -2159,6 +2378,7 @@
         "strength": -1,
         "constitution": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/courtier/physician.dm#L32",
       "group": "physician"
@@ -2173,6 +2393,7 @@
         "strength": -2,
         "constitution": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltmagos.dm#L2",
       "group": "heartfelt"
@@ -2187,6 +2408,7 @@
         "perception": 2,
         "fortune": 5
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltcourtier.dm#L2",
       "group": "heartfelt"
@@ -2201,6 +2423,7 @@
         "willpower": 2,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltwarriors.dm#L2",
       "group": "heartfelt"
@@ -2215,6 +2438,7 @@
         "strength": 1,
         "constitution": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltwarriors.dm#L113",
       "group": "heartfelt"
@@ -2228,6 +2452,7 @@
         "fortune": 1,
         "speed": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltphyscian.dm#L2",
       "group": "heartfelt"
@@ -2242,6 +2467,7 @@
         "speed": 1,
         "strength": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltprior.dm#L2",
       "group": "heartfelt"
@@ -2254,6 +2480,7 @@
         "intelligence": 2,
         "speed": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltworkers.dm#L1",
       "group": "heartfelt"
@@ -2269,6 +2496,7 @@
         "willpower": 2,
         "speed": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltwarriors.dm#L223",
       "group": "heartfelt"
@@ -2284,6 +2512,7 @@
         "strength": -1,
         "fortune": 3
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/consort.dm#L32",
       "group": "lady"
@@ -2298,6 +2527,7 @@
         "willpower": 2,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/knight/knight_heavy.dm#L1",
       "group": "knight"
@@ -2312,6 +2542,7 @@
         "intelligence": 2,
         "speed": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/antag/hedgeknight.dm#L1",
       "group": "hedgeknight"
@@ -2327,6 +2558,7 @@
         "speed": 1,
         "constitution": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/antag/hedgemage.dm#L1",
       "group": "hedgemage"
@@ -2341,6 +2573,7 @@
         "speed": 1,
         "perception": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/grenzelhoft.dm#L70",
       "group": "mercenary"
@@ -2354,6 +2587,7 @@
         "willpower": 3,
         "perception": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/retainer.dm#L32",
       "group": "baron_retainer"
@@ -2366,6 +2600,7 @@
         "constitution": 2,
         "speed": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/herald_of_progress.dm#L1",
       "group": "wretch"
@@ -2378,6 +2613,7 @@
         "constitution": 2,
         "willpower": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/heretic.dm#L1",
       "group": "wretch"
@@ -2393,6 +2629,7 @@
         "intelligence": -1,
         "perception": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/heretic.dm#L564",
       "group": "wretch"
@@ -2407,6 +2644,7 @@
         "intelligence": 1,
         "fortune": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/heretic.dm#L311",
       "group": "wretch"
@@ -2420,6 +2658,7 @@
         "willpower": 2,
         "intelligence": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/ferentia.dm#L238",
       "group": "mercenary"
@@ -2435,6 +2674,7 @@
         "willpower": 2,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_squire.dm#L115",
       "group": "kj_squire_hobelar"
@@ -2449,6 +2689,7 @@
         "strength": 1,
         "fortune": 3
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/consort.dm#L133",
       "group": "lady"
@@ -2461,6 +2702,7 @@
         "constitution": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/peasants/slave.dm#L45",
       "group": "slave"
@@ -2473,6 +2715,7 @@
         "speed": 2,
         "willpower": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/byos/tribalguard.dm#L43",
       "group": "tribalguard"
@@ -2487,6 +2730,7 @@
         "willpower": 1,
         "speed": 3
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/byos/triballackey.dm#L46",
       "group": "tribalrabble"
@@ -2500,6 +2744,7 @@
         "speed": 1,
         "constitution": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/courtier/councillor.dm#L53",
       "group": "councillor"
@@ -2513,6 +2758,7 @@
         "fortune": 2,
         "constitution": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/antag/Iconoclast.dm#L1",
       "group": "iconoclast"
@@ -2526,6 +2772,7 @@
         "willpower": 2,
         "speed": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/antag/gnoll/gnoll_impure.dm#L1",
       "group": "gnoll_impure"
@@ -2541,6 +2788,7 @@
         "willpower": -2,
         "strength": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/lord.dm#L266",
       "group": "lord"
@@ -2556,6 +2804,7 @@
         "willpower": -2,
         "fortune": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/prince.dm#L239",
       "group": "heir"
@@ -2570,6 +2819,7 @@
         "intelligence": 1,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/yeomen/barkeep.dm#L30",
       "group": "barkeep"
@@ -2584,6 +2834,7 @@
         "perception": 2,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/Inquisition/puritanclasses/inspector.dm#L4",
       "group": "puritan"
@@ -2598,6 +2849,7 @@
         "constitution": -1,
         "fortune": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/prince.dm#L100",
       "group": "heir"
@@ -2610,6 +2862,7 @@
         "willpower": 2,
         "constitution": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L358",
       "group": "sfighter"
@@ -2623,6 +2876,7 @@
         "constitution": 1,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/squire.dm#L166",
       "group": "squire"
@@ -2636,6 +2890,7 @@
         "strength": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/trader/jeweler.dm#L1",
       "group": "trader"
@@ -2648,6 +2903,7 @@
         "speed": 2,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_followers/kj_jongleur.dm#L1",
       "group": "kj_follower"
@@ -2662,6 +2918,7 @@
         "strength": -5,
         "perception": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/church/keeper.dm#L42",
       "group": "keeper"
@@ -2677,6 +2934,7 @@
         "perception": -1,
         "speed": -3
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/gronnheavy.dm#L1",
       "group": "mercenary"
@@ -2692,6 +2950,7 @@
         "willpower": 1,
         "constitution": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/antag/knave.dm#L1",
       "group": "knave"
@@ -2707,6 +2966,7 @@
         "willpower": 2,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_knight.dm#L3",
       "group": "kj_knight"
@@ -2722,6 +2982,7 @@
         "perception": 1,
         "fortune": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/captain.dm#L76",
       "group": "captain"
@@ -2738,6 +2999,7 @@
         "speed": 1,
         "strength": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/bailiff.dm#L92",
       "group": "marshal"
@@ -2751,6 +3013,7 @@
         "willpower": 1,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/noble.dm#L63",
       "group": "noble"
@@ -2765,6 +3028,7 @@
         "willpower": 1,
         "speed": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/unknightly_heretic_journey/ukj_dark_itinerant.dm#L189",
       "group": "ukj_dark_itinerant_harbinger"
@@ -2780,6 +3044,7 @@
         "willpower": 2,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfeltknight.dm#L45",
       "group": "heartfelt"
@@ -2794,6 +3059,7 @@
         "willpower": 1,
         "speed": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_knight.dm#L162",
       "group": "kj_knight_outrider"
@@ -2806,6 +3072,7 @@
         "constitution": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/peasants/slave.dm#L79",
       "group": "slave"
@@ -2820,6 +3087,7 @@
         "constitution": 1,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/squire.dm#L49",
       "group": "squire"
@@ -2833,6 +3101,7 @@
         "constitution": 2,
         "willpower": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/baron.dm#L84",
       "group": "baron"
@@ -2847,6 +3116,7 @@
         "speed": 1,
         "constitution": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/ferentia.dm#L312",
       "group": "mercenary"
@@ -2859,6 +3129,7 @@
         "intelligence": -1,
         "constitution": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/goatherd.dm#L1",
       "group": "vagabond_goatherd"
@@ -2872,6 +3143,7 @@
         "willpower": 1,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/ferentia.dm#L382",
       "group": "mercenary"
@@ -2887,6 +3159,7 @@
         "speed": 1,
         "fortune": 5
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfeltlord.dm#L23",
       "group": "heartfelt"
@@ -2902,6 +3175,7 @@
         "perception": 2,
         "fortune": 5
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/rare/heartfelt.dm#L2",
       "group": "heartfeltlord"
@@ -2917,6 +3191,7 @@
         "intelligence": -2,
         "perception": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/lunacyembracer.dm#L1",
       "group": "wretch"
@@ -2928,6 +3203,7 @@
         "speed": 2,
         "constitution": 4
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/peasants/lunatic.dm#L31",
       "group": "lunatic"
@@ -2940,6 +3216,7 @@
         "willpower": 2,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/courtier/mage_associate.dm#L96",
       "group": "wapprentice"
@@ -2952,6 +3229,7 @@
         "perception": 2,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/courtier/mage_associate.dm#L41",
       "group": "wapprentice"
@@ -2966,6 +3244,7 @@
         "speed": 2,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/lord.dm#L227",
       "group": "lord"
@@ -2978,6 +3257,7 @@
         "intelligence": 1,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/courtier/servant.dm#L77",
       "group": "servant"
@@ -2991,6 +3271,7 @@
         "constitution": 2,
         "willpower": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/plaguebearer.dm#L1",
       "group": "wretch"
@@ -3007,6 +3288,7 @@
         "speed": 1,
         "strength": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/bailiff.dm#L54",
       "group": "marshal"
@@ -3021,6 +3303,7 @@
         "constitution": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfelthand.dm#L36",
       "group": "heartfelt"
@@ -3035,6 +3318,7 @@
         "perception": 1,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/church/martyr/martyr.dm#L51",
       "group": "martyr"
@@ -3050,6 +3334,7 @@
         "constitution": 1,
         "perception": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/rare/Lsmith.dm#L3",
       "group": "masterblacksmith"
@@ -3061,6 +3346,7 @@
         "intelligence": 3,
         "constitution": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/rare/Lchef.dm#L3",
       "group": "masterchef"
@@ -3076,6 +3362,7 @@
         "constitution": 1,
         "perception": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/rare/Lpeasant.dm#L1",
       "group": "farmermaster"
@@ -3088,6 +3375,7 @@
         "perception": 2,
         "speed": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/rare/Lfish.dm#L3",
       "group": "fishermaster"
@@ -3103,6 +3391,7 @@
         "constitution": 1,
         "perception": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/rare/Lminer.dm#L3",
       "group": "minermaster"
@@ -3118,6 +3407,7 @@
         "constitution": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/wardenmaster.dm#L61",
       "group": "wardenmaster"
@@ -3130,6 +3420,7 @@
         "intelligence": 2,
         "strength": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/yeomen/merchant.dm#L31",
       "group": "merchant"
@@ -3144,6 +3435,7 @@
         "speed": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/lord.dm#L181",
       "group": "lord"
@@ -3157,6 +3449,7 @@
         "fortune": 2,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/miner.dm#L1",
       "group": "miner"
@@ -3170,6 +3463,7 @@
         "speed": 1,
         "fortune": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/minstrel.dm#L1",
       "group": "minstrel"
@@ -3183,6 +3477,7 @@
         "willpower": 1,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/cleric.dm#L599",
       "group": "cleric"
@@ -3197,6 +3492,7 @@
         "speed": 1,
         "fortune": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/mistwalker.dm#L1",
       "group": "wretch"
@@ -3208,6 +3504,7 @@
         "willpower": 2,
         "constitution": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/cleric.dm#L1",
       "group": "cleric"
@@ -3222,6 +3519,7 @@
         "willpower": 1,
         "perception": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/knight/knight_mounted.dm#L1",
       "group": "knight"
@@ -3236,6 +3534,7 @@
         "perception": 1,
         "constitution": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/warscholar.dm#L1",
       "group": "mercenary"
@@ -3248,6 +3547,7 @@
         "willpower": 2,
         "constitution": 3
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/warscholar.dm#L88",
       "group": "mercenary"
@@ -3260,6 +3560,7 @@
         "perception": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/naledi.dm#L1",
       "group": "foreigner"
@@ -3272,6 +3573,7 @@
         "speed": 2,
         "willpower": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/warscholar.dm#L209",
       "group": "mercenary"
@@ -3285,6 +3587,7 @@
         "willpower": 1,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/necromancer.dm#L1",
       "group": "wretch"
@@ -3297,6 +3600,7 @@
         "strength": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/youngfolk/churchling.dm#L104",
       "group": "churchling"
@@ -3313,6 +3617,7 @@
         "willpower": 1,
         "fortune": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/prince.dm#L311",
       "group": "heir"
@@ -3326,6 +3631,7 @@
         "willpower": 2,
         "constitution": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/newmoon.dm#L1",
       "group": "mercenary"
@@ -3339,6 +3645,7 @@
         "willpower": 1,
         "intelligence": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/special/nakedandafraid.dm#L2",
       "group": "nudist"
@@ -3352,6 +3659,7 @@
         "intelligence": 3,
         "speed": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/oathmarked.dm#L76",
       "group": "mercenary"
@@ -3366,6 +3674,7 @@
         "perception": 1,
         "speed": -3
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/oathmarked.dm#L12",
       "group": "mercenary"
@@ -3380,6 +3689,7 @@
         "perception": 1,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/Inquisition/puritanclasses/ordinator.dm#L4",
       "group": "puritan"
@@ -3393,6 +3703,7 @@
         "strength": -1,
         "willpower": 3
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/otava.dm#L1",
       "group": "foreigner"
@@ -3407,6 +3718,7 @@
         "perception": 1,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/routier.dm#L1",
       "group": "mercenary"
@@ -3421,6 +3733,7 @@
         "strength": -1,
         "intelligence": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/outlaw.dm#L1",
       "group": "wretch"
@@ -3433,6 +3746,7 @@
         "constitution": 2,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/cleric.dm#L202",
       "group": "cleric"
@@ -3445,6 +3759,7 @@
         "perception": 2,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/trader/peddler.dm#L1",
       "group": "trader"
@@ -3460,6 +3775,7 @@
         "constitution": 1,
         "fortune": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/antag/pioneer.dm#L1",
       "group": "pioneer"
@@ -3473,6 +3789,7 @@
         "willpower": 2,
         "constitution": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/poacher.dm#L1",
       "group": "wretch"
@@ -3486,6 +3803,7 @@
         "constitution": 1,
         "strength": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/potter.dm#L1",
       "group": "potter"
@@ -3500,6 +3818,7 @@
         "intelligence": 1,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/scavenger.dm#L74",
       "group": "scavenger"
@@ -3512,6 +3831,7 @@
         "willpower": 1,
         "speed": 3
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/psyalmist.dm#L4",
       "group": "psyaltrist"
@@ -3524,6 +3844,7 @@
         "constitution": 3,
         "intelligence": 3
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/pyromaniac.dm#L1",
       "group": "wretch"
@@ -3536,6 +3857,7 @@
         "speed": 2,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/warden.dm#L66",
       "group": "warden"
@@ -3550,6 +3872,7 @@
         "constitution": 2,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/manorguard/retainer.dm#L2",
       "group": "manorguard"
@@ -3564,6 +3887,7 @@
         "willpower": 2,
         "constitution": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/retainer.dm#L99",
       "group": "baron_retainer"
@@ -3578,6 +3902,7 @@
         "perception": 1,
         "willpower": 3
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/veteran.dm#L158",
       "group": "veteran"
@@ -3591,6 +3916,7 @@
         "constitution": 2,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/veteran.dm#L373",
       "group": "veteran"
@@ -3604,6 +3930,7 @@
         "willpower": 1,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/roguemage.dm#L2",
       "group": "wretch"
@@ -3617,6 +3944,7 @@
         "willpower": 2,
         "speed": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/knight/knight_champion.dm#L1",
       "group": "knight"
@@ -3631,6 +3959,7 @@
         "perception": 1,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/rumaclan.dm#L1",
       "group": "mercenary"
@@ -3645,6 +3974,7 @@
         "strength": -1,
         "constitution": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/rumaclan.dm#L55",
       "group": "mercenary"
@@ -3657,6 +3987,7 @@
         "speed": 1,
         "intelligence": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/runner.dm#L1",
       "group": "vagabond_runner"
@@ -3671,6 +4002,7 @@
         "speed": 1,
         "intelligence": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/byos/tribalguard.dm#L202",
       "group": "tribalguard"
@@ -3683,6 +4015,7 @@
         "speed": 3,
         "fortune": 3
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/antag/sawbones.dm#L1",
       "group": "sawbones"
@@ -3697,6 +4030,7 @@
         "willpower": 1,
         "fortune": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/suitor.dm#L86",
       "group": "suitor"
@@ -3710,6 +4044,7 @@
         "perception": 1,
         "strength": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/seamstress.dm#L1",
       "group": "seamstress"
@@ -3723,6 +4058,7 @@
         "intelligence": 2,
         "constitution": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/ferentia.dm#L176",
       "group": "mercenary"
@@ -3737,6 +4073,7 @@
         "intelligence": 1,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/ferentia.dm#L10",
       "group": "mercenary"
@@ -3751,6 +4088,7 @@
         "constitution": 1,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/ferentia.dm#L102",
       "group": "mercenary"
@@ -3765,6 +4103,7 @@
         "constitution": 1,
         "perception": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/antag/sellsword.dm#L2",
       "group": "sellsword"
@@ -3778,6 +4117,7 @@
         "fortune": 1,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/courtier/butler.dm#L31",
       "group": "seneschal"
@@ -3789,6 +4129,7 @@
         "perception": 3,
         "speed": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/ranger.dm#L1",
       "group": "ranger"
@@ -3803,6 +4144,7 @@
         "perception": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/sergeant.dm#L51",
       "group": "sergeant"
@@ -3815,6 +4157,7 @@
         "intelligence": 1,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/courtier/servant.dm#L32",
       "group": "servant"
@@ -3828,6 +4171,7 @@
         "willpower": 3,
         "speed": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_slave.dm#L6",
       "group": "slaver"
@@ -3840,6 +4184,7 @@
         "intelligence": 2,
         "speed": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_followers/kj_servitor.dm#L1",
       "group": "kj_follower"
@@ -3854,6 +4199,7 @@
         "fortune": 1,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/prince.dm#L168",
       "group": "heir"
@@ -3866,6 +4212,7 @@
         "intelligence": 1,
         "fortune": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/youngfolk/shophand.dm#L30",
       "group": "shophand"
@@ -3880,6 +4227,7 @@
         "willpower": 2,
         "fortune": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/baron.dm#L52",
       "group": "baron"
@@ -3892,6 +4240,7 @@
         "perception": 2,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/manorguard/skirmisher.dm#L4",
       "group": "manorguard"
@@ -3904,6 +4253,7 @@
         "constitution": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/peasants/slave.dm#L116",
       "group": "slave"
@@ -3916,6 +4266,7 @@
         "constitution": 2,
         "strength": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/yeomen/slaver.dm#L34",
       "group": "slaver"
@@ -3930,6 +4281,7 @@
         "speed": 1,
         "intelligence": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/peasants/soilson.dm#L33",
       "group": "soilson"
@@ -3943,6 +4295,7 @@
         "strength": -1,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/sojourner.dm#L4",
       "group": "sojourner"
@@ -3955,6 +4308,7 @@
         "perception": 2,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/mage.dm#L1",
       "group": "mage"
@@ -3967,6 +4321,7 @@
         "constitution": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/hunter.dm#L97",
       "group": "hunter"
@@ -3980,6 +4335,7 @@
         "constitution": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/mage.dm#L63",
       "group": "mage"
@@ -3992,6 +4348,7 @@
         "speed": 2,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/mage.dm#L221",
       "group": "mage"
@@ -4005,6 +4362,7 @@
         "intelligence": 2,
         "fortune": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/hand.dm#L107",
       "group": "hand"
@@ -4018,6 +4376,7 @@
         "perception": 1,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/noble.dm#L186",
       "group": "noble"
@@ -4033,6 +4392,7 @@
         "willpower": 1,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_squire.dm#L3",
       "group": "kj_squire"
@@ -4047,6 +4407,7 @@
         "constitution": 1,
         "intelligence": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/unknightly_heretic_journey/ukj_varlet.dm#L130",
       "group": "ukj_varlet_stablehand"
@@ -4059,6 +4420,7 @@
         "willpower": 1,
         "perception": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/manorguard/standard_bearer.dm#L6",
       "group": "manorguard"
@@ -4073,6 +4435,7 @@
         "constitution": 1,
         "strength": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/steward.dm#L31",
       "group": "steward"
@@ -4087,6 +4450,7 @@
         "constitution": 1,
         "willpower": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfelthand.dm#L119",
       "group": "heartfelt"
@@ -4100,6 +4464,7 @@
         "speed": 1,
         "strength": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/cleric.dm#L750",
       "group": "cleric"
@@ -4112,6 +4477,7 @@
         "strength": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/rogue.dm#L210",
       "group": "rogue"
@@ -4125,6 +4491,7 @@
         "willpower": 1,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_chaplain.dm#L3",
       "group": "kj_chaplain"
@@ -4138,6 +4505,7 @@
         "speed": 1,
         "strength": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_chaplain.dm#L159",
       "group": "kj_chaplain_stigmata"
@@ -4150,6 +4518,7 @@
         "perception": 2,
         "constitution": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/czwarteki.dm#L1",
       "group": "foreigner"
@@ -4163,6 +4532,7 @@
         "speed": 1,
         "strength": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/yeomen/tailor.dm#L27",
       "group": "tailor"
@@ -4176,6 +4546,7 @@
         "intelligence": 1,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/peasants/knavewench.dm#L29",
       "group": "tapster"
@@ -4191,6 +4562,7 @@
         "intelligence": 2,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/veteran.dm#L264",
       "group": "veteran"
@@ -4203,6 +4575,7 @@
         "strength": 2,
         "constitution": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/church/templar.dm#L60",
       "group": "templar"
@@ -4214,6 +4587,7 @@
         "intelligence": -2,
         "fortune": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/unraveled.dm#L1",
       "group": "vagabond_unraveled"
@@ -4225,6 +4599,7 @@
         "constitution": -1,
         "willpower": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/the_original.dm#L1",
       "group": "vagabond_original"
@@ -4238,6 +4613,7 @@
         "constitution": 2,
         "speed": -2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/thespian.dm#L1",
       "group": "foreigner"
@@ -4252,6 +4628,7 @@
         "willpower": 1,
         "speed": 3
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/rogue.dm#L69",
       "group": "rogue"
@@ -4265,6 +4642,7 @@
         "intelligence": -1,
         "constitution": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/peasants/bathmaid.dm#L181",
       "group": "nightmaiden"
@@ -4277,6 +4655,7 @@
         "willpower": 2,
         "constitution": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/artificer.dm#L1",
       "group": "artificer"
@@ -4291,6 +4670,7 @@
         "perception": 2,
         "speed": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/special/torso.dm#L1",
       "group": "torso"
@@ -4303,6 +4683,7 @@
         "intelligence": 3,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/yeomen/crier.dm#L29",
       "group": "towncrier"
@@ -4317,6 +4698,7 @@
         "constitution": 1,
         "speed": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/townelder.dm#L1",
       "group": "elder"
@@ -4330,6 +4712,7 @@
         "constitution": -1,
         "strength": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/trader/scholar.dm#L1",
       "group": "trader"
@@ -4344,6 +4727,7 @@
         "willpower": 1,
         "speed": 3
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/rogue.dm#L1",
       "group": "rogue"
@@ -4358,6 +4742,7 @@
         "strength": -1,
         "constitution": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/byos/tribalshaman.dm#L35",
       "group": "tribalshaman"
@@ -4372,6 +4757,7 @@
         "speed": 2,
         "fortune": 3
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/consort.dm#L80",
       "group": "lady"
@@ -4385,6 +4771,7 @@
         "strength": 2,
         "fortune": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/underdweller.dm#L2",
       "group": "foreigner"
@@ -4400,6 +4787,7 @@
         "speed": 1,
         "strength": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/byos/tribalchief.dm#L101",
       "group": "tribalchieftain"
@@ -4415,6 +4803,7 @@
         "speed": 1,
         "strength": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/nobility/lord.dm#L138",
       "group": "lord"
@@ -4430,6 +4819,7 @@
         "perception": 3,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/other/vampire_spawn.dm#L25",
       "group": "vampire_spawn"
@@ -4442,6 +4832,7 @@
         "speed": 2,
         "willpower": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/vanguard.dm#L58",
       "group": "vanguard"
@@ -4456,6 +4847,7 @@
         "perception": 2,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/vanguard.dm#L109",
       "group": "vanguard"
@@ -4468,6 +4860,7 @@
         "intelligence": 2,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/vaquero.dm#L1",
       "group": "mercenary"
@@ -4483,6 +4876,7 @@
         "constitution": 1,
         "perception": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/veteran.dm#L49",
       "group": "veteran"
@@ -4495,6 +4889,7 @@
         "speed": 2,
         "intelligence": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/wanted.dm#L1",
       "group": "vagabond_wanted"
@@ -4509,6 +4904,7 @@
         "speed": 1,
         "perception": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/byos/tribalguard.dm#L120",
       "group": "tribalguard"
@@ -4523,6 +4919,7 @@
         "perception": 2,
         "willpower": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/garrison/watchcaptain.dm#L47",
       "group": "watchcaptain"
@@ -4535,6 +4932,7 @@
         "speed": 2,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/ranger.dm#L71",
       "group": "ranger"
@@ -4549,6 +4947,7 @@
         "intelligence": 3,
         "speed": 2
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/special/whitecheesemaker.dm#L1",
       "group": "whitecheese"
@@ -4561,6 +4960,7 @@
         "speed": 2,
         "fortune": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/witch.dm#L1",
       "group": "witch"
@@ -4574,6 +4974,7 @@
         "constitution": 1,
         "perception": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/woodcutter.dm#L1",
       "group": "woodworker"
@@ -4587,6 +4988,7 @@
         "willpower": 1,
         "speed": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/unknightly_heretic_journey/ukj_dark_chaplain.dm#L3",
       "group": "ukj_dark_chaplain"
@@ -4601,6 +5003,7 @@
         "perception": 1,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/wretchedtoiler.dm#L1",
       "group": "wretch"
@@ -4616,6 +5019,7 @@
         "intelligence": -1,
         "perception": -1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/mercenaries/classes/atgervi.dm#L86",
       "group": "mercenary"
@@ -4628,6 +5032,7 @@
         "constitution": 2,
         "willpower": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/slavers.dm#L2",
       "group": "foreigner"
@@ -4643,6 +5048,7 @@
         "speed": 1,
         "perception": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_mercenary.dm#L8",
       "group": "slaver"
@@ -4657,6 +5063,7 @@
         "speed": 2,
         "perception": 3
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_mercenary.dm#L160",
       "group": "slaver"
@@ -4672,6 +5079,7 @@
         "perception": 1,
         "fortune": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_master.dm#L2",
       "group": "slaver"
@@ -4687,6 +5095,7 @@
         "speed": 1,
         "perception": 1
       },
+      "choices": [],
       "description": "",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_mercenary.dm#L84",
       "group": "slaver"
@@ -4703,6 +5112,7 @@
         "strength": -1,
         "constitution": -1
       },
+      "choices": [],
       "description": "Your will leads the way.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/mental.dm#L22",
       "group": "mental"
@@ -4717,6 +5127,7 @@
         "constitution": -1,
         "willpower": -1
       },
+      "choices": [],
       "description": "You sharpened both your body and your mind as best you were able, and vigilance has been your reward.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/physical.dm#L13",
       "group": "physical"
@@ -4725,6 +5136,7 @@
       "id": "/datum/statpack/wildcard/austere",
       "name": "Austere",
       "stats": {},
+      "choices": [],
       "description": "You've kept your humors balanced, your body honed and mind sharp enough. Fate has left you mostly unchanged, in every way.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/wildcard.dm#L18",
       "group": "wildcard"
@@ -4738,6 +5150,7 @@
         "willpower": -1,
         "constitution": -1
       },
+      "choices": [],
       "description": "Your keen senses have not led you astray.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/mental.dm#L27",
       "group": "mental"
@@ -4751,6 +5164,7 @@
         "willpower": 1,
         "strength": -1
       },
+      "choices": [],
       "description": "Being quick on the draw has left you weaker when they live past your first strike.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/agile.dm#L32",
       "group": "agile"
@@ -4764,6 +5178,7 @@
         "constitution": -2,
         "intelligence": -1
       },
+      "choices": [],
       "description": "You see. You dash. You spring. You dodge. Can you keep it up?",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/agile.dm#L27",
       "group": "agile"
@@ -4776,6 +5191,7 @@
         "willpower": 1,
         "speed": -1
       },
+      "choices": [],
       "description": "You take your time, but you have a lot of it to spare.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/mental.dm#L37",
       "group": "mental"
@@ -4788,6 +5204,7 @@
         "willpower": 3,
         "speed": -4
       },
+      "choices": [],
       "description": "You've spent yils willingly submitting your body through a most perilous journey. Stalwart in your faith, you've sworn to never flee again.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/physical.dm#L33",
       "group": "physical"
@@ -4825,6 +5242,7 @@
           2
         ]
       },
+      "choices": [],
       "description": "The first or the last - let destiny's fickle loom decree what your fate shall be.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/wildcard.dm#L8",
       "group": "wildcard"
@@ -4838,6 +5256,7 @@
         "strength": -1,
         "willpower": -1
       },
+      "choices": [],
       "description": "You see what is and what will sometimes be.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/mental.dm#L17",
       "group": "mental"
@@ -4854,6 +5273,7 @@
         "speed": -4,
         "fortune": -4
       },
+      "choices": [],
       "description": "The growing dark lines your vision more with every passing day: your flesh and mind are failing you, and destiny has turned her gaze from you. How will your tale endure such hardship?",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/wildcard.dm#L13",
       "group": "wildcard"
@@ -4867,6 +5287,7 @@
         "strength": -2,
         "speed": -2
       },
+      "choices": [],
       "description": "Uniquely Pestran fortitude affords you the means to shrug off illnesses and poisons that others might not.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/agile.dm#L7",
       "group": "agile"
@@ -4880,6 +5301,7 @@
         "constitution": -1,
         "perception": -1
       },
+      "choices": [],
       "description": "You waste no time. You know enough to get by, and strive towards it.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/mental.dm#L42",
       "group": "mental"
@@ -4893,6 +5315,7 @@
         "perception": -1,
         "speed": -2
       },
+      "choices": [],
       "description": "Hard labor has honed you into a mass of sinew - a valuable trait in a world where might makes right.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/physical.dm#L8",
       "group": "physical"
@@ -4906,6 +5329,7 @@
         "willpower": -1,
         "constitution": -1
       },
+      "choices": [],
       "description": "You've seen it all. You've heard it all. An eye to the horizon, and an ear to the ground, and the right place to strike.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/mental.dm#L32",
       "group": "mental"
@@ -4920,6 +5344,7 @@
         "perception": -1,
         "fortune": -1
       },
+      "choices": [],
       "description": "Look ever to the Gods for guidance in these trying times - and so you have, to the exclusion of the world around you.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/mental.dm#L7",
       "group": "mental"
@@ -4935,6 +5360,7 @@
         "perception": -3,
         "fortune": -2
       },
+      "choices": [],
       "description": "Lyfe's dealt you a poor hand, so you've opted to simply flip the table instead.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/physical.dm#L28",
       "group": "physical"
@@ -4948,6 +5374,7 @@
         "strength": -1,
         "willpower": -1
       },
+      "choices": [],
       "description": "Your understanding of the world avails you, more often than not.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/mental.dm#L2",
       "group": "mental"
@@ -4961,6 +5388,7 @@
         "intelligence": -1,
         "constitution": -2
       },
+      "choices": [],
       "description": "With the wind in your hair and trouble at your back, your speed has oft been your salvation.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/agile.dm#L2",
       "group": "agile"
@@ -4975,6 +5403,7 @@
         "perception": -2,
         "constitution": -1
       },
+      "choices": [],
       "description": "Wound tight like the limbs of a time-teller, your physicality is poised to strike - or flee - at a moment's notice.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/physical.dm#L18",
       "group": "physical"
@@ -4990,6 +5419,7 @@
         "willpower": -1,
         "speed": -1
       },
+      "choices": [],
       "description": "Your robust physique and keen eyes oft been your most valuable friends in such trying times.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/agile.dm#L17",
       "group": "agile"
@@ -5003,6 +5433,7 @@
         "perception": -1,
         "intelligence": -1
       },
+      "choices": [],
       "description": "Your lyfe, hard-lyved, has imparted one solitary adage: carry on above all else. And so you endure.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/physical.dm#L23",
       "group": "physical"
@@ -5017,6 +5448,7 @@
         "perception": -1,
         "intelligence": -1
       },
+      "choices": [],
       "description": "Years honing your physique has left you with a physical edge, but your faculties have been somewhat neglected.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/physical.dm#L3",
       "group": "physical"
@@ -5032,6 +5464,7 @@
         "willpower": -1,
         "strength": -1
       },
+      "choices": [],
       "description": "Swift feet with a mind to match and a tiny sliver of the Ten's own luck.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/agile.dm#L12",
       "group": "agile"
@@ -5040,6 +5473,7 @@
       "id": "/datum/statpack/wildcard/virtuous",
       "name": "Virtuous",
       "stats": {},
+      "choices": [],
       "description": "The breadth of my being is one of many, distinguished talents.   (Allows access to 'virtues', special traits/quirks that replace the bonus normally given by a statpack.)",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/wildcard.dm#L22",
       "group": "wildcard"
@@ -5053,6 +5487,7 @@
         "strength": -2,
         "constitution": -2
       },
+      "choices": [],
       "description": "Eyes forward, ever and always. A careful course has always seen you through... so far.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/agile.dm#L22",
       "group": "agile"
@@ -5069,6 +5504,7 @@
         "speed": -2,
         "fortune": 3
       },
+      "choices": [],
       "description": "The cruelty of Enigma leaves many in its wake - you among them. But with her terrible eye turned elsewhere, perhaps it is time for your fortune to be made...",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/wildcard.dm#L3",
       "group": "wildcard"
@@ -5083,9 +5519,41 @@
         "perception": -1,
         "speed": -1
       },
+      "choices": [],
       "description": "Faith in something drives your body and mind to match what neither can see.",
       "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/modular_azurepeak/statpacks/mental.dm#L12",
       "group": "mental"
+    }
+  ],
+  "ages": [
+    {
+      "id": "adult",
+      "name": "Adult",
+      "stats": {},
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/stats.dm"
+    },
+    {
+      "id": "middleaged",
+      "name": "Middle-Aged",
+      "stats": {
+        "speed": -1,
+        "willpower": 1,
+        "fortune": 1
+      },
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/stats.dm"
+    },
+    {
+      "id": "old",
+      "name": "Old",
+      "stats": {
+        "strength": -1,
+        "speed": -2,
+        "perception": -1,
+        "constitution": -2,
+        "intelligence": 3,
+        "fortune": 1
+      },
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/stats.dm"
     }
   ],
   "buffs": [
