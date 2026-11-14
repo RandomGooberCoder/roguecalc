@@ -10,9 +10,19 @@ A static, dependency-free website for GitHub Pages. Choose a race, job subclass,
 4. Open **Actions > Refresh data and deploy Pages > Run workflow**, select `main`, and run it. Future pushes to `main` deploy automatically.
 5. When the workflow finishes, Settings > Pages and the workflow's deployment show your published URL.
 
-The workflow reads `Rotwood-Vale/Ratwood-2.0`, branch `main`, extracts fresh stats, checks the calculator, and publishes only the static website. It also runs daily at 06:23 UTC, subject to GitHub's scheduler delays. No personal access token, npm packages, server, or external JavaScript libraries are needed. GitHub may disable scheduled workflows in inactive public repositories after 60 days; running the workflow manually still refreshes and deploys the data.
+The workflow reads `Rotwood-Vale/Ratwood-2.0`, branch `main`, extracts fresh stats, checks the calculator, and publishes only the static website. It checks upstream main every 15 minutes (at minutes 07, 22, 37, and 52), subject to GitHub scheduler delays. Scheduled runs skip extraction and deployment when the upstream commit matches the last successfully deployed snapshot. Pushes, manual runs, and repository_dispatch events always rebuild. No personal access token, npm packages, server, or external JavaScript libraries are needed. GitHub may disable scheduled workflows in inactive public repositories after 60 days; running the workflow manually still refreshes and deploys the data.
 
 If your default branch has another name, update the push branch in `.github/workflows/pages.yml`. Scheduled workflows run from the default branch. The included data snapshot also supports a conventional branch-based Pages deployment, but that option will not automatically refresh upstream data.
+
+## Automatic upstream refresh
+
+Replace `.github/workflows/pages.yml` with the included updated version, commit it to `main`, keep Pages set to **GitHub Actions**, then run **Refresh data and deploy Pages** once manually.
+
+The final recording job needs **contents: write**, declared in the workflow. Your repository or organization must permit this and allow the Actions bot to push `data/stats.json` to `main`. No personal access token is needed for polling. This assumes the calculator default branch is `main`; if different, update the trigger, the recording checkout ref, and its push destination.
+
+This is polling, not an immediate upstream push subscription. It detects any change to the upstream main commit, including changes outside the stat directories. GitHub schedules are best effort and may be delayed; inactive public repositories can have schedules disabled after 60 days.
+
+For event-driven updates, the workflow also accepts `repository_dispatch` with event type `upstream-update`. An upstream maintainer or an external integration must send that event to the calculator repository using a GitHub App or token authorized for that repository. Adding the receiver alone does not subscribe to upstream pushes. No upstream changes or credentials are required for the default polling mode.
 
 ## Run locally
 
@@ -34,7 +44,7 @@ git -C ../ratwood-source sparse-checkout set code/modules/mob/living/carbon/huma
 python scripts/build_data.py ../ratwood-source
 ```
 
-Commit the new `data/stats.json` if using branch-based Pages hosting. The Actions deployment builds a fresh snapshot into the deployment artifact; it does not commit it back to your repository. Visitors receive the deployed snapshot without making hundreds of requests to GitHub's API.
+Commit the new `data/stats.json` if using branch-based Pages hosting. The Actions deployment builds a fresh snapshot and, only after Pages deployment succeeds, commits data/stats.json back to main. This records the deployed upstream commit so unchanged scheduled runs can skip work. The built-in GITHUB_TOKEN push does not trigger another push workflow. A failed build or deployment leaves the old snapshot marker, so the next check retries. If main changed during the run, recording is skipped and a later run retries. Branch protection or organization policy that blocks bot pushes must be adjusted or the recording job will fail and scheduled checks will keep rebuilding. Visitors receive the deployed snapshot without making hundreds of requests to GitHub's API.
 
 ## Calculation and scope
 

@@ -3,30 +3,67 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  repository_dispatch:
+    types: [upstream-update]
   schedule:
-    - cron: '23 6 * * *'
+    # Every 15 minutes, offset from the busiest part of the hour.
+    - cron: '7,22,37,52 * * * *'
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: github-pages
   cancel-in-progress: false
 
 jobs:
-  build:
+  check:
     runs-on: ubuntu-latest
+    outputs:
+      refresh: ${{ steps.upstream.outputs.refresh }}
+      commit: ${{ steps.upstream.outputs.commit }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Compare upstream HEAD with last deployed snapshot
+        id: upstream
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          latest=$(git ls-remote https://github.com/Rotwood-Vale/Ratwood-2.0.git refs/heads/main | awk '{print $1}')
+          [[ "$latest" =~ ^[0-9a-f]{40}$ ]] || { echo 'Could not resolve upstream main'; exit 1; }
+          current=$(python3 -c 'import json; print(json.load(open("data/stats.json")).get("commit", ""))')
+          echo "commit=$latest" >> "$GITHUB_OUTPUT"
+          if [[ "$EVENT_NAME" != schedule || "$latest" != "$current" ]]; then
+            echo 'refresh=true' >> "$GITHUB_OUTPUT"
+            echo "Refresh requested: upstream $latest" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo 'refresh=false' >> "$GITHUB_OUTPUT"
+            echo "No upstream change ($latest); build and deployment skipped." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+  build:
+    needs: check
+    if: needs.check.outputs.refresh == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
     steps:
       - name: Check out calculator
         uses: actions/checkout@v4
-      - name: Check out upstream data
+        with:
+          persist-credentials: false
+      - name: Check out the exact upstream commit checked above
         uses: actions/checkout@v4
         with:
           repository: Rotwood-Vale/Ratwood-2.0
-          ref: main
+          ref: ${{ needs.check.outputs.commit }}
           path: upstream
+          persist-credentials: false
           sparse-checkout: |
             code/modules/mob/living/carbon/human/species_types
             code/modules/jobs/job_types/roguetown
@@ -49,19 +86,62 @@ jobs:
           mkdir -p _site/data
           cp index.html style.css app.js calc.mjs icon.svg .nojekyll _site/
           cp data/stats.json _site/data/
+      - name: Save snapshot for recording after successful deployment
+        uses: actions/upload-artifact@v4
+        with:
+          name: deployed-snapshot
+          path: data/stats.json
+          retention-days: 1
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     steps:
       - name: Publish GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  record:
+    # Never mark a commit current before its deployment succeeds.
+    needs: deploy
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/download-artifact@v4
+        with:
+          name: deployed-snapshot
+          path: snapshot
+      - name: Commit successfully deployed data snapshot
+        env:
+          EXPECTED_HEAD: ${{ github.sha }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ "$(git rev-parse HEAD)" != "$EXPECTED_HEAD" ]]; then
+            echo 'Calculator changed during this run. Leave snapshot for the next run.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          cp snapshot/stats.json data/stats.json
+          git add data/stats.json
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore: refresh deployed upstream stat snapshot'
+          git push origin HEAD:main
