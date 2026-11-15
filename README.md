@@ -140,3 +140,11 @@ node --test tests/*.test.mjs
 ```
 
 The deployment workflow now runs both combat importers and publishes `combat.mjs` and `combat-ui.js`. Upload all updated files, including scripts/tests/workflow. Formula source links are in the expandable mechanics section. Source constants, weapons, intent fields and class skill lists refresh automatically; major procedural formula rewrites still require updating the corresponding JavaScript implementation.
+
+## Parallel armor / opponent estimates
+
+Combat now shows Clean damage/resources beside Against virtual opponent. Choose the enemy's single chest armor piece, current integrity percentage, weapon, grip, age, final stats, skill, and armor training. Both directions of parry are explicit: your parry against enemy swings and enemy parry against your swings. Enemy parry reduces your expected health DPS and armor wear rate; the separate contact percentage accounts for other misses/dodges as an editable scenario input.
+
+Armor ratings, maximum integrity, failure threshold, weapon integrity multiplier, intent penetration and intent integrity factor are extracted independently from each build. HP penetration and integrity damage follow their separate source branches, including Ratwood's different penetrating-hit wear behavior. The armor-break counter targets the source failure threshold, not zero durability. Expected time starts with an attack at t=0 and includes unsuccessful swings via expected landing probability.
+
+This is a single covered chest piece, not a full equipment-layer simulator. Weapons remain pristine at fixed damage, cadence is uninterrupted, armor is not repaired, and fatigue pauses, cooldown-blocked parry attempts, tempo, status effects and special traits are excluded. These are explicit scenario limits, not a claim of assumption-free actual combat. Other hit/contact chance is user-set, not auto-derived accuracy. Enemy stat inputs are final stats; enemy age controls the explicit age parry bonus only. No armor or already-broken armor uses the unarmored scenario. A Never break time means the selected modeled attacks do not deplete the piece or cannot land.

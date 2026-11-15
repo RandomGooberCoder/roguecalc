@@ -51,3 +51,39 @@ export function estimate(stats,weapon,intent,skill,athletics,enemySkill,opt,r){
   attacks:cost>0?Math.max(0,Math.ceil(stam.pool/cost)-1):Infinity,
   restSeconds:stam.regen>0?Math.ceil(stam.pool/stam.regen)*(stam.delay+stam.tick):Infinity};
 }
+
+// Single covering armor piece at fixed weapon sharpness; no layered-armor approximation.
+export function armorImpact(hit,stats,weapon,intent,armor,r){
+ if(!armor)return {health:hit,wear:0,penInfo:0};
+ const type=intent.damageType,tier=armor.ratings[type]||0,pen=intent.penfactor;
+ const wf=weapon.intdamage_factor??1, inf=intent.intent_intdamage_factor??1;
+ const factor=Math.max(wf,inf)>1?Math.max(wf,inf):Math.min(wf,inf);
+ let health=hit,wear=hit*factor,penInfo=1;
+ if(type==='blunt'){
+  if(tier>0)health=0;
+  wear=hit/(1+r.bluntDR*tier)*factor;
+ }else if(type==='slash'||type==='stab'){
+  if(pen){
+   let balance=weapon.wbalance===-1?stats.strength-8:weapon.wbalance===1?Math.max(stats.strength-10,stats.speed-10):stats.strength-10;
+   if(weapon.wbalance!==-1)balance=Math.min(balance,4);
+   penInfo=clamp((pen===tier?1:2*(pen-tier))+balance+(weapon.sharp?1:0),1,8);
+  }
+  if(tier>0)health=pen>=tier?hit*clamp(r.armorMinimum+(r.azure?penInfo:pen)*r.armorRatio,0,1):0;
+  if(pen>=tier){
+   // Ratwood only calls take_damage in consume_debuff branch; Azure always wears the piece.
+   wear=r.azure?hit*(1-penInfo*r.armorRatio)*factor:0;
+  }
+ }
+ wear=wear<armor.deflection?1:Math.round(wear*10)/10;
+ return {health,wear:Math.max(0,wear),penInfo};
+}
+export function versusArmor(raw,stats,weapon,intent,armor,condition,landChance,r){
+ const impact=armorImpact(raw.hit,stats,weapon,intent,armor,r);
+ const p=clamp(landChance,0,1);
+ const current=armor?armor.integrity*condition/100:0;
+ const remaining=armor?Math.max(0,current-armor.integrity*armor.failure):0;
+ const hits=remaining===0?0:impact.wear>0?Math.ceil((remaining-1e-9)/impact.wear):Infinity;
+ const time=hits===0?0:p>0&&Number.isFinite(hits)?(hits/p-1)*raw.interval:Infinity;
+ return {healthDps:impact.health/raw.interval*p,healthHit:impact.health,armorWear:impact.wear,
+  armorDps:impact.wear/raw.interval*p,breakHits:hits,breakSeconds:time,landPercent:p*100};
+}

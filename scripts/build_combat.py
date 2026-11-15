@@ -16,7 +16,7 @@ def build(root, snapshot):
     for file in files:
         if file.startswith('code/__DEFINES/') and file.endswith('.dm'):
             # Only relevant define files, avoiding a full-tree download.
-            if not any(x in file for x in ('combat', 'roguetown', 'skills')):
+            if not any(x in file for x in ('combat', 'roguetown', 'skills', 'armor')):
                 continue
             for key, value in re.findall(r'^#define\s+(\w+)\s+([^\n]+)', strip_comments(read(file)), re.M):
                 defines[key] = value.strip()
@@ -40,7 +40,8 @@ def build(root, snapshot):
         return ev(node)
     definitions = {}
     sources = [f for f in files if f.endswith('.dm') and (f.startswith('code/game/objects/items/rogueweapons/') or f.startswith('code/modules/jobs/job_types/roguetown/'))]
-    sources.append('code/game/objects/items.dm')
+    sources.extend(['code/game/objects/items.dm','code/modules/clothing/clothing.dm'])
+    sources.extend(f for f in files if f.startswith('code/modules/clothing/rogueclothes/armor/') and f.endswith('.dm'))
     for file in sources:
         text = strip_comments(read(file))
         for key,value in re.findall(r'^#define[ \t]+(\w+)[ \t]+([^\n]+)',text,re.M):
@@ -75,10 +76,11 @@ def build(root, snapshot):
         path='/obj/item/rogueweapon/'+suffix
         if path not in definitions:continue
         try:
-            fields={k:num(path,k) for k in ['force','force_wielded','wdefense','wdefense_wbonus','minstr','wbalance','can_parry']}
+            fields={k:num(path,k) for k in ['force','force_wielded','wdefense','wdefense_wbonus','minstr','wbalance','can_parry','intdamage_factor']}
         except (ValueError,TypeError,SyntaxError,KeyError):continue
         if not fields['can_parry']:continue
         item=dict(id=path,name=resolve(path,'name').strip('"'),skill=resolve(path,'associated_skill'),source=link(path),**fields)
+        item['sharp']=bool(num(path,'sharpness'))
         item['secondarySkills']={}
         secondary=resolve(path,'secondary_skills') or ''
         for skill,value in re.findall(r'(/datum/skill/[\w/]+)\s*=\s*([\d.]+)',secondary):item['secondarySkills'][skill]=float(value)
@@ -89,12 +91,13 @@ def build(root, snapshot):
             intents=[]
             for ipath in re.findall(r'/datum/intent/[\w/]+',raw):
                 try:
-                    vals={k:num(ipath,k) for k in ['damfactor','clickcd','swingdelay','chargetime','releasedrain']}
+                    vals={k:num(ipath,k) for k in ['damfactor','clickcd','swingdelay','chargetime','releasedrain','penfactor','intent_intdamage_factor']}
                 except (ValueError,TypeError,SyntaxError,KeyError):continue
                 if 'Azure-Peak/Azure-Peak' in data['repository']:
                     vals.update(minDamage=num(ipath,'min_intent_damage'), maxDamage=num(ipath,'max_intent_damage'))
                 # Exact standard repeat cadence only: charge/windup intent overrides excluded.
                 if vals['chargetime'] or vals['swingdelay'] or vals['clickcd']<=0:continue
+                vals['damageType']=(resolve(ipath,'item_d_type') or '"blunt"').strip('"')
                 intents.append(dict(id=ipath,name=(resolve(ipath,'name') or ipath.rsplit('/',1)[1]).strip('"'),source=link(ipath),**vals))
             item['intents'][mode]=intents
         if any(item['intents'].values()):weapons.append(item)
@@ -115,6 +118,24 @@ def build(root, snapshot):
     if not tick: raise ValueError('Unknown mob tick interval')
     rules['tickSeconds']=int(tick[1])/10
     data['combat']={'weapons':sorted(weapons,key=lambda x:x['name']),'rules':rules,'sources':{k:f"{data['repository']}/blob/{data['commit']}/{v}" for k,v in {'Damage':'code/_onclick/item_attack.dm','Parry':'code/modules/mob/living/combat/parry.dm','Stamina':'code/modules/mob/living/carbon/energystamina.dm','Tick':'code/controllers/subsystem.dm','Constants':'code/__DEFINES/combat.dm'}.items()}}
+    armors=[]
+    for suffix in ['plate','plate/iron','chainmail','chainmail/hauberk','brigandine','leather','gambeson']:
+        path='/obj/item/clothing/suit/roguetown/armor/'+suffix
+        if path not in definitions:continue
+        raw=resolve(path,'armor') or ''
+        if raw in defines:raw=defines[raw]
+        ratings={k:number(v) for k,v in re.findall(r'"(blunt|slash|stab)"\s*=\s*(\w+)',raw)}
+        if len(ratings)!=3:continue
+        armors.append(dict(id=path,name=resolve(path,'name').strip('"'),ratings=ratings,
+            integrity=num(path,'max_integrity'),failure=num(path,'integrity_failure'),
+            deflection=number(resolve(path,'damage_deflection') or '0'),source=link(path)))
+    data['combat']['armors']=armors
+    data['combat']['rules']['armorMinimum']=constant('PEN_PASSTHROUGH_MINIMUM')
+    data['combat']['rules']['armorRatio']=constant('PEN_PASSTHROUGH_RATIO')
+    data['combat']['rules']['bluntDR']=0.2 if azure else constant('BLUNT_DR_COEFFICIENT')
+    for label,file in [('Armor','code/modules/mob/living/carbon/human/human_defense.dm'),('Penetration','code/modules/mob/living/living_defense.dm'),('Break threshold','code/game/objects/obj_defense.dm')]:
+        data['combat']['sources'][label]=f"{data['repository']}/blob/{data['commit']}/{file}"
+
     if not weapons:raise ValueError('No supported combat weapons')
     snapshot.write_text(json.dumps(data,indent=2)+'\n')
     print(f'{snapshot}: {len(weapons)} melee weapons; {sum(j["skillsKnown"] for j in data["jobs"])} class skill lists')

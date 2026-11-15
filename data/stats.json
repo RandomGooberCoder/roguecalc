@@ -10791,6 +10791,8 @@
         "minstr": 7,
         "wbalance": 0,
         "can_parry": 1,
+        "intdamage_factor": 1,
+        "sharp": true,
         "secondarySkills": {},
         "intents": {
           "one": [
@@ -10802,7 +10804,10 @@
               "clickcd": 10,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1,
+              "damageType": "slash"
             },
             {
               "id": "/datum/intent/sword/thrust/arming",
@@ -10812,7 +10817,10 @@
               "clickcd": 10,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 1,
+              "intent_intdamage_factor": 1,
+              "damageType": "stab"
             },
             {
               "id": "/datum/intent/sword/strike",
@@ -10822,7 +10830,10 @@
               "clickcd": 12,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1.4,
+              "damageType": "blunt"
             }
           ],
           "two": [
@@ -10834,7 +10845,10 @@
               "clickcd": 10,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1,
+              "damageType": "slash"
             },
             {
               "id": "/datum/intent/sword/thrust/arming",
@@ -10844,7 +10858,10 @@
               "clickcd": 10,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 1,
+              "intent_intdamage_factor": 1,
+              "damageType": "stab"
             },
             {
               "id": "/datum/intent/sword/strike",
@@ -10854,7 +10871,10 @@
               "clickcd": 12,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1.4,
+              "damageType": "blunt"
             }
           ]
         }
@@ -10871,6 +10891,8 @@
         "minstr": 5,
         "wbalance": 0,
         "can_parry": 1,
+        "intdamage_factor": 1,
+        "sharp": false,
         "secondarySkills": {},
         "intents": {
           "one": [
@@ -10882,7 +10904,10 @@
               "clickcd": 12,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1.4,
+              "damageType": "blunt"
             }
           ],
           "two": []
@@ -10900,6 +10925,8 @@
         "minstr": 9,
         "wbalance": 0,
         "can_parry": 1,
+        "intdamage_factor": 1,
+        "sharp": true,
         "secondarySkills": {},
         "intents": {
           "one": [],
@@ -10912,7 +10939,10 @@
               "clickcd": 12,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1,
+              "damageType": "slash"
             }
           ]
         }
@@ -10929,6 +10959,8 @@
         "minstr": 7,
         "wbalance": 0,
         "can_parry": 1,
+        "intdamage_factor": 1,
+        "sharp": true,
         "secondarySkills": {},
         "intents": {
           "one": [
@@ -10940,7 +10972,10 @@
               "clickcd": 12,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1,
+              "damageType": "slash"
             },
             {
               "id": "/datum/intent/sword/thrust/long",
@@ -10950,7 +10985,10 @@
               "clickcd": 12,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 1,
+              "intent_intdamage_factor": 1,
+              "damageType": "stab"
             }
           ],
           "two": [
@@ -10962,7 +11000,10 @@
               "clickcd": 10,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1,
+              "damageType": "slash"
             },
             {
               "id": "/datum/intent/sword/thrust/long",
@@ -10972,7 +11013,10 @@
               "clickcd": 12,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 1,
+              "intent_intdamage_factor": 1,
+              "damageType": "stab"
             }
           ]
         }
@@ -10989,6 +11033,8 @@
         "minstr": 6,
         "wbalance": 1,
         "can_parry": 1,
+        "intdamage_factor": 1,
+        "sharp": true,
         "secondarySkills": {},
         "intents": {
           "one": [
@@ -11000,7 +11046,10 @@
               "clickcd": 8,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 2,
+              "intent_intdamage_factor": 1,
+              "damageType": "stab"
             },
             {
               "id": "/datum/intent/sword/cut/rapier",
@@ -11010,7 +11059,10 @@
               "clickcd": 10,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1,
+              "damageType": "slash"
             }
           ],
           "two": []
@@ -11028,6 +11080,8 @@
         "minstr": 5,
         "wbalance": 1,
         "can_parry": 1,
+        "intdamage_factor": 1,
+        "sharp": true,
         "secondarySkills": {},
         "intents": {
           "one": [
@@ -11039,7 +11093,10 @@
               "clickcd": 8,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1,
+              "damageType": "slash"
             },
             {
               "id": "/datum/intent/sword/thrust/sabre",
@@ -11049,7 +11106,10 @@
               "clickcd": 9,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 1,
+              "intent_intdamage_factor": 1,
+              "damageType": "stab"
             },
             {
               "id": "/datum/intent/sword/strike",
@@ -11059,7 +11119,10 @@
               "clickcd": 12,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1.4,
+              "damageType": "blunt"
             }
           ],
           "two": []
@@ -11077,6 +11140,8 @@
         "minstr": 11,
         "wbalance": 0,
         "can_parry": 1,
+        "intdamage_factor": 1,
+        "sharp": true,
         "secondarySkills": {},
         "intents": {
           "one": [
@@ -11088,7 +11153,10 @@
               "clickcd": 14,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 1,
+              "intent_intdamage_factor": 1,
+              "damageType": "slash"
             }
           ],
           "two": [
@@ -11100,7 +11168,10 @@
               "clickcd": 14,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 1,
+              "intent_intdamage_factor": 1,
+              "damageType": "slash"
             },
             {
               "id": "/datum/intent/axe/sweep",
@@ -11110,7 +11181,10 @@
               "clickcd": 18,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1,
+              "damageType": "slash"
             }
           ]
         }
@@ -11127,6 +11201,8 @@
         "minstr": 7,
         "wbalance": -1,
         "can_parry": 1,
+        "intdamage_factor": 1,
+        "sharp": false,
         "secondarySkills": {},
         "intents": {
           "one": [
@@ -11138,7 +11214,10 @@
               "clickcd": 12,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1.4,
+              "damageType": "blunt"
             }
           ],
           "two": [
@@ -11150,7 +11229,10 @@
               "clickcd": 12,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1.4,
+              "damageType": "blunt"
             }
           ]
         }
@@ -11167,6 +11249,8 @@
         "minstr": 4,
         "wbalance": 1,
         "can_parry": 1,
+        "intdamage_factor": 1,
+        "sharp": true,
         "secondarySkills": {},
         "intents": {
           "one": [
@@ -11178,7 +11262,10 @@
               "clickcd": 9,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1,
+              "damageType": "slash"
             },
             {
               "id": "/datum/intent/sword/thrust/short",
@@ -11188,7 +11275,10 @@
               "clickcd": 8,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 2,
+              "intent_intdamage_factor": 1,
+              "damageType": "stab"
             }
           ],
           "two": []
@@ -11206,6 +11296,8 @@
         "minstr": 7,
         "wbalance": -1,
         "can_parry": 1,
+        "intdamage_factor": 1,
+        "sharp": false,
         "secondarySkills": {},
         "intents": {
           "one": [
@@ -11217,7 +11309,10 @@
               "clickcd": 12,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1.4,
+              "damageType": "blunt"
             },
             {
               "id": "/datum/intent/mace/warhammer/stab",
@@ -11227,7 +11322,10 @@
               "clickcd": 12,
               "swingdelay": 0,
               "chargetime": 0,
-              "releasedrain": 1
+              "releasedrain": 1,
+              "penfactor": 1,
+              "intent_intdamage_factor": 1,
+              "damageType": "stab"
             }
           ],
           "two": []
@@ -11246,14 +11344,113 @@
       "skillParry": 20,
       "wdefParry": 10,
       "oldParry": 20,
-      "tickSeconds": 2.0
+      "tickSeconds": 2.0,
+      "armorMinimum": 0.4,
+      "armorRatio": 0.1,
+      "bluntDR": 0.3
     },
     "sources": {
       "Damage": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/_onclick/item_attack.dm",
       "Parry": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/combat/parry.dm",
       "Stamina": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/energystamina.dm",
       "Tick": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/controllers/subsystem.dm",
-      "Constants": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/__DEFINES/combat.dm"
-    }
+      "Constants": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/__DEFINES/combat.dm",
+      "Armor": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/carbon/human/human_defense.dm",
+      "Penetration": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/mob/living/living_defense.dm",
+      "Break threshold": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/game/objects/obj_defense.dm"
+    },
+    "armors": [
+      {
+        "id": "/obj/item/clothing/suit/roguetown/armor/plate",
+        "name": "steel half-plate",
+        "ratings": {
+          "blunt": 1,
+          "slash": 3,
+          "stab": 3
+        },
+        "integrity": 500,
+        "failure": 0.1,
+        "deflection": 0,
+        "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/clothing/rogueclothes/armor/plate.dm#L2"
+      },
+      {
+        "id": "/obj/item/clothing/suit/roguetown/armor/plate/iron",
+        "name": "iron half-plate",
+        "ratings": {
+          "blunt": 1,
+          "slash": 3,
+          "stab": 3
+        },
+        "integrity": 375,
+        "failure": 0.1,
+        "deflection": 0,
+        "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/clothing/rogueclothes/armor/plate.dm#L31"
+      },
+      {
+        "id": "/obj/item/clothing/suit/roguetown/armor/chainmail",
+        "name": "haubergeon",
+        "ratings": {
+          "blunt": 1,
+          "slash": 3,
+          "stab": 3
+        },
+        "integrity": 300,
+        "failure": 0.1,
+        "deflection": 0,
+        "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/clothing/rogueclothes/armor/chainmail.dm#L2"
+      },
+      {
+        "id": "/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk",
+        "name": "hauberk",
+        "ratings": {
+          "blunt": 1,
+          "slash": 3,
+          "stab": 3
+        },
+        "integrity": 300,
+        "failure": 0.1,
+        "deflection": 0,
+        "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/clothing/rogueclothes/armor/chainmail.dm#L62"
+      },
+      {
+        "id": "/obj/item/clothing/suit/roguetown/armor/brigandine",
+        "name": "brigandine",
+        "ratings": {
+          "blunt": 2,
+          "slash": 3,
+          "stab": 3
+        },
+        "integrity": 400,
+        "failure": 0.1,
+        "deflection": 0,
+        "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/clothing/rogueclothes/armor/brigandine.dm#L2"
+      },
+      {
+        "id": "/obj/item/clothing/suit/roguetown/armor/leather",
+        "name": "leather armor",
+        "ratings": {
+          "blunt": 3,
+          "slash": 1,
+          "stab": 1
+        },
+        "integrity": 200,
+        "failure": 0.1,
+        "deflection": 0,
+        "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/clothing/rogueclothes/armor/leather.dm#L1"
+      },
+      {
+        "id": "/obj/item/clothing/suit/roguetown/armor/gambeson",
+        "name": "gambeson",
+        "ratings": {
+          "blunt": 5,
+          "slash": 2,
+          "stab": 2
+        },
+        "integrity": 250,
+        "failure": 0.1,
+        "deflection": 0,
+        "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/667702e7445add96422ac86518acea5a23861444/code/modules/clothing/rogueclothes/armor/gambeson.dm#L3"
+      }
+    ]
   }
 }

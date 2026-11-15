@@ -9333,6 +9333,8 @@
         "minstr": 7,
         "wbalance": 0,
         "can_parry": 1,
+        "intdamage_factor": 1,
+        "sharp": true,
         "secondarySkills": {},
         "intents": {
           "one": [
@@ -9345,8 +9347,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "slash"
             },
             {
               "id": "/datum/intent/sword/thrust/arming",
@@ -9357,8 +9362,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 1,
+              "intent_intdamage_factor": 1,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "stab"
             },
             {
               "id": "/datum/intent/sword/strike",
@@ -9369,8 +9377,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1.6,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "blunt"
             }
           ],
           "two": [
@@ -9383,8 +9394,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "slash"
             },
             {
               "id": "/datum/intent/sword/thrust/arming",
@@ -9395,8 +9409,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 1,
+              "intent_intdamage_factor": 1,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "stab"
             },
             {
               "id": "/datum/intent/sword/strike",
@@ -9407,8 +9424,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1.6,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "blunt"
             }
           ]
         }
@@ -9425,6 +9445,8 @@
         "minstr": 5,
         "wbalance": 0,
         "can_parry": 1,
+        "intdamage_factor": 1,
+        "sharp": false,
         "secondarySkills": {},
         "intents": {
           "one": [
@@ -9437,8 +9459,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1.6,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "blunt"
             },
             {
               "id": "/datum/intent/flail/bash",
@@ -9449,8 +9474,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1.6,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "blunt"
             }
           ],
           "two": []
@@ -9468,6 +9496,8 @@
         "minstr": 7,
         "wbalance": 0,
         "can_parry": 1,
+        "intdamage_factor": 1,
+        "sharp": true,
         "secondarySkills": {},
         "intents": {
           "one": [
@@ -9480,8 +9510,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "slash"
             },
             {
               "id": "/datum/intent/sword/thrust/long",
@@ -9492,8 +9525,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 1,
+              "intent_intdamage_factor": 1,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "stab"
             }
           ],
           "two": [
@@ -9506,8 +9542,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "slash"
             },
             {
               "id": "/datum/intent/sword/thrust/long",
@@ -9518,8 +9557,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 1,
+              "intent_intdamage_factor": 1,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "stab"
             }
           ]
         }
@@ -9536,6 +9578,8 @@
         "minstr": 6,
         "wbalance": 1,
         "can_parry": 1,
+        "intdamage_factor": 1,
+        "sharp": true,
         "secondarySkills": {},
         "intents": {
           "one": [
@@ -9548,8 +9592,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 2,
+              "intent_intdamage_factor": 1,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "stab"
             },
             {
               "id": "/datum/intent/sword/cut/rapier",
@@ -9560,8 +9607,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "slash"
             }
           ],
           "two": []
@@ -9579,6 +9629,8 @@
         "minstr": 11,
         "wbalance": 0,
         "can_parry": 1,
+        "intdamage_factor": 1,
+        "sharp": true,
         "secondarySkills": {},
         "intents": {
           "one": [
@@ -9591,8 +9643,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 1,
+              "intent_intdamage_factor": 1,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "slash"
             }
           ],
           "two": [
@@ -9605,8 +9660,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 1,
+              "intent_intdamage_factor": 1,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "slash"
             },
             {
               "id": "/datum/intent/axe/sweep",
@@ -9617,8 +9675,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "slash"
             }
           ]
         }
@@ -9635,6 +9696,8 @@
         "minstr": 7,
         "wbalance": -1,
         "can_parry": 1,
+        "intdamage_factor": 1,
+        "sharp": false,
         "secondarySkills": {},
         "intents": {
           "one": [
@@ -9647,8 +9710,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1.6,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "blunt"
             }
           ],
           "two": [
@@ -9661,8 +9727,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1.6,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "blunt"
             }
           ]
         }
@@ -9679,6 +9748,8 @@
         "minstr": 4,
         "wbalance": 0,
         "can_parry": 1,
+        "intdamage_factor": 1,
+        "sharp": true,
         "secondarySkills": {},
         "intents": {
           "one": [
@@ -9691,8 +9762,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "slash"
             },
             {
               "id": "/datum/intent/sword/thrust/short",
@@ -9703,8 +9777,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 1,
+              "intent_intdamage_factor": 1,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "stab"
             },
             {
               "id": "/datum/intent/sword/strike",
@@ -9715,8 +9792,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1.6,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "blunt"
             }
           ],
           "two": []
@@ -9734,6 +9814,8 @@
         "minstr": 7,
         "wbalance": -1,
         "can_parry": 1,
+        "intdamage_factor": 1,
+        "sharp": false,
         "secondarySkills": {},
         "intents": {
           "one": [
@@ -9746,8 +9828,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 0,
+              "intent_intdamage_factor": 1.6,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "blunt"
             },
             {
               "id": "/datum/intent/mace/warhammer/stab",
@@ -9758,8 +9843,11 @@
               "swingdelay": 0,
               "chargetime": 0,
               "releasedrain": 1,
+              "penfactor": 1,
+              "intent_intdamage_factor": 1,
               "minDamage": 0,
-              "maxDamage": 200
+              "maxDamage": 200,
+              "damageType": "stab"
             }
           ],
           "two": []
@@ -9780,14 +9868,113 @@
       "oldParry": 0,
       "staminaBase": 135,
       "staminaPerWill": 5,
-      "tickSeconds": 2.0
+      "tickSeconds": 2.0,
+      "armorMinimum": 0.4,
+      "armorRatio": 0.05,
+      "bluntDR": 0.2
     },
     "sources": {
       "Damage": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/_onclick/item_attack.dm",
       "Parry": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/combat/parry.dm",
       "Stamina": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/energystamina.dm",
       "Tick": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/controllers/subsystem.dm",
-      "Constants": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/__DEFINES/combat.dm"
-    }
+      "Constants": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/__DEFINES/combat.dm",
+      "Armor": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/human_defense.dm",
+      "Penetration": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/living_defense.dm",
+      "Break threshold": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/game/objects/obj_defense.dm"
+    },
+    "armors": [
+      {
+        "id": "/obj/item/clothing/suit/roguetown/armor/plate",
+        "name": "steel half-plate",
+        "ratings": {
+          "blunt": 1,
+          "slash": 3,
+          "stab": 3
+        },
+        "integrity": 500,
+        "failure": 0.1,
+        "deflection": 0,
+        "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/clothing/rogueclothes/armor/plate.dm#L2"
+      },
+      {
+        "id": "/obj/item/clothing/suit/roguetown/armor/plate/iron",
+        "name": "iron half-plate",
+        "ratings": {
+          "blunt": 1,
+          "slash": 3,
+          "stab": 3
+        },
+        "integrity": 375,
+        "failure": 0.1,
+        "deflection": 0,
+        "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/clothing/rogueclothes/armor/plate.dm#L32"
+      },
+      {
+        "id": "/obj/item/clothing/suit/roguetown/armor/chainmail",
+        "name": "haubergeon",
+        "ratings": {
+          "blunt": 2,
+          "slash": 3,
+          "stab": 3
+        },
+        "integrity": 300,
+        "failure": 0.1,
+        "deflection": 0,
+        "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/clothing/rogueclothes/armor/chainmail.dm#L42"
+      },
+      {
+        "id": "/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk",
+        "name": "hauberk",
+        "ratings": {
+          "blunt": 2,
+          "slash": 3,
+          "stab": 3
+        },
+        "integrity": 300,
+        "failure": 0.1,
+        "deflection": 0,
+        "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/clothing/rogueclothes/armor/chainmail.dm#L122"
+      },
+      {
+        "id": "/obj/item/clothing/suit/roguetown/armor/brigandine",
+        "name": "brigandine",
+        "ratings": {
+          "blunt": 3,
+          "slash": 3,
+          "stab": 2
+        },
+        "integrity": 350,
+        "failure": 0.1,
+        "deflection": 0,
+        "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/clothing/rogueclothes/armor/brigandine.dm#L2"
+      },
+      {
+        "id": "/obj/item/clothing/suit/roguetown/armor/leather",
+        "name": "leather armor",
+        "ratings": {
+          "blunt": 3,
+          "slash": 1,
+          "stab": 1
+        },
+        "integrity": 160,
+        "failure": 0.1,
+        "deflection": 0,
+        "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/clothing/rogueclothes/armor/leather.dm#L1"
+      },
+      {
+        "id": "/obj/item/clothing/suit/roguetown/armor/gambeson",
+        "name": "gambeson",
+        "ratings": {
+          "blunt": 4,
+          "slash": 2,
+          "stab": 1
+        },
+        "integrity": 200,
+        "failure": 0.1,
+        "deflection": 0,
+        "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/clothing/rogueclothes/armor/gambeson.dm#L3"
+      }
+    ]
   }
 }

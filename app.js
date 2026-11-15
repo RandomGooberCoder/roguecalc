@@ -1,4 +1,4 @@
-import { initCombat, renderCombat } from './combat-ui.js?v=combat-1';
+import { initCombat, renderCombat } from './combat-ui.js?v=armor-1';
 import { LABELS, calculate, display } from './calc.mjs';
 
 const $ = id => document.getElementById(id);
