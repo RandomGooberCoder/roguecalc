@@ -3,6 +3,9 @@ import { LABELS, calculate, display } from './calc.mjs';
 const $ = id => document.getElementById(id);
 const groups = { race: 'races', job: 'jobs', statpack: 'statpacks' };
 let data;
+let activeBuild = 'ratwood';
+const builds = {ratwood: {name:'Ratwood', file:'stats.json'}, azure: {name:'Azure Peak', file:'azure.json'}};
+let loadSequence = 0;
 let chosen = {};
 
 function defaults() {
@@ -102,9 +105,63 @@ function render() {
   }
 }
 function writeHash() {
-  history.replaceState(null, '', '#' + new URLSearchParams(chosen).toString());
+  history.replaceState(null, '', '#' + new URLSearchParams({build: activeBuild, ...chosen}).toString());
 }
 
+function metadata() {
+  document.querySelector('.repo-link').href = data.repository;
+  document.title = `${builds[activeBuild].name} | Stat Calculator`;
+  document.querySelector('.brand').childNodes[1].textContent = ' ' + builds[activeBuild].name.toUpperCase() + ' ';
+  $('buff-sources').replaceChildren();
+    const commit = document.createElement('a');
+    commit.href = `${data.repository}/commit/${data.commit}`;
+    commit.textContent = data.commit.slice(0, 7);
+    commit.target = '_blank';
+    commit.rel = 'noopener noreferrer';
+    $('data-info').replaceChildren(document.createTextNode(`Data: ${new Date(data.generatedAt).toISOString().slice(0, 10)} / `), commit);
+    $('buff-sources').append(document.createTextNode('Buff definitions: '));
+    data.buffs.forEach((buff, i) => {
+      const link = cell('a', buff.name);
+      link.href = buff.source;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      if (i) $('buff-sources').append(document.createTextNode(' / '));
+      $('buff-sources').append(link);
+    });
+
+}
+async function loadBuild(id, useHash = false) {
+  const seq = ++loadSequence;
+  $('build').disabled = true;
+  $('calculator').inert = true;
+  $('status').hidden = false;
+  $('status').textContent = 'Loading ' + builds[id].name + ' data...';
+  try {
+    const response = await fetch('./data/' + builds[id].file, {cache:'no-cache'});
+    if (!response.ok) throw new Error(`Data request failed (${response.status})`);
+    const next = await response.json();
+    if (!['races','jobs','statpacks','buffs','stats','ages'].every(k => Array.isArray(next[k]) && next[k].length)) throw new Error('Incomplete build snapshot');
+    if (seq !== loadSequence) return;
+    data = next;
+    activeBuild = id;
+    $('build').value = id;
+    if (useHash) readHash(); else chosen = defaults();
+    $('job-search').value = '';
+    $('age').replaceChildren();
+    for (const age of data.ages) $('age').add(new Option(age.name, age.id));
+    Object.keys(groups).forEach(options);
+    metadata();
+    render();
+    $('calculator').hidden = false;
+    $('status').hidden = true;
+    if (!useHash) writeHash();
+  } catch (error) {
+    $('build').value = activeBuild;
+    $('status').textContent = 'Could not load build: ' + error.message;
+  } finally {
+    if (seq === loadSequence) { $('build').disabled = false; $('calculator').inert = false; }
+  }
+}
 async function init() {
   $('breakdown-toggle').addEventListener('click', () => {
     const open = $('breakdown-panel').hidden;
@@ -113,11 +170,9 @@ async function init() {
     $('breakdown-label').textContent = open ? 'Hide the stat breakdown' : 'See the stat breakdown';
   });
   try {
-    const response = await fetch('./data/stats.json', { cache: 'no-cache' });
-    if (!response.ok) throw new Error(`Data request failed (${response.status})`);
-    data = await response.json();
-    if (!['races', 'jobs', 'statpacks', 'buffs', 'stats', 'ages'].every(k => Array.isArray(data[k]) && data[k].length)) throw new Error('The data snapshot is incomplete.');
-    readHash();
+    await loadBuild(builds[new URLSearchParams(location.hash.slice(1)).get('build')] ? new URLSearchParams(location.hash.slice(1)).get('build') : 'ratwood', true);
+    if (!data) return;
+    $('build').addEventListener('change', () => loadBuild($('build').value));
     for (const key of Object.keys(groups)) {
       options(key);
       $(key).addEventListener('change', () => {
@@ -127,7 +182,6 @@ async function init() {
         writeHash();
       });
     }
-    for (const age of data.ages) $('age').add(new Option(age.name, age.id));
     for (const key of ['age', 'choice']) $(key).addEventListener('change', () => {
       chosen[key] = $(key).value;
       render();
@@ -155,25 +209,8 @@ async function init() {
       }
     });
     addEventListener('hashchange', () => {
-      readHash();
-      $('job-search').value = '';
-      Object.keys(groups).forEach(options);
-      render();
-    });
-    const commit = document.createElement('a');
-    commit.href = `${data.repository}/commit/${data.commit}`;
-    commit.textContent = data.commit.slice(0, 7);
-    commit.target = '_blank';
-    commit.rel = 'noopener noreferrer';
-    $('data-info').replaceChildren(document.createTextNode(`Data: ${new Date(data.generatedAt).toISOString().slice(0, 10)} / `), commit);
-    $('buff-sources').append(document.createTextNode('Buff definitions: '));
-    data.buffs.forEach((buff, i) => {
-      const link = cell('a', buff.name);
-      link.href = buff.source;
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      if (i) $('buff-sources').append(document.createTextNode(' / '));
-      $('buff-sources').append(link);
+      const id = new URLSearchParams(location.hash.slice(1)).get('build');
+      loadBuild(builds[id] ? id : 'ratwood', true);
     });
     render();
     $('status').hidden = true;

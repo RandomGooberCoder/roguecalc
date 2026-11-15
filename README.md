@@ -105,3 +105,18 @@ The age dropdown uses the game's life stages, not invented numerical age thresho
 - Old: Strength -1, Speed -2, Perception -1, Constitution -2, Intelligence +3, Fortune +1.
 
 Age branches are alternatives, not cumulative. Job-specific age-related skills and bespoke outfit logic remain outside the stat-list calculator. Age and species choice are included in shared URLs and the expandable breakdown. The default compact dashboard is designed for one-screen laptop use; the expanded breakdown and smaller screens may scroll.
+
+## Multiple game builds
+
+Use the **Build** selector in the header to switch between Ratwood and Azure Peak. Each has its own races, job subclasses, statpacks, choices, age rules, buffs, commit, and source links. Switching resets character selections to that build's defaults. Shared URLs include `build=ratwood` or `build=azure`; old links default to Ratwood.
+
+Azure Peak currently stores statpacks in `code/modules/statpacks`; the importer automatically detects this alternative to `modular_azurepeak/statpacks`. Its Old age INT modifier is imported independently, not copied from Ratwood. Runtime patron/virtue effects remain outside this list-based planner.
+
+The Actions workflow checks both upstream main branches every 15 minutes. When either changes, it rebuilds and tests both snapshots and deploys them together, then records both snapshots after successful deployment. Include all updated project files, especially `scripts/check_upstreams.py`, `data/azure.json`, the new tests, and `.github/workflows/pages.yml`, when updating an existing repository.
+
+Manual Azure data refresh:
+
+```sh
+python scripts/build_data.py ../azure-source --repository https://github.com/Azure-Peak/Azure-Peak --output data/azure.json
+node --test tests/*.test.mjs
+```

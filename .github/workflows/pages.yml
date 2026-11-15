@@ -22,6 +22,7 @@ jobs:
     outputs:
       refresh: ${{ steps.upstream.outputs.refresh }}
       commit: ${{ steps.upstream.outputs.commit }}
+      azure_commit: ${{ steps.upstream.outputs.azure_commit }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -33,17 +34,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          latest=$(git ls-remote https://github.com/Rotwood-Vale/Ratwood-2.0.git refs/heads/main | awk '{print $1}')
-          [[ "$latest" =~ ^[0-9a-f]{40}$ ]] || { echo 'Could not resolve upstream main'; exit 1; }
-          current=$(python3 -c 'import json; print(json.load(open("data/stats.json")).get("commit", ""))')
-          echo "commit=$latest" >> "$GITHUB_OUTPUT"
-          if [[ "$EVENT_NAME" != schedule || "$latest" != "$current" ]]; then
-            echo 'refresh=true' >> "$GITHUB_OUTPUT"
-            echo "Refresh requested: upstream $latest" >> "$GITHUB_STEP_SUMMARY"
-          else
-            echo 'refresh=false' >> "$GITHUB_OUTPUT"
-            echo "No upstream change ($latest); build and deployment skipped." >> "$GITHUB_STEP_SUMMARY"
-          fi
+          python3 scripts/check_upstreams.py
+
 
   build:
     needs: check
@@ -70,6 +62,20 @@ jobs:
             modular_azurepeak/statpacks
             code/datums/status_effects/rogue
             code/modules/mob/living/stats.dm
+      - name: Check out Azure Peak at the checked commit
+        uses: actions/checkout@v4
+        with:
+          repository: Azure-Peak/Azure-Peak
+          ref: ${{ needs.check.outputs.azure_commit }}
+          path: upstream-azure
+          persist-credentials: false
+          sparse-checkout: |
+            code/modules/mob/living/carbon/human/species_types
+            code/modules/jobs/job_types/roguetown
+            modular_azurepeak/statpacks
+            code/modules/statpacks
+            code/datums/status_effects/rogue
+            code/modules/mob/living/stats.dm
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
@@ -77,21 +83,23 @@ jobs:
         with:
           node-version: '22'
       - name: Extract current repository stats
-        run: python scripts/build_data.py upstream
+        run: |
+          python scripts/build_data.py upstream
+          python scripts/build_data.py upstream-azure --repository https://github.com/Azure-Peak/Azure-Peak --output data/azure.json
       - name: Check extraction and calculator
         run: |
           python -m unittest discover -s tests -p 'test_*.py'
-          node --test tests/calc.test.mjs
+          node --test tests/*.test.mjs
       - name: Assemble static site
         run: |
           mkdir -p _site/data
           cp index.html style.css app.js calc.mjs icon.svg .nojekyll _site/
-          cp data/stats.json _site/data/
+          cp data/*.json _site/data/
       - name: Save snapshot for recording after successful deployment
         uses: actions/upload-artifact@v4
         with:
           name: deployed-snapshot
-          path: data/stats.json
+          path: data/*.json
           retention-days: 1
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
@@ -139,8 +147,8 @@ jobs:
             echo 'Calculator changed during this run. Leave snapshot for the next run.' >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
-          cp snapshot/stats.json data/stats.json
-          git add data/stats.json
+          cp snapshot/*.json data/
+          git add data/stats.json data/azure.json
           if git diff --cached --quiet; then exit 0; fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'

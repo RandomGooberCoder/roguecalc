@@ -43,3 +43,5 @@
 .breakdown-panel td{font-size:13px}
 .breakdown-panel th{font-size:11px}
 @media(max-width:760px){.breakdown-section{margin-top:8px}.breakdown-toggle{min-height:40px;padding:8px 12px;font-size:13px}}
+
+.source-picker{display:flex;align-items:center;gap:8px;margin-left:auto}.source-picker label{font-size:11px;color:var(--gold)}.source-picker select{font:inherit;font-size:12px;color:var(--text);background:var(--panel);border:1px solid var(--gold);border-radius:4px;padding:4px 8px}.masthead{gap:14px}@media(max-width:760px){.brand-sub,.repo-link{display:none}.brand{font-size:12px;letter-spacing:1px}.source-picker{gap:5px}.source-picker select{max-width:130px;font-size:11px}}

@@ -1,0 +1,4898 @@
+{
+  "repository": "https://github.com/Azure-Peak/Azure-Peak",
+  "commit": "2f55782da57c1f27a3049414264742311fc25a1d",
+  "generatedAt": "2026-11-14T20:59:57.888399+00:00",
+  "base": 10,
+  "stats": [
+    "strength",
+    "perception",
+    "intelligence",
+    "constitution",
+    "willpower",
+    "speed",
+    "fortune"
+  ],
+  "races": [
+    {
+      "id": "/datum/species/aasimar",
+      "name": "Aasimar",
+      "stats": {
+        "fortune": 1
+      },
+      "choices": [
+        {
+          "id": "fortune",
+          "name": "+1 FOR",
+          "stats": {
+            "fortune": 1
+          }
+        },
+        {
+          "id": "intelligence",
+          "name": "+1 INT",
+          "stats": {
+            "intelligence": 1
+          }
+        },
+        {
+          "id": "constitution",
+          "name": "+1 CON",
+          "stats": {
+            "constitution": 1
+          }
+        },
+        {
+          "id": "willpower",
+          "name": "+1 WIL",
+          "stats": {
+            "willpower": 1
+          }
+        },
+        {
+          "id": "perception",
+          "name": "+1 PER",
+          "stats": {
+            "perception": 1
+          }
+        },
+        {
+          "id": "trait_nohunger",
+          "name": "No Hunger & Thirst",
+          "stats": {}
+        }
+      ],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/roguetown/other/aasimar.dm#L4",
+      "group": "aasimar"
+    },
+    {
+      "id": "/datum/species/akula",
+      "name": "Axian",
+      "stats": {
+        "willpower": 1,
+        "constitution": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/furry/akula.dm#L4",
+      "group": "akula"
+    },
+    {
+      "id": "/datum/species/elf/dark",
+      "name": "Dark Elf",
+      "stats": {
+        "perception": 1,
+        "intelligence": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/roguetown/elf/elfd.dm#L4",
+      "group": "elf"
+    },
+    {
+      "id": "/datum/species/elf/dark/raider",
+      "name": "Dark Elf Raider",
+      "stats": {
+        "perception": 1,
+        "intelligence": 1
+      },
+      "choices": [],
+      "description": "A hardened dark elf adapted for ruthless Underdark raids.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/roguetown/elf/elfd.dm#L128",
+      "group": "elf"
+    },
+    {
+      "id": "/datum/species/dracon",
+      "name": "Drakian",
+      "stats": {
+        "strength": 1
+      },
+      "choices": [],
+      "description": "Hailing from Lirvas, Drakians are winged relatives of the Zardmen, results of Matthios's doomed attempts to mimic the forms of drakkyn. Though they may share visual similarities, and their pride tends to befit such, no Drakian would ever claim to be a descendant of the drakkyn, as to do so is to invite a terrible wasting curse.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/furry/dracon.dm#L4",
+      "group": "dracon"
+    },
+    {
+      "id": "/datum/species/dwarf/mountain",
+      "name": "Dwarf",
+      "stats": {
+        "constitution": 1,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/roguetown/dwarf/dwarfm.dm#L4",
+      "group": "dwarf"
+    },
+    {
+      "id": "/datum/species/elf/wood",
+      "name": "Elf",
+      "stats": {
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/roguetown/elf/elfs.dm#L4",
+      "group": "elf"
+    },
+    {
+      "id": "/datum/species/moth",
+      "name": "Fluvian",
+      "stats": {
+        "speed": 1
+      },
+      "choices": [],
+      "description": "Many comparisons have been made to the common moths in an attempt to describe this unique species. From the appetite for clothing to the disconcertingly insectoid appearance, the name 'Moth' is forever stamped onto the common vocabulary. The comparison, however, falls short on the matter of flight.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/furry/moth.dm#L4",
+      "group": "moth"
+    },
+    {
+      "id": "/datum/species/dwarf/gnome",
+      "name": "Gnome",
+      "stats": {
+        "intelligence": 1,
+        "perception": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/roguetown/dwarf/gnome.dm#L4",
+      "group": "dwarf"
+    },
+    {
+      "id": "/datum/species/goblinp",
+      "name": "Goblin",
+      "stats": {
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/roguetown/goblin/goblinp.dm#L4",
+      "group": "goblinp"
+    },
+    {
+      "id": "/datum/species/halforc",
+      "name": "Half Orc",
+      "stats": {
+        "strength": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/roguetown/other/halforc.dm#L4",
+      "group": "halforc"
+    },
+    {
+      "id": "/datum/species/human/halfelf",
+      "name": "Half-Elf",
+      "stats": {
+        "perception": 1,
+        "constitution": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/roguetown/other/halfelf.dm#L4",
+      "group": "human"
+    },
+    {
+      "id": "/datum/species/demihuman",
+      "name": "Half-Kin",
+      "stats": {
+        "perception": 1,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "The inevitable union between wildkin and some form of humanity or another. While they also experience animalistic tendencies akin to their full-blooded ancestors, their intermingling with others has stemmed the severity of such primordial impulses. (Half-kin are not a template race to play your own custom race. If you play a half-kin, you are expected to roleplay to the setting and the race's lore.)",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/furry/demihuman.dm#L4",
+      "group": "demihuman"
+    },
+    {
+      "id": "/datum/species/human/northern",
+      "name": "Humen",
+      "stats": {
+        "intelligence": 1,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/roguetown/human/humen.dm#L4",
+      "group": "human"
+    },
+    {
+      "id": "/datum/species/kobold",
+      "name": "Kobold",
+      "stats": {
+        "fortune": 1
+      },
+      "choices": [
+        {
+          "id": "fortune",
+          "name": "+1 FOR",
+          "stats": {
+            "fortune": 1
+          }
+        },
+        {
+          "id": "intelligence",
+          "name": "+1 INT",
+          "stats": {
+            "intelligence": 1
+          }
+        },
+        {
+          "id": "constitution",
+          "name": "+1 CON",
+          "stats": {
+            "constitution": 1
+          }
+        },
+        {
+          "id": "willpower",
+          "name": "+1 WIL",
+          "stats": {
+            "willpower": 1
+          }
+        },
+        {
+          "id": "perception",
+          "name": "+1 PER",
+          "stats": {
+            "perception": 1
+          }
+        }
+      ],
+      "description": "Short in stature and typically scrawny, these little lizards make up for it in their natural agility. People typically stereotype them as thieves, though...",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/furry/kobold.dm#L4",
+      "group": "kobold"
+    },
+    {
+      "id": "/datum/species/lupian",
+      "name": "Lupian",
+      "stats": {
+        "intelligence": 1,
+        "constitution": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/furry/lupian.dm#L4",
+      "group": "lupian"
+    },
+    {
+      "id": "/datum/species/construct/metal",
+      "name": "Metal Construct",
+      "stats": {
+        "willpower": 1,
+        "speed": -2
+      },
+      "choices": [],
+      "description": "Masterworks of artifice, metal constructs are as the name implies- entirely constructed by mortal hands. They are beings not of flesh and blood, but cold metal and the arcyne. Constructs are said to originate from works of Zizo, and they hail from the far-off lands of the Southern Empty- a great city of artifice, where the only artificers capable of understanding what is necessary to create the constructs live. For some reason, they have found themselves travelling out of the empty, as of late. Children of the Resonator Siphon.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/roguetown/construct/constructm.dm#L4",
+      "group": "construct"
+    },
+    {
+      "id": "/datum/species/ooze",
+      "name": "Murkling",
+      "stats": {
+        "constitution": 1,
+        "intelligence": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/roguetown/other/ooze.dm#L1",
+      "group": "ooze"
+    },
+    {
+      "id": "/datum/species/orc",
+      "name": "Orc",
+      "stats": {
+        "strength": 1,
+        "constitution": 1,
+        "intelligence": -1,
+        "speed": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/roguetown/other/orc.dm#L1",
+      "group": "orc"
+    },
+    {
+      "id": "/datum/species/elf/sun",
+      "name": "Sun Elf",
+      "stats": {},
+      "choices": [
+        {
+          "id": "fortune",
+          "name": "+1 FOR",
+          "stats": {
+            "fortune": 1
+          }
+        },
+        {
+          "id": "intelligence",
+          "name": "+1 INT",
+          "stats": {
+            "intelligence": 1
+          }
+        },
+        {
+          "id": "constitution",
+          "name": "+1 CON",
+          "stats": {
+            "constitution": 1
+          }
+        },
+        {
+          "id": "willpower",
+          "name": "+1 WIL",
+          "stats": {
+            "willpower": 1
+          }
+        },
+        {
+          "id": "perception",
+          "name": "+1 PER",
+          "stats": {
+            "perception": 1
+          }
+        }
+      ],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/roguetown/elf/elfc.dm#L4",
+      "group": "elf"
+    },
+    {
+      "id": "/datum/species/tabaxi",
+      "name": "Tabaxi",
+      "stats": {
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/furry/tabaxi.dm#L4",
+      "group": "tabaxi"
+    },
+    {
+      "id": "/datum/species/tieberian",
+      "name": "Tiefling",
+      "stats": {
+        "intelligence": 1,
+        "constitution": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/roguetown/other/tiefling.dm#L4",
+      "group": "tieberian"
+    },
+    {
+      "id": "/datum/species/vulpkanin",
+      "name": "Venardine",
+      "stats": {
+        "perception": 1,
+        "intelligence": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/furry/vulpkanin.dm#L4",
+      "group": "vulpkanin"
+    },
+    {
+      "id": "/datum/species/anthromorphsmall",
+      "name": "Verminvolk",
+      "stats": {
+        "speed": 1
+      },
+      "choices": [],
+      "description": "A race akin to wild-kin, except afflicted with significantly smaller stature. A bit less respected than their kin due to their closer resemblance to vermin, like the dichotomy between Kobold and Zardman.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/furry/anthromorphsmall.dm#L4",
+      "group": "anthromorphsmall"
+    },
+    {
+      "id": "/datum/species/anthromorph",
+      "name": "Wild-Kin",
+      "stats": {
+        "perception": 1,
+        "constitution": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/furry/anthromorph.dm#L4",
+      "group": "anthromorph"
+    },
+    {
+      "id": "/datum/species/lizardfolk",
+      "name": "Zardman",
+      "stats": {
+        "constitution": 1,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/carbon/human/species_types/furry/lizardfolk.dm#L4",
+      "group": "lizardfolk"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "/datum/advclass/mercenary/anthrax_assassin",
+      "name": "\"Anthraxi\" Assassin",
+      "stats": {
+        "willpower": 2,
+        "perception": 2,
+        "intelligence": 1,
+        "speed": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/anthrax.dm#L83",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/mercenary/anthrax",
+      "name": "\"Black Venom\" Pursuer",
+      "stats": {
+        "strength": 2,
+        "constitution": 2,
+        "willpower": 2,
+        "perception": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/anthrax.dm#L1",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/vagabond_thrall",
+      "name": "Abandoned Thrall",
+      "stats": {
+        "strength": -1,
+        "speed": 2,
+        "constitution": -2,
+        "intelligence": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/vagabond/thrall.dm#L1",
+      "group": "vagabond_thrall"
+    },
+    {
+      "id": "/datum/advclass/absolver",
+      "name": "Absolver",
+      "stats": {
+        "constitution": 5,
+        "willpower": 5,
+        "intelligence": 2,
+        "speed": -2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/Inquisition/absolutionist.dm#L39",
+      "group": "absolver"
+    },
+    {
+      "id": "/datum/advclass/acolyte",
+      "name": "Acolyte",
+      "stats": {
+        "intelligence": 3,
+        "willpower": 2,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/church/acolyte.dm#L31",
+      "group": "acolyte"
+    },
+    {
+      "id": "/datum/advclass/psydoniantemplar",
+      "name": "Adjudicator",
+      "stats": {
+        "willpower": 3,
+        "constitution": 3,
+        "strength": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/psydoniantemplar.dm#L1",
+      "group": "psydoniantemplar"
+    },
+    {
+      "id": "/datum/advclass/hand/advisor",
+      "name": "Advisor",
+      "stats": {
+        "intelligence": 4,
+        "perception": 3,
+        "speed": 1,
+        "willpower": 1,
+        "fortune": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/courtier/hand.dm#L167",
+      "group": "hand"
+    },
+    {
+      "id": "/datum/advclass/heartfelt/hand/advisor",
+      "name": "Advisor of Heartfelt",
+      "stats": {
+        "intelligence": 3,
+        "perception": 3,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfelthand.dm#L171",
+      "group": "heartfelt"
+    },
+    {
+      "id": "/datum/advclass/mage/alchemist",
+      "name": "Alchemist",
+      "stats": {
+        "intelligence": 3,
+        "perception": 3,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/mage.dm#L63",
+      "group": "mage"
+    },
+    {
+      "id": "/datum/advclass/rogue/antiquarian",
+      "name": "Antiquarian",
+      "stats": {
+        "strength": -1,
+        "intelligence": 2,
+        "perception": 2,
+        "willpower": 1,
+        "speed": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/rogue.dm#L248",
+      "group": "rogue"
+    },
+    {
+      "id": "/datum/advclass/apothecary",
+      "name": "Apothecary",
+      "stats": {
+        "intelligence": 3,
+        "perception": 2,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/burghers/apothecary.dm#L38",
+      "group": "apothecary"
+    },
+    {
+      "id": "/datum/advclass/guildsman/architect",
+      "name": "Architect",
+      "stats": {
+        "intelligence": 2,
+        "willpower": 2,
+        "fortune": 2,
+        "strength": 1,
+        "constitution": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/burghers/guildsman.dm#L177",
+      "group": "guildsman"
+    },
+    {
+      "id": "/datum/advclass/archivist",
+      "name": "Archivist",
+      "stats": {
+        "intelligence": 4,
+        "constitution": -1,
+        "strength": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/courtier/archivist.dm#L40",
+      "group": "archivist"
+    },
+    {
+      "id": "/datum/advclass/heartfelt/lord/archmage",
+      "name": "Archmagos of Heartfelt",
+      "stats": {
+        "intelligence": 3,
+        "perception": 2,
+        "fortune": 5
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfeltlord.dm#L94",
+      "group": "heartfelt"
+    },
+    {
+      "id": "/datum/advclass/mage/spellthief",
+      "name": "Arcyne Trickster",
+      "stats": {
+        "intelligence": 2,
+        "speed": 2,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/mage.dm#L390",
+      "group": "mage"
+    },
+    {
+      "id": "/datum/advclass/noble",
+      "name": "Aristocrat",
+      "stats": {
+        "perception": 1,
+        "intelligence": 2,
+        "strength": 1,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/noble.dm#L1",
+      "group": "noble"
+    },
+    {
+      "id": "/datum/advclass/mercenary/grenzelhoft_crossbowman",
+      "name": "Armbrustschutze",
+      "stats": {
+        "speed": 2,
+        "willpower": 2,
+        "perception": 2,
+        "strength": 1,
+        "constitution": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/grenzelhoft.dm#L135",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/guildsman/artificer",
+      "name": "Artificer",
+      "stats": {
+        "intelligence": 3,
+        "willpower": 2,
+        "strength": 1,
+        "constitution": 1,
+        "perception": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/burghers/guildsman.dm#L108",
+      "group": "guildsman"
+    },
+    {
+      "id": "/datum/advclass/mercenary/atgervi_shaman",
+      "name": "Atgervi Shaman",
+      "stats": {
+        "strength": 3,
+        "constitution": 2,
+        "willpower": 1,
+        "speed": 1,
+        "intelligence": -1,
+        "perception": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/atgervi.dm#L79",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/mercenary/atgervi",
+      "name": "Atgervi Varangian",
+      "stats": {
+        "willpower": 3,
+        "constitution": 3,
+        "strength": 2,
+        "perception": 1,
+        "speed": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/atgervi.dm#L1",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/mage/spellblade",
+      "name": "Azurcaephan",
+      "stats": {
+        "strength": 1,
+        "intelligence": 1,
+        "perception": 1,
+        "constitution": 1,
+        "willpower": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/mage.dm#L129",
+      "group": "mage"
+    },
+    {
+      "id": "/datum/advclass/wapprentice/spellblade",
+      "name": "Azurcaephan Associate",
+      "stats": {
+        "intelligence": 2,
+        "perception": 1,
+        "constitution": 1,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/burghers/mage_apprentice.dm#L143",
+      "group": "wapprentice"
+    },
+    {
+      "id": "/datum/advclass/foreigner/lesserblackoak",
+      "name": "Azurian Grovewalker",
+      "stats": {
+        "perception": 2,
+        "speed": 2,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner.dm#L705",
+      "group": "foreigner"
+    },
+    {
+      "id": "/datum/advclass/manorguard/bailiff",
+      "name": "Bailiff",
+      "stats": {
+        "strength": 3,
+        "constitution": 2,
+        "willpower": 2,
+        "intelligence": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/garrison/manatarms.dm#L353",
+      "group": "manorguard"
+    },
+    {
+      "id": "/datum/advclass/mercenary/etrusca_balestrieri",
+      "name": "Balestriero Guildsman",
+      "stats": {
+        "willpower": 2,
+        "perception": 3,
+        "speed": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/etrusca.dm#L77",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/sfighter/barbarian",
+      "name": "Barbarian",
+      "stats": {
+        "strength": 3,
+        "constitution": 2,
+        "willpower": 1,
+        "intelligence": -2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L229",
+      "group": "sfighter"
+    },
+    {
+      "id": "/datum/advclass/barbersurgeon",
+      "name": "Barber Surgeon",
+      "stats": {
+        "intelligence": 3,
+        "fortune": 1,
+        "perception": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/barbersurgeon.dm#L1",
+      "group": "barbersurgeon"
+    },
+    {
+      "id": "/datum/advclass/rogue/bard",
+      "name": "Bard",
+      "stats": {
+        "intelligence": 2,
+        "speed": 2,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/rogue.dm#L121",
+      "group": "rogue"
+    },
+    {
+      "id": "/datum/advclass/bathworker",
+      "name": "Bath Attendant",
+      "stats": {
+        "constitution": 3,
+        "willpower": 2,
+        "strength": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/peasants/bathmaid.dm#L39",
+      "group": "bathworker"
+    },
+    {
+      "id": "/datum/advclass/bathmaster",
+      "name": "Bathmaster",
+      "stats": {
+        "willpower": 1,
+        "strength": 1,
+        "constitution": 1,
+        "intelligence": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/burghers/bathmaster.dm#L36",
+      "group": "bathmaster"
+    },
+    {
+      "id": "/datum/advclass/sfighter",
+      "name": "Battlemaster",
+      "stats": {
+        "strength": 2,
+        "willpower": 1,
+        "constitution": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L1",
+      "group": "sfighter"
+    },
+    {
+      "id": "/datum/advclass/vagabond_beggar",
+      "name": "Beggar",
+      "stats": {
+        "strength": 1,
+        "constitution": -3,
+        "willpower": -3,
+        "intelligence": -4
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/vagabond/beggar.dm#L1",
+      "group": "vagabond_beggar"
+    },
+    {
+      "id": "/datum/advclass/wretch/berserker",
+      "name": "Berserker",
+      "stats": {
+        "strength": 3,
+        "constitution": 2,
+        "willpower": 1,
+        "speed": 1,
+        "intelligence": -2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/berserker.dm#L1",
+      "group": "wretch"
+    },
+    {
+      "id": "/datum/advclass/thug/bigman",
+      "name": "Big Fella",
+      "stats": {
+        "strength": 2,
+        "willpower": 2,
+        "constitution": 5,
+        "speed": -4,
+        "intelligence": -6,
+        "perception": -3,
+        "fortune": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/thug.dm#L150",
+      "group": "thug"
+    },
+    {
+      "id": "/datum/advclass/ranger/bwanderer",
+      "name": "Biome Wanderer",
+      "stats": {
+        "perception": 2,
+        "constitution": 1,
+        "willpower": 1,
+        "intelligence": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/ranger.dm#L200",
+      "group": "ranger"
+    },
+    {
+      "id": "/datum/advclass/bishop",
+      "name": "Bishop",
+      "stats": {
+        "intelligence": 4,
+        "willpower": 2,
+        "strength": -1,
+        "constitution": -1,
+        "speed": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/church/priest.dm#L53",
+      "group": "bishop"
+    },
+    {
+      "id": "/datum/advclass/mercenary/blackoak_adept",
+      "name": "Black Oaken Adept",
+      "stats": {
+        "intelligence": 1,
+        "perception": 1,
+        "speed": 2,
+        "constitution": 1,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/blackoak.dm#L172",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/mercenary/blackoak",
+      "name": "Black Oaken Guardian",
+      "stats": {
+        "strength": 3,
+        "willpower": 2,
+        "constitution": 1,
+        "perception": 1,
+        "intelligence": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/blackoak.dm#L2",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/wretch/pariah",
+      "name": "Black Oaken Pariah",
+      "stats": {
+        "intelligence": 1,
+        "perception": 1,
+        "speed": 1,
+        "constitution": 1,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/pariah.dm#L2",
+      "group": "wretch"
+    },
+    {
+      "id": "/datum/advclass/mercenary/blackoak_ranger",
+      "name": "Black Oaken Ranger",
+      "stats": {
+        "speed": 3,
+        "willpower": 2,
+        "perception": 2,
+        "constitution": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/blackoak.dm#L80",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/blacksmith",
+      "name": "Blacksmith",
+      "stats": {
+        "willpower": 2,
+        "constitution": 2,
+        "strength": 1,
+        "fortune": 1,
+        "speed": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/blacksmith.dm#L1",
+      "group": "blacksmith"
+    },
+    {
+      "id": "/datum/advclass/hand/blademaster",
+      "name": "Blademaster",
+      "stats": {
+        "perception": 3,
+        "intelligence": 3,
+        "strength": 2,
+        "constitution": 1,
+        "fortune": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/courtier/hand.dm#L58",
+      "group": "hand"
+    },
+    {
+      "id": "/datum/advclass/ranger/bombardier",
+      "name": "Bombardier",
+      "stats": {
+        "strength": 2,
+        "intelligence": 1,
+        "fortune": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/ranger.dm#L122",
+      "group": "ranger"
+    },
+    {
+      "id": "/datum/advclass/hunter",
+      "name": "Bow-Hunter",
+      "stats": {
+        "perception": 3,
+        "intelligence": 1,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/hunter.dm#L1",
+      "group": "hunter"
+    },
+    {
+      "id": "/datum/advclass/trader/brewer",
+      "name": "Brewer",
+      "stats": {
+        "intelligence": 3,
+        "perception": 1,
+        "constitution": 1,
+        "strength": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/trader/brewer.dm#L1",
+      "group": "trader"
+    },
+    {
+      "id": "/datum/advclass/brigand",
+      "name": "Brigand",
+      "stats": {
+        "strength": 4,
+        "willpower": 2,
+        "constitution": 2,
+        "speed": 1,
+        "fortune": 1,
+        "intelligence": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/antag/brigand.dm#L1",
+      "group": "brigand"
+    },
+    {
+      "id": "/datum/advclass/seneschal/chiefbutler",
+      "name": "Butler",
+      "stats": {
+        "intelligence": 2,
+        "perception": 2,
+        "fortune": 1,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/courtier/seneschal.dm#L115",
+      "group": "seneschal"
+    },
+    {
+      "id": "/datum/advclass/cleric/cantor",
+      "name": "Cantor",
+      "stats": {
+        "strength": 1,
+        "willpower": 1,
+        "speed": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/cleric.dm#L371",
+      "group": "cleric"
+    },
+    {
+      "id": "/datum/advclass/councillor/castellan",
+      "name": "Castellan",
+      "stats": {
+        "strength": 1,
+        "constitution": 1,
+        "willpower": 1,
+        "perception": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/courtier/councillor.dm#L120",
+      "group": "councillor"
+    },
+    {
+      "id": "/datum/advclass/squire/lancer",
+      "name": "Cavalier Squire",
+      "stats": {
+        "strength": 1,
+        "speed": 1,
+        "perception": 1,
+        "constitution": 1,
+        "intelligence": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/retinue/squire.dm#L45",
+      "group": "squire"
+    },
+    {
+      "id": "/datum/advclass/manorguard/cavalry",
+      "name": "Cavalryman",
+      "stats": {
+        "constitution": 2,
+        "willpower": 2,
+        "strength": 1,
+        "intelligence": 1,
+        "perception": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/garrison/manatarms.dm#L259",
+      "group": "manorguard"
+    },
+    {
+      "id": "/datum/advclass/chasseur",
+      "name": "Chasseur",
+      "stats": {
+        "perception": 3,
+        "strength": 2,
+        "intelligence": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/chasseur.dm#L1",
+      "group": "chasseur"
+    },
+    {
+      "id": "/datum/advclass/cheesemaker",
+      "name": "Cheesemaker",
+      "stats": {
+        "intelligence": 2,
+        "constitution": 2,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/cheesemaker.dm#L1",
+      "group": "cheesemaker"
+    },
+    {
+      "id": "/datum/advclass/heartfelt/lord/chief",
+      "name": "Chieftain of Heartfelt",
+      "stats": {
+        "strength": 3,
+        "willpower": 3,
+        "constitution": 2,
+        "perception": -2,
+        "intelligence": -1,
+        "fortune": 5
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfeltlord.dm#L175",
+      "group": "heartfelt"
+    },
+    {
+      "id": "/datum/advclass/clerk",
+      "name": "Clerk",
+      "stats": {
+        "fortune": 2,
+        "intelligence": 2,
+        "speed": 1,
+        "strength": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/courtier/clerk.dm#L33",
+      "group": "clerk"
+    },
+    {
+      "id": "/datum/advclass/councillor/cofferer",
+      "name": "Cofferer",
+      "stats": {
+        "willpower": 2,
+        "intelligence": 2,
+        "perception": 2,
+        "strength": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/courtier/councillor.dm#L64",
+      "group": "councillor"
+    },
+    {
+      "id": "/datum/advclass/mercenary/etrusca_condottiero",
+      "name": "Condottiero Ringleader",
+      "stats": {
+        "willpower": 1,
+        "perception": 2,
+        "speed": 2,
+        "intelligence": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/etrusca.dm#L1",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/confessor",
+      "name": "Confessor",
+      "stats": {
+        "speed": 3,
+        "willpower": 3,
+        "perception": 2,
+        "strength": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/confessor.dm#L1",
+      "group": "confessor"
+    },
+    {
+      "id": "/datum/advclass/consort",
+      "name": "Consort",
+      "stats": {
+        "intelligence": 3,
+        "willpower": 3,
+        "speed": 2,
+        "perception": 2,
+        "fortune": 5
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/nobility/consort.dm#L31",
+      "group": "consort"
+    },
+    {
+      "id": "/datum/advclass/marshal/classic",
+      "name": "Constable",
+      "stats": {
+        "strength": 2,
+        "perception": 2,
+        "intelligence": 3,
+        "constitution": 3,
+        "willpower": 1,
+        "speed": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/retinue/marshal.dm#L62",
+      "group": "marshal"
+    },
+    {
+      "id": "/datum/advclass/cook",
+      "name": "Cook",
+      "stats": {
+        "constitution": 2,
+        "strength": 1,
+        "intelligence": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/peasants/cook.dm#L30",
+      "group": "cook"
+    },
+    {
+      "id": "/datum/advclass/courtmage",
+      "name": "Court Magician",
+      "stats": {
+        "intelligence": 5,
+        "perception": 3,
+        "fortune": 1,
+        "strength": -1,
+        "constitution": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/courtier/magician.dm#L36",
+      "group": "courtmage"
+    },
+    {
+      "id": "/datum/advclass/bathworker/courtesan",
+      "name": "Courtesan",
+      "stats": {
+        "speed": 3,
+        "willpower": 2,
+        "perception": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/peasants/bathmaid.dm#L153",
+      "group": "bathworker"
+    },
+    {
+      "id": "/datum/advclass/crusader",
+      "name": "Crusader",
+      "stats": {
+        "strength": 2,
+        "constitution": 2,
+        "willpower": 2,
+        "perception": 1,
+        "intelligence": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/special/crusader.dm#L1",
+      "group": "crusader"
+    },
+    {
+      "id": "/datum/advclass/trader/cuisiner",
+      "name": "Cuisiner",
+      "stats": {
+        "intelligence": 3,
+        "perception": 1,
+        "constitution": 1,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/trader/cuisiner.dm#L1",
+      "group": "trader"
+    },
+    {
+      "id": "/datum/advclass/heir/daring",
+      "name": "Daring Twit",
+      "stats": {
+        "strength": 1,
+        "perception": 1,
+        "constitution": 1,
+        "speed": 1,
+        "fortune": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/nobility/prince.dm#L41",
+      "group": "heir"
+    },
+    {
+      "id": "/datum/advclass/sfighter/deprived",
+      "name": "Deprived",
+      "stats": {
+        "strength": 3,
+        "constitution": 2,
+        "willpower": 1,
+        "fortune": 1,
+        "intelligence": -2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L722",
+      "group": "sfighter"
+    },
+    {
+      "id": "/datum/advclass/mercenary/desert_rider_almah",
+      "name": "Desert Rider Almah",
+      "stats": {
+        "speed": 1,
+        "intelligence": 1,
+        "perception": 1,
+        "constitution": 1,
+        "willpower": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/desert_rider_almah.dm#L1",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/mercenary/desert_rider",
+      "name": "Desert Rider Janissary",
+      "stats": {
+        "strength": 2,
+        "willpower": 2,
+        "speed": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/desert_rider_janissary.dm#L1",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/mercenary/desert_rider_sahir",
+      "name": "Desert Rider Sahir",
+      "stats": {
+        "speed": 1,
+        "willpower": 2,
+        "intelligence": 3,
+        "perception": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/desert_rider_sahir.dm#L3",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/mercenary/desert_rider_zeybek",
+      "name": "Desert Rider Zeybek",
+      "stats": {
+        "speed": 3,
+        "willpower": 2,
+        "intelligence": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/desert_rider_zeybek.dm#L1",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/wretch/deserter",
+      "name": "Deserter",
+      "stats": {
+        "strength": 2,
+        "willpower": 2,
+        "intelligence": 1,
+        "constitution": 1,
+        "perception": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/deserter.dm#L197",
+      "group": "wretch"
+    },
+    {
+      "id": "/datum/advclass/disciple",
+      "name": "Disciple",
+      "stats": {
+        "strength": 3,
+        "willpower": 3,
+        "constitution": 3,
+        "intelligence": -1,
+        "speed": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/disciple.dm#L1",
+      "group": "disciple"
+    },
+    {
+      "id": "/datum/advclass/wretch/deserter_knight",
+      "name": "Disgraced Knight",
+      "stats": {
+        "willpower": 3,
+        "constitution": 2,
+        "strength": 2,
+        "perception": 2,
+        "fortune": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/deserter.dm#L1",
+      "group": "wretch"
+    },
+    {
+      "id": "/datum/advclass/wretch/slasher",
+      "name": "Disturbed",
+      "stats": {
+        "strength": 2,
+        "speed": 1,
+        "intelligence": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/slasher.dm#L1",
+      "group": "wretch"
+    },
+    {
+      "id": "/datum/advclass/trader/doomsayer",
+      "name": "Doomsayer",
+      "stats": {
+        "intelligence": 3,
+        "perception": 1,
+        "strength": 1,
+        "constitution": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/trader/doomsayer.dm#L1",
+      "group": "trader"
+    },
+    {
+      "id": "/datum/advclass/mercenary/grenzelhoft",
+      "name": "Doppelsoldner",
+      "stats": {
+        "constitution": 3,
+        "willpower": 3,
+        "strength": 2,
+        "perception": 1,
+        "speed": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/grenzelhoft.dm#L1",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/druid",
+      "name": "Druid",
+      "stats": {
+        "intelligence": 2,
+        "willpower": 2,
+        "speed": 1,
+        "perception": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/church/druid.dm#L36",
+      "group": "druid"
+    },
+    {
+      "id": "/datum/advclass/sfighter/duelist",
+      "name": "Duelist",
+      "stats": {
+        "intelligence": 2,
+        "strength": 1,
+        "willpower": 1,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L131",
+      "group": "sfighter"
+    },
+    {
+      "id": "/datum/advclass/foreigner/yoruku",
+      "name": "Eastern Assassin",
+      "stats": {
+        "speed": 3,
+        "perception": 1,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner.dm#L70",
+      "group": "foreigner"
+    },
+    {
+      "id": "/datum/advclass/foreigner",
+      "name": "Eastern Warrior",
+      "stats": {
+        "strength": 2,
+        "constitution": 2,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner.dm#L1",
+      "group": "foreigner"
+    },
+    {
+      "id": "/datum/advclass/suitor/envoy",
+      "name": "Envoy",
+      "stats": {
+        "intelligence": 3,
+        "perception": 3,
+        "willpower": 1,
+        "speed": 1,
+        "fortune": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/courtier/suitor.dm#L35",
+      "group": "suitor"
+    },
+    {
+      "id": "/datum/advclass/veteran/spy",
+      "name": "Ex-Spy",
+      "stats": {
+        "intelligence": 3,
+        "perception": 1,
+        "constitution": 1,
+        "speed": 1,
+        "strength": -2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/veteran.dm#L627",
+      "group": "veteran"
+    },
+    {
+      "id": "/datum/advclass/vagabond_excommunicated",
+      "name": "Excommunicated",
+      "stats": {
+        "perception": 2,
+        "constitution": -1,
+        "willpower": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/vagabond/excommunicado.dm#L1",
+      "group": "vagabond_excommunicated"
+    },
+    {
+      "id": "/datum/advclass/vagabond_mage",
+      "name": "Exiled Apprentice",
+      "stats": {
+        "intelligence": 2,
+        "constitution": -2,
+        "willpower": -2,
+        "speed": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/vagabond/failed_apprentice.dm#L1",
+      "group": "vagabond_mage"
+    },
+    {
+      "id": "/datum/advclass/sfighter/mhunter",
+      "name": "Exorcist",
+      "stats": {
+        "strength": 2,
+        "perception": 2,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L485",
+      "group": "sfighter"
+    },
+    {
+      "id": "/datum/advclass/peasant",
+      "name": "Farmer",
+      "stats": {
+        "strength": 1,
+        "intelligence": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/peasant.dm#L1",
+      "group": "peasant"
+    },
+    {
+      "id": "/datum/advclass/fisher",
+      "name": "Fisher",
+      "stats": {
+        "perception": 2,
+        "fortune": 2,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/fisher.dm#L1",
+      "group": "fisher"
+    },
+    {
+      "id": "/datum/advclass/mercenary/gronn_heavy",
+      "name": "Fjall J\u00e1rnkl\u00e6ddur",
+      "stats": {
+        "willpower": 3,
+        "strength": 3,
+        "intelligence": 2,
+        "constitution": 3,
+        "perception": -1,
+        "speed": -3
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/gronn.dm#L129",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/knight/footknight",
+      "name": "Foot Knight",
+      "stats": {
+        "strength": 1,
+        "intelligence": 1,
+        "constitution": 4,
+        "willpower": 3,
+        "perception": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/retinue/knight.dm#L189",
+      "group": "knight"
+    },
+    {
+      "id": "/datum/advclass/manorguard/footsman",
+      "name": "Footman",
+      "stats": {
+        "strength": 2,
+        "intelligence": 1,
+        "constitution": 3,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/garrison/manatarms.dm#L52",
+      "group": "manorguard"
+    },
+    {
+      "id": "/datum/advclass/foreigner/fencerguy",
+      "name": "Foreign Fencer",
+      "stats": {
+        "intelligence": 2,
+        "perception": 3
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner.dm#L401",
+      "group": "foreigner"
+    },
+    {
+      "id": "/datum/advclass/mercenary/forlorn",
+      "name": "Forlorn Hope Mercenary",
+      "stats": {
+        "willpower": 3,
+        "strength": 2,
+        "constitution": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/forlorn.dm#L1",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/wretch/freeblade",
+      "name": "Free Blade",
+      "stats": {
+        "strength": 2,
+        "perception": 1,
+        "intelligence": 3,
+        "constitution": 1,
+        "willpower": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/freeblade.dm#L1",
+      "group": "wretch"
+    },
+    {
+      "id": "/datum/advclass/mercenary/freelancer",
+      "name": "Freifechter Fencer",
+      "stats": {
+        "intelligence": 3,
+        "perception": 3,
+        "willpower": 2,
+        "constitution": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/freifechter.dm#L1",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/mercenary/freelancer_lancer",
+      "name": "Freifechter Lancer",
+      "stats": {
+        "constitution": 2,
+        "perception": 3,
+        "strength": 1,
+        "willpower": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/freifechter.dm#L65",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/mercenary/freelancer_sabrist",
+      "name": "Freifechter Sabrist",
+      "stats": {
+        "intelligence": 2,
+        "perception": 3,
+        "speed": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/freifechter.dm#L124",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/suitor/gallant",
+      "name": "Gallant",
+      "stats": {
+        "strength": 2,
+        "perception": 2,
+        "willpower": 1,
+        "speed": 1,
+        "fortune": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/courtier/suitor.dm#L146",
+      "group": "suitor"
+    },
+    {
+      "id": "/datum/advclass/drunkard",
+      "name": "Gambler",
+      "stats": {
+        "fortune": 2,
+        "constitution": 1,
+        "strength": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/drunkard.dm#L1",
+      "group": "drunkard"
+    },
+    {
+      "id": "/datum/advclass/mercenary/grenzelhoft_mage",
+      "name": "Gefechtsgelehrter",
+      "stats": {
+        "intelligence": 3,
+        "willpower": 3,
+        "strength": -1,
+        "perception": 3,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/grenzelhoft.dm#L214",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/gnoll/berserker",
+      "name": "Gnoll Berserker",
+      "stats": {
+        "strength": 3,
+        "constitution": 3,
+        "willpower": 3,
+        "speed": 3,
+        "intelligence": -3,
+        "perception": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/antag/gnoll/gnoll_berserker.dm#L1",
+      "group": "gnoll"
+    },
+    {
+      "id": "/datum/advclass/gnoll/knight",
+      "name": "Gnoll Knight",
+      "stats": {
+        "willpower": 5,
+        "constitution": 5,
+        "speed": 2,
+        "intelligence": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/antag/gnoll/gnoll_knight.dm#L1",
+      "group": "gnoll"
+    },
+    {
+      "id": "/datum/advclass/gnoll/shaman",
+      "name": "Gnoll Shaman",
+      "stats": {
+        "perception": 2,
+        "willpower": 2,
+        "speed": 3,
+        "constitution": 1,
+        "intelligence": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/antag/gnoll/gnoll_shaman.dm#L1",
+      "group": "gnoll"
+    },
+    {
+      "id": "/datum/advclass/gnoll/templar",
+      "name": "Gnoll Templar",
+      "stats": {
+        "constitution": 3,
+        "willpower": 2,
+        "speed": 2,
+        "strength": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/antag/gnoll/gnoll_templar.dm#L1",
+      "group": "gnoll"
+    },
+    {
+      "id": "/datum/advclass/thug/goon",
+      "name": "Goon",
+      "stats": {
+        "strength": 2,
+        "willpower": 1,
+        "constitution": 2,
+        "speed": -1,
+        "intelligence": -2,
+        "perception": -2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/thug.dm#L4",
+      "group": "thug"
+    },
+    {
+      "id": "/datum/advclass/sexton/gravetender",
+      "name": "Gravetender",
+      "stats": {
+        "speed": 2,
+        "perception": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/church/sexton.dm#L107",
+      "group": "sexton"
+    },
+    {
+      "id": "/datum/advclass/sexton/groundskeeper",
+      "name": "Groundskeeper",
+      "stats": {
+        "speed": 1,
+        "perception": 1,
+        "intelligence": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/church/sexton.dm#L30",
+      "group": "sexton"
+    },
+    {
+      "id": "/datum/advclass/mercenary/grudgebearer",
+      "name": "Grudgebearer Smith",
+      "stats": {
+        "intelligence": 3,
+        "willpower": 3,
+        "perception": 3,
+        "strength": 1,
+        "speed": -2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/grudgebearer.dm#L2",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/mercenary/grudgebearer_soldier",
+      "name": "Grudgebearer Soldier",
+      "stats": {
+        "constitution": 5,
+        "willpower": 4,
+        "strength": 2,
+        "speed": -2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/grudgebearer.dm#L69",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/templar/guardian",
+      "name": "Guardian",
+      "stats": {
+        "strength": 2,
+        "constitution": 2,
+        "willpower": 3
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/church/templar/templar_guardian.dm#L1",
+      "group": "templar"
+    },
+    {
+      "id": "/datum/advclass/guildsman/blacksmith",
+      "name": "Guild Blacksmith",
+      "stats": {
+        "strength": 2,
+        "willpower": 2,
+        "constitution": 2,
+        "intelligence": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/burghers/guildsman.dm#L37",
+      "group": "guildsman"
+    },
+    {
+      "id": "/datum/advclass/guildmaster",
+      "name": "Guildmaster",
+      "stats": {
+        "strength": 2,
+        "constitution": 2,
+        "willpower": 2,
+        "intelligence": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/burghers/guildmaster.dm#L34",
+      "group": "guildmaster"
+    },
+    {
+      "id": "/datum/advclass/hag",
+      "name": "Hag",
+      "stats": {
+        "strength": -7,
+        "willpower": 8,
+        "speed": -2,
+        "constitution": 1,
+        "intelligence": 9
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/antag/hag_class/hag_class.dm#L3",
+      "group": "hag"
+    },
+    {
+      "id": "/datum/advclass/mercenary/grenzelhoft_halberdier",
+      "name": "Halberdier",
+      "stats": {
+        "strength": 2,
+        "constitution": 2,
+        "willpower": 2,
+        "speed": 1,
+        "perception": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/grenzelhoft.dm#L69",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/mercenary/chonin",
+      "name": "Hangyaku-Chonin",
+      "stats": {
+        "strength": 2,
+        "constitution": 2,
+        "willpower": 2,
+        "perception": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/hangyaku.dm#L110",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/mercenary/hangyaku",
+      "name": "Hangyaku-Kouken",
+      "stats": {
+        "strength": 2,
+        "intelligence": 1,
+        "constitution": 2,
+        "willpower": 2,
+        "perception": 2,
+        "speed": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/hangyaku.dm#L1",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/trader/harlequin",
+      "name": "Harlequin",
+      "stats": {
+        "speed": 2,
+        "perception": 1,
+        "willpower": 1,
+        "intelligence": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/trader/harlequin.dm#L1",
+      "group": "trader"
+    },
+    {
+      "id": "/datum/advclass/bathworker/harlot",
+      "name": "Harlot",
+      "stats": {
+        "perception": 2,
+        "willpower": 2,
+        "speed": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/peasants/bathmaid.dm#L91",
+      "group": "bathworker"
+    },
+    {
+      "id": "/datum/advclass/seneschal/headmaid",
+      "name": "Head Maid",
+      "stats": {
+        "intelligence": 2,
+        "perception": 2,
+        "fortune": 1,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/courtier/seneschal.dm#L76",
+      "group": "seneschal"
+    },
+    {
+      "id": "/datum/advclass/physician",
+      "name": "Head Physician",
+      "stats": {
+        "intelligence": 4,
+        "willpower": 1,
+        "fortune": 1,
+        "speed": 1,
+        "strength": -1,
+        "constitution": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/burghers/physician.dm#L40",
+      "group": "physician"
+    },
+    {
+      "id": "/datum/advclass/assassin_ranger",
+      "name": "Headhunter",
+      "stats": {
+        "perception": 4,
+        "speed": 3,
+        "strength": 1,
+        "willpower": 1,
+        "intelligence": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/antag/assassin/ranger.dm#L1",
+      "group": "assassin_ranger"
+    },
+    {
+      "id": "/datum/advclass/heartfelt/retinue/armorer",
+      "name": "Heartfelt Armorer",
+      "stats": {
+        "fortune": 1,
+        "strength": 2,
+        "willpower": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltarmorer.dm#L2",
+      "group": "heartfelt"
+    },
+    {
+      "id": "/datum/advclass/heartfelt/retinue/courtier",
+      "name": "Heartfelt Courtier",
+      "stats": {
+        "intelligence": 3,
+        "speed": 2,
+        "perception": 2,
+        "fortune": 5
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltcourtier.dm#L2",
+      "group": "heartfelt"
+    },
+    {
+      "id": "/datum/advclass/heartfelt/retinue/houseguard",
+      "name": "Heartfelt House Guard",
+      "stats": {
+        "strength": 2,
+        "willpower": 2,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltwarriors.dm#L2",
+      "group": "heartfelt"
+    },
+    {
+      "id": "/datum/advclass/heartfelt/retinue/magos",
+      "name": "Heartfelt Magos",
+      "stats": {
+        "intelligence": 2,
+        "perception": 2,
+        "willpower": 1,
+        "strength": -2,
+        "constitution": -2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltmagos.dm#L2",
+      "group": "heartfelt"
+    },
+    {
+      "id": "/datum/advclass/heartfelt/retinue/housearb",
+      "name": "Heartfelt Missilite",
+      "stats": {
+        "speed": 2,
+        "perception": 2,
+        "fortune": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltwarriors.dm#L110",
+      "group": "heartfelt"
+    },
+    {
+      "id": "/datum/advclass/heartfelt/retinue/physician",
+      "name": "Heartfelt Physician",
+      "stats": {
+        "intelligence": 3,
+        "speed": 1,
+        "fortune": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltphyscian.dm#L2",
+      "group": "heartfelt"
+    },
+    {
+      "id": "/datum/advclass/heartfelt/retinue/prior",
+      "name": "Heartfelt Priest",
+      "stats": {
+        "intelligence": 3,
+        "willpower": 1,
+        "strength": -1,
+        "constitution": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltprior.dm#L2",
+      "group": "heartfelt"
+    },
+    {
+      "id": "/datum/advclass/heartfelt/retinue/servant",
+      "name": "Heartfelt Servant",
+      "stats": {
+        "intelligence": 2,
+        "speed": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltworkers.dm#L1",
+      "group": "heartfelt"
+    },
+    {
+      "id": "/datum/advclass/heartfelt/retinue/squire",
+      "name": "Heartfelt Squire",
+      "stats": {
+        "intelligence": 2,
+        "perception": 1,
+        "constitution": 2,
+        "speed": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltwarriors.dm#L217",
+      "group": "heartfelt"
+    },
+    {
+      "id": "/datum/advclass/knight/heavy",
+      "name": "Heavy Knight",
+      "stats": {
+        "strength": 3,
+        "intelligence": 3,
+        "constitution": 1,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/retinue/knight.dm#L72",
+      "group": "knight"
+    },
+    {
+      "id": "/datum/advclass/hedgealchemist",
+      "name": "Hedge Alchemist",
+      "stats": {
+        "intelligence": 4,
+        "speed": 3,
+        "fortune": 3
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/antag/alchemist.dm#L1",
+      "group": "hedgealchemist"
+    },
+    {
+      "id": "/datum/advclass/hedgeknight",
+      "name": "Hedge Knight",
+      "stats": {
+        "constitution": 3,
+        "strength": 2,
+        "willpower": 3,
+        "fortune": 2,
+        "intelligence": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/antag/hedgeknight.dm#L1",
+      "group": "hedgeknight"
+    },
+    {
+      "id": "/datum/advclass/hedgemage",
+      "name": "Hedge Mage",
+      "stats": {
+        "intelligence": 3,
+        "willpower": 3,
+        "perception": 2,
+        "fortune": 2,
+        "speed": 1,
+        "constitution": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/antag/hedgemage.dm#L1",
+      "group": "hedgemage"
+    },
+    {
+      "id": "/datum/advclass/councillor/herald",
+      "name": "Herald",
+      "stats": {
+        "speed": 2,
+        "intelligence": 1,
+        "perception": 1,
+        "willpower": 1,
+        "strength": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/courtier/councillor.dm#L35",
+      "group": "councillor"
+    },
+    {
+      "id": "/datum/advclass/herald",
+      "name": "Herald of the Abyss",
+      "stats": {
+        "intelligence": 2,
+        "willpower": 2,
+        "speed": 1,
+        "perception": 2,
+        "fortune": 1,
+        "strength": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/church/painter.dm#L29",
+      "group": "herald"
+    },
+    {
+      "id": "/datum/advclass/wretch/heretic",
+      "name": "Heretic",
+      "stats": {
+        "strength": 2,
+        "constitution": 2,
+        "willpower": 1,
+        "fortune": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/heretic.dm#L1",
+      "group": "wretch"
+    },
+    {
+      "id": "/datum/advclass/wretch/heretic_spellblade",
+      "name": "Heretic Azurcaephan",
+      "stats": {
+        "strength": 1,
+        "intelligence": 1,
+        "perception": 1,
+        "constitution": 1,
+        "willpower": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/heretic_spellblade.dm#L8",
+      "group": "wretch"
+    },
+    {
+      "id": "/datum/advclass/wretch/heretic_spellfist",
+      "name": "Heretic Spellfist",
+      "stats": {
+        "strength": 2,
+        "willpower": 2,
+        "constitution": 3
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/heretic_spellfist.dm#L3",
+      "group": "wretch"
+    },
+    {
+      "id": "/datum/advclass/wretch/heretic/spy",
+      "name": "Heretic Spy",
+      "stats": {
+        "perception": 2,
+        "willpower": 2,
+        "speed": 2,
+        "intelligence": 1,
+        "fortune": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/heretic.dm#L337",
+      "group": "wretch"
+    },
+    {
+      "id": "/datum/advclass/homesteader",
+      "name": "Homesteader",
+      "stats": {
+        "intelligence": 3,
+        "strength": 1,
+        "willpower": 1,
+        "perception": 1,
+        "fortune": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/homesteader.dm#L1",
+      "group": "homesteader"
+    },
+    {
+      "id": "/datum/advclass/councillor/huntmaster",
+      "name": "Huntmaster",
+      "stats": {
+        "perception": 3,
+        "intelligence": 1,
+        "speed": 1,
+        "constitution": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/courtier/councillor.dm#L87",
+      "group": "councillor"
+    },
+    {
+      "id": "/datum/advclass/iconoclast",
+      "name": "Iconoclast",
+      "stats": {
+        "strength": 3,
+        "constitution": 1,
+        "willpower": 3,
+        "fortune": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/antag/Iconoclast.dm#L1",
+      "group": "iconoclast"
+    },
+    {
+      "id": "/datum/advclass/gnoll_impure",
+      "name": "Impure Gnoll",
+      "stats": {
+        "strength": -1,
+        "constitution": 5,
+        "willpower": 2,
+        "speed": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/antag/gnoll/gnoll_impure.dm#L1",
+      "group": "gnoll_impure"
+    },
+    {
+      "id": "/datum/advclass/lord/inbred",
+      "name": "Inbred Lord",
+      "stats": {
+        "fortune": 10,
+        "intelligence": -2,
+        "perception": -2,
+        "constitution": -2,
+        "willpower": -2,
+        "strength": -2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/nobility/lord.dm#L344",
+      "group": "lord"
+    },
+    {
+      "id": "/datum/advclass/heir/inbred",
+      "name": "Inbred wastrel",
+      "stats": {
+        "strength": -2,
+        "perception": -2,
+        "intelligence": -2,
+        "constitution": -2,
+        "willpower": -2,
+        "fortune": 5
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/nobility/prince.dm#L225",
+      "group": "heir"
+    },
+    {
+      "id": "/datum/advclass/innkeeper",
+      "name": "Innkeeper",
+      "stats": {
+        "strength": 1,
+        "willpower": 1,
+        "constitution": 1,
+        "intelligence": 1,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/burghers/innkeep.dm#L30",
+      "group": "innkeeper"
+    },
+    {
+      "id": "/datum/advclass/inquisitor/inspector",
+      "name": "Inquisitor",
+      "stats": {
+        "constitution": 1,
+        "perception": 2,
+        "intelligence": 2,
+        "willpower": 2,
+        "speed": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/Inquisition/inquisitor.dm#L39",
+      "group": "inquisitor"
+    },
+    {
+      "id": "/datum/advclass/heir/bookworm",
+      "name": "Introverted Bookworm",
+      "stats": {
+        "strength": -1,
+        "intelligence": 2,
+        "speed": 1,
+        "constitution": -1,
+        "fortune": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/nobility/prince.dm#L111",
+      "group": "heir"
+    },
+    {
+      "id": "/datum/advclass/sfighter/ironclad",
+      "name": "Ironclad",
+      "stats": {
+        "strength": 2,
+        "willpower": 2,
+        "constitution": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L342",
+      "group": "sfighter"
+    },
+    {
+      "id": "/datum/advclass/knight/irregularknight",
+      "name": "Irregular Knight",
+      "stats": {
+        "strength": 1,
+        "intelligence": 1,
+        "willpower": 2,
+        "speed": 2,
+        "perception": 1,
+        "fortune": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/retinue/knight.dm#L432",
+      "group": "knight"
+    },
+    {
+      "id": "/datum/advclass/squire/skirmisher",
+      "name": "Irregular Squire",
+      "stats": {
+        "speed": 2,
+        "perception": 1,
+        "constitution": 1,
+        "intelligence": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/retinue/squire.dm#L161",
+      "group": "squire"
+    },
+    {
+      "id": "/datum/advclass/trader/jeweler",
+      "name": "Jeweler",
+      "stats": {
+        "intelligence": 3,
+        "perception": 1,
+        "strength": 1,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/trader/jeweler.dm#L1",
+      "group": "trader"
+    },
+    {
+      "id": "/datum/advclass/keeper",
+      "name": "Keeper",
+      "stats": {
+        "intelligence": 3,
+        "willpower": 5,
+        "constitution": 3,
+        "strength": -5,
+        "perception": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/church/keeper.dm#L30",
+      "group": "keeper"
+    },
+    {
+      "id": "/datum/advclass/knave",
+      "name": "Knave",
+      "stats": {
+        "speed": 3,
+        "perception": 2,
+        "fortune": 2,
+        "strength": 1,
+        "willpower": 1,
+        "constitution": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/antag/knave.dm#L1",
+      "group": "knave"
+    },
+    {
+      "id": "/datum/advclass/knight/knightchampion",
+      "name": "Knight Banneret",
+      "stats": {
+        "strength": 2,
+        "constitution": 2,
+        "willpower": 2,
+        "intelligence": 2,
+        "perception": 2,
+        "fortune": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/retinue/knight.dm#L568",
+      "group": "knight"
+    },
+    {
+      "id": "/datum/advclass/marshal/kcommander",
+      "name": "Knight Commander",
+      "stats": {
+        "strength": 2,
+        "perception": 2,
+        "intelligence": 2,
+        "constitution": 1,
+        "willpower": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/retinue/marshal.dm#L112",
+      "group": "marshal"
+    },
+    {
+      "id": "/datum/advclass/noble/knighte",
+      "name": "Knight Errant",
+      "stats": {
+        "strength": 2,
+        "constitution": 1,
+        "willpower": 1,
+        "intelligence": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/noble.dm#L407",
+      "group": "noble"
+    },
+    {
+      "id": "/datum/advclass/heartfelt/knight",
+      "name": "Knight of Heartfelt",
+      "stats": {
+        "strength": 1,
+        "intelligence": 1,
+        "constitution": 2,
+        "willpower": 2,
+        "speed": -2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfeltknight.dm#L46",
+      "group": "heartfelt"
+    },
+    {
+      "id": "/datum/advclass/lampwarden",
+      "name": "Lampwarden",
+      "stats": {
+        "strength": 1,
+        "perception": 2,
+        "constitution": 2,
+        "willpower": 3
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/special/lamplighter.dm#L34",
+      "group": "lampwarden"
+    },
+    {
+      "id": "/datum/advclass/lampwicker",
+      "name": "Lampwicker",
+      "stats": {
+        "perception": 1,
+        "intelligence": 2,
+        "constitution": 2,
+        "willpower": 3
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/special/lamplighter.dm#L89",
+      "group": "lampwicker"
+    },
+    {
+      "id": "/datum/advclass/levy",
+      "name": "Levy",
+      "stats": {
+        "constitution": 1,
+        "strength": 1,
+        "willpower": 1,
+        "intelligence": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/levy.dm#L1",
+      "group": "levy"
+    },
+    {
+      "id": "/datum/advclass/mercenary/lirvanmerc",
+      "name": "Lirvan Tithebound",
+      "stats": {
+        "strength": 2,
+        "constitution": 1,
+        "willpower": 1,
+        "perception": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/lirvan.dm#L1",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/vagabond_goatherd",
+      "name": "Lone Goatherd",
+      "stats": {
+        "willpower": 2,
+        "intelligence": -1,
+        "constitution": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/vagabond/goatherd.dm#L1",
+      "group": "vagabond_goatherd"
+    },
+    {
+      "id": "/datum/advclass/heartfelt/lord/lord",
+      "name": "Lord of Heartfelt",
+      "stats": {
+        "strength": 2,
+        "intelligence": 2,
+        "perception": 2,
+        "fortune": 5
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfeltlord.dm#L23",
+      "group": "heartfelt"
+    },
+    {
+      "id": "/datum/advclass/lunatic",
+      "name": "Lunatic",
+      "stats": {
+        "speed": 2,
+        "constitution": 4
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/lunatic.dm#L35",
+      "group": "lunatic"
+    },
+    {
+      "id": "/datum/advclass/wretch/maestro",
+      "name": "Maestro",
+      "stats": {
+        "intelligence": 1,
+        "willpower": 2,
+        "speed": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/maestro.dm#L1",
+      "group": "wretch"
+    },
+    {
+      "id": "/datum/advclass/lord/mage",
+      "name": "Mage Lord",
+      "stats": {
+        "fortune": 5,
+        "intelligence": 4,
+        "perception": 2,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/nobility/lord.dm#L288",
+      "group": "lord"
+    },
+    {
+      "id": "/datum/advclass/wapprentice/associate",
+      "name": "Magician's Associate",
+      "stats": {
+        "intelligence": 3,
+        "perception": 2,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/burghers/mage_apprentice.dm#L44",
+      "group": "wapprentice"
+    },
+    {
+      "id": "/datum/advclass/servant/maid",
+      "name": "Maid",
+      "stats": {
+        "perception": 2,
+        "intelligence": 1,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/peasants/servant.dm#L72",
+      "group": "servant"
+    },
+    {
+      "id": "/datum/advclass/wretch/plaguebearer",
+      "name": "Malpractitioner",
+      "stats": {
+        "intelligence": 2,
+        "perception": 3,
+        "constitution": 2,
+        "willpower": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/plaguebearer.dm#L1",
+      "group": "wretch"
+    },
+    {
+      "id": "/datum/advclass/servant/manservant",
+      "name": "Manservant",
+      "stats": {
+        "perception": 2,
+        "intelligence": 1,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/peasants/servant.dm#L108",
+      "group": "servant"
+    },
+    {
+      "id": "/datum/advclass/templar/maris",
+      "name": "Maris",
+      "stats": {
+        "constitution": 2,
+        "willpower": 3,
+        "speed": 1,
+        "perception": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/church/painter.dm#L177",
+      "group": "templar"
+    },
+    {
+      "id": "/datum/advclass/heartfelt/hand/marshal",
+      "name": "Marshal of Heartfelt",
+      "stats": {
+        "strength": 2,
+        "perception": 2,
+        "intelligence": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfelthand.dm#L38",
+      "group": "heartfelt"
+    },
+    {
+      "id": "/datum/advclass/martyr",
+      "name": "Martyr",
+      "stats": {
+        "constitution": 3,
+        "willpower": 3,
+        "strength": 2,
+        "perception": 1,
+        "intelligence": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/church/martyr.dm#L524",
+      "group": "martyr"
+    },
+    {
+      "id": "/datum/advclass/masterblacksmith",
+      "name": "Master Blacksmith",
+      "stats": {
+        "fortune": 4,
+        "strength": 2,
+        "intelligence": 2,
+        "willpower": 2,
+        "constitution": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/rare/Lsmith.dm#L3",
+      "group": "masterblacksmith"
+    },
+    {
+      "id": "/datum/advclass/masterchef",
+      "name": "Master Chef",
+      "stats": {
+        "intelligence": 3,
+        "constitution": 2,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/rare/Lchef.dm#L3",
+      "group": "masterchef"
+    },
+    {
+      "id": "/datum/advclass/farmermaster",
+      "name": "Master Farmer",
+      "stats": {
+        "fortune": 4,
+        "strength": 2,
+        "intelligence": 2,
+        "willpower": 2,
+        "constitution": 1,
+        "perception": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/rare/Lpeasant.dm#L1",
+      "group": "farmermaster"
+    },
+    {
+      "id": "/datum/advclass/fishermaster",
+      "name": "Master Fisher",
+      "stats": {
+        "constitution": 2,
+        "perception": 2,
+        "fortune": 2,
+        "speed": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/rare/Lfish.dm#L3",
+      "group": "fishermaster"
+    },
+    {
+      "id": "/datum/advclass/minermaster",
+      "name": "Master Miner",
+      "stats": {
+        "fortune": 4,
+        "strength": 2,
+        "intelligence": 2,
+        "willpower": 2,
+        "constitution": 1,
+        "perception": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/rare/Lminer.dm#L3",
+      "group": "minermaster"
+    },
+    {
+      "id": "/datum/advclass/merchant",
+      "name": "Merchant",
+      "stats": {
+        "perception": 3,
+        "intelligence": 2,
+        "strength": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/burghers/merchant.dm#L40",
+      "group": "merchant"
+    },
+    {
+      "id": "/datum/advclass/lord/merchant",
+      "name": "Merchant Lord",
+      "stats": {
+        "fortune": 5,
+        "intelligence": 5,
+        "perception": 4,
+        "speed": 1,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/nobility/lord.dm#L225",
+      "group": "lord"
+    },
+    {
+      "id": "/datum/advclass/miner",
+      "name": "Miner",
+      "stats": {
+        "strength": 2,
+        "constitution": 1,
+        "fortune": 2,
+        "willpower": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/miner.dm#L1",
+      "group": "miner"
+    },
+    {
+      "id": "/datum/advclass/minstrel",
+      "name": "Minstrel",
+      "stats": {
+        "speed": 1,
+        "intelligence": 1,
+        "willpower": 1,
+        "fortune": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/minstrel.dm#L1",
+      "group": "minstrel"
+    },
+    {
+      "id": "/datum/advclass/cleric/missionary",
+      "name": "Missionary",
+      "stats": {
+        "intelligence": 2,
+        "perception": 2,
+        "willpower": 1,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/cleric.dm#L504",
+      "group": "cleric"
+    },
+    {
+      "id": "/datum/advclass/wretch/mistwalker",
+      "name": "Mistwalker",
+      "stats": {
+        "strength": 2,
+        "constitution": 1,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/mistwalker.dm#L1",
+      "group": "wretch"
+    },
+    {
+      "id": "/datum/advclass/cleric",
+      "name": "Monk",
+      "stats": {
+        "strength": 2,
+        "willpower": 2,
+        "constitution": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/cleric.dm#L1",
+      "group": "cleric"
+    },
+    {
+      "id": "/datum/advclass/templar/monk",
+      "name": "Monk",
+      "stats": {
+        "strength": 2,
+        "constitution": 1,
+        "willpower": 2,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/church/templar/templar_monk.dm#L1",
+      "group": "templar"
+    },
+    {
+      "id": "/datum/advclass/knight/mountedknight",
+      "name": "Mounted Knight",
+      "stats": {
+        "strength": 2,
+        "intelligence": 2,
+        "constitution": 1,
+        "willpower": 2,
+        "perception": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/retinue/knight.dm#L292",
+      "group": "knight"
+    },
+    {
+      "id": "/datum/advclass/wretch/munitioneer",
+      "name": "Munitioneer",
+      "stats": {
+        "strength": 1,
+        "constitution": 2,
+        "intelligence": 2,
+        "perception": 1,
+        "fortune": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/munitioneer.dm#L1",
+      "group": "wretch"
+    },
+    {
+      "id": "/datum/advclass/mercenary/warscholar",
+      "name": "Naledi Hierophant",
+      "stats": {
+        "intelligence": 3,
+        "willpower": 2,
+        "speed": 2,
+        "perception": 1,
+        "constitution": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/warscholar.dm#L1",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/mercenary/warscholar_pontifex",
+      "name": "Naledi Pontifex",
+      "stats": {
+        "strength": 2,
+        "willpower": 2,
+        "constitution": 3
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/warscholar.dm#L93",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/foreigner/refugee",
+      "name": "Naledi Refugee",
+      "stats": {
+        "speed": 2,
+        "perception": 1,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner.dm#L183",
+      "group": "foreigner"
+    },
+    {
+      "id": "/datum/advclass/mercenary/warscholar_vizier",
+      "name": "Naledi Vizier",
+      "stats": {
+        "intelligence": 3,
+        "speed": 2,
+        "willpower": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/warscholar.dm#L220",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/wretch/necromancer",
+      "name": "Necromancer",
+      "stats": {
+        "intelligence": 4,
+        "perception": 2,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/necromancer.dm#L1",
+      "group": "wretch"
+    },
+    {
+      "id": "/datum/advclass/heir/scamp",
+      "name": "Nettlesome Scamp",
+      "stats": {
+        "strength": -3,
+        "constitution": -3,
+        "speed": 4,
+        "perception": 2,
+        "intelligence": 2,
+        "willpower": 1,
+        "fortune": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/nobility/prince.dm#L276",
+      "group": "heir"
+    },
+    {
+      "id": "/datum/advclass/templar/noc_spellblade",
+      "name": "Noccite Azurcaephan",
+      "stats": {
+        "strength": 1,
+        "intelligence": 1,
+        "perception": 1,
+        "constitution": 1,
+        "willpower": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/church/templar/templar_spellblade.dm#L1",
+      "group": "templar"
+    },
+    {
+      "id": "/datum/advclass/nudist",
+      "name": "Nudist",
+      "stats": {
+        "speed": 2,
+        "constitution": 2,
+        "willpower": 1,
+        "intelligence": -2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/special/nakedandafraid.dm#L2",
+      "group": "nudist"
+    },
+    {
+      "id": "/datum/advclass/inquisitor/ordinator",
+      "name": "Ordinator",
+      "stats": {
+        "constitution": 3,
+        "willpower": 3,
+        "intelligence": 1,
+        "strength": 3,
+        "perception": 1,
+        "speed": -3
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/Inquisition/inquisitor.dm#L181",
+      "group": "inquisitor"
+    },
+    {
+      "id": "/datum/advclass/foreigner/repentant",
+      "name": "Otavan Repentant",
+      "stats": {
+        "constitution": 3,
+        "speed": -1,
+        "strength": -1,
+        "willpower": 3
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner.dm#L137",
+      "group": "foreigner"
+    },
+    {
+      "id": "/datum/advclass/mercenary/routier",
+      "name": "Otavan Routiers",
+      "stats": {
+        "constitution": 4,
+        "willpower": 2,
+        "strength": 2,
+        "perception": 1,
+        "speed": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/routier.dm#L1",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/wretch/outlaw",
+      "name": "Outlaw",
+      "stats": {
+        "speed": 3,
+        "willpower": 2,
+        "perception": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/outlaw.dm#L1",
+      "group": "wretch"
+    },
+    {
+      "id": "/datum/advclass/cleric/paladin",
+      "name": "Paladin",
+      "stats": {
+        "strength": 2,
+        "constitution": 2,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/cleric.dm#L153",
+      "group": "cleric"
+    },
+    {
+      "id": "/datum/advclass/trader/peddler",
+      "name": "Peddler",
+      "stats": {
+        "intelligence": 3,
+        "perception": 2,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/trader/peddler.dm#L1",
+      "group": "trader"
+    },
+    {
+      "id": "/datum/advclass/wretch/poacher",
+      "name": "Poacher",
+      "stats": {
+        "perception": 3,
+        "speed": 2,
+        "willpower": 2,
+        "constitution": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/poacher.dm#L1",
+      "group": "wretch"
+    },
+    {
+      "id": "/datum/advclass/assassin_poisoner",
+      "name": "Poisoner",
+      "stats": {
+        "perception": 2,
+        "willpower": 2,
+        "speed": 2,
+        "intelligence": 3,
+        "constitution": 3
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/antag/assassin/poisoner.dm#L1",
+      "group": "assassin_poisoner"
+    },
+    {
+      "id": "/datum/advclass/potter",
+      "name": "Potter",
+      "stats": {
+        "perception": 2,
+        "willpower": 2,
+        "constitution": 1,
+        "speed": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/potter.dm#L1",
+      "group": "potter"
+    },
+    {
+      "id": "/datum/advclass/wretch/profane_champion",
+      "name": "Profane Champion",
+      "stats": {
+        "strength": 2,
+        "constitution": 1,
+        "willpower": 4
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/profane_champion.dm#L1",
+      "group": "wretch"
+    },
+    {
+      "id": "/datum/advclass/psyaltrist",
+      "name": "Psyaltrist",
+      "stats": {
+        "strength": 1,
+        "willpower": 1,
+        "speed": 3
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/psyalmist.dm#L1",
+      "group": "psyaltrist"
+    },
+    {
+      "id": "/datum/advclass/wretch/pyromaniac",
+      "name": "Pyromaniac",
+      "stats": {
+        "willpower": 3,
+        "constitution": 3,
+        "intelligence": 2,
+        "fortune": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/pyromaniac.dm#L1",
+      "group": "wretch"
+    },
+    {
+      "id": "/datum/advclass/foreigner/slaver",
+      "name": "Ranesheni Slaver",
+      "stats": {
+        "strength": 2,
+        "constitution": 2,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner.dm#L300",
+      "group": "foreigner"
+    },
+    {
+      "id": "/datum/advclass/veteran/scout",
+      "name": "Retired Bogmaster",
+      "stats": {
+        "perception": 3,
+        "intelligence": 2,
+        "willpower": 1,
+        "constitution": 1,
+        "speed": 1,
+        "strength": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/veteran.dm#L512",
+      "group": "veteran"
+    },
+    {
+      "id": "/datum/advclass/veteran/footman",
+      "name": "Retired Footman",
+      "stats": {
+        "constitution": 2,
+        "intelligence": 2,
+        "strength": 1,
+        "perception": 1,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/veteran.dm#L166",
+      "group": "veteran"
+    },
+    {
+      "id": "/datum/advclass/veteran/merc",
+      "name": "Retired Mercenary",
+      "stats": {
+        "willpower": 3,
+        "strength": 2,
+        "constitution": 1,
+        "intelligence": 1,
+        "speed": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/veteran.dm#L394",
+      "group": "veteran"
+    },
+    {
+      "id": "/datum/advclass/wretch/roguemage",
+      "name": "Rogue Mage",
+      "stats": {
+        "intelligence": 4,
+        "perception": 2,
+        "willpower": 1,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/roguemage.dm#L2",
+      "group": "wretch"
+    },
+    {
+      "id": "/datum/advclass/mercenary/rumaclan",
+      "name": "Ruma Clan Gun-in",
+      "stats": {
+        "constitution": 3,
+        "willpower": 3,
+        "strength": 2,
+        "perception": 1,
+        "speed": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/rumaclan.dm#L1",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/mercenary/rumaclan_sasu",
+      "name": "Ruma Clan Sasu",
+      "stats": {
+        "speed": 4,
+        "perception": 2,
+        "willpower": 2,
+        "strength": -1,
+        "constitution": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/rumaclan.dm#L120",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/vagabond_runner",
+      "name": "Rumbled Runner",
+      "stats": {
+        "willpower": 4,
+        "speed": 2,
+        "intelligence": -2,
+        "perception": -2,
+        "strength": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/vagabond/runner.dm#L1",
+      "group": "vagabond_runner"
+    },
+    {
+      "id": "/datum/advclass/suitor/schemer",
+      "name": "Schemer",
+      "stats": {
+        "speed": 3,
+        "intelligence": 1,
+        "perception": 2,
+        "fortune": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/courtier/suitor.dm#L93",
+      "group": "suitor"
+    },
+    {
+      "id": "/datum/advclass/trader/scholar",
+      "name": "Scholar",
+      "stats": {
+        "intelligence": 3,
+        "perception": 1,
+        "speed": 1,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/trader/scholar.dm#L1",
+      "group": "trader"
+    },
+    {
+      "id": "/datum/advclass/seamstress",
+      "name": "Seamster",
+      "stats": {
+        "speed": 2,
+        "intelligence": 2,
+        "perception": 1,
+        "strength": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/seamstress.dm#L1",
+      "group": "seamstress"
+    },
+    {
+      "id": "/datum/advclass/sellsword",
+      "name": "Sellsword",
+      "stats": {
+        "strength": 2,
+        "willpower": 2,
+        "speed": 2,
+        "constitution": 1,
+        "fortune": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/antag/sellsword.dm#L1",
+      "group": "sellsword"
+    },
+    {
+      "id": "/datum/advclass/seneschal/seneschal",
+      "name": "Seneschal",
+      "stats": {
+        "intelligence": 2,
+        "perception": 2,
+        "fortune": 1,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/courtier/seneschal.dm#L34",
+      "group": "seneschal"
+    },
+    {
+      "id": "/datum/advclass/ranger",
+      "name": "Sentinel",
+      "stats": {
+        "perception": 3,
+        "speed": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/ranger.dm#L1",
+      "group": "ranger"
+    },
+    {
+      "id": "/datum/advclass/sergeant/sergeant",
+      "name": "Sergeant-at-Arms",
+      "stats": {
+        "strength": 2,
+        "intelligence": 2,
+        "constitution": 2,
+        "perception": 1,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/garrison/sergeant.dm#L56",
+      "group": "sergeant"
+    },
+    {
+      "id": "/datum/advclass/servant/servant",
+      "name": "Servant",
+      "stats": {
+        "perception": 2,
+        "intelligence": 1,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/peasants/servant.dm#L35",
+      "group": "servant"
+    },
+    {
+      "id": "/datum/advclass/heir/aristocrat",
+      "name": "Sheltered Aristocrat",
+      "stats": {
+        "perception": 2,
+        "strength": -1,
+        "intelligence": 2,
+        "fortune": 1,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/nobility/prince.dm#L167",
+      "group": "heir"
+    },
+    {
+      "id": "/datum/advclass/shophand",
+      "name": "Shophand",
+      "stats": {
+        "speed": 1,
+        "intelligence": 1,
+        "fortune": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/peasants/shophand.dm#L34",
+      "group": "shophand"
+    },
+    {
+      "id": "/datum/advclass/manorguard/skirmisher",
+      "name": "Skirmisher",
+      "stats": {
+        "strength": 1,
+        "speed": 2,
+        "perception": 2,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/garrison/manatarms.dm#L159",
+      "group": "manorguard"
+    },
+    {
+      "id": "/datum/advclass/assassin_hitman",
+      "name": "Snickersnacker",
+      "stats": {
+        "willpower": 3,
+        "speed": 3,
+        "intelligence": 1,
+        "strength": 1,
+        "perception": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/antag/assassin/hitman.dm#L1",
+      "group": "assassin_hitman"
+    },
+    {
+      "id": "/datum/advclass/soilson",
+      "name": "Soilson",
+      "stats": {
+        "willpower": 2,
+        "strength": 1,
+        "constitution": 1,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/peasants/soilson.dm#L33",
+      "group": "soilson"
+    },
+    {
+      "id": "/datum/advclass/sojourner",
+      "name": "Sojourner",
+      "stats": {
+        "strength": 2,
+        "willpower": 2,
+        "constitution": 3
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/sojourner.dm#L2",
+      "group": "sojourner"
+    },
+    {
+      "id": "/datum/advclass/mage",
+      "name": "Sorcerer",
+      "stats": {
+        "intelligence": 3,
+        "perception": 2,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/mage.dm#L1",
+      "group": "mage"
+    },
+    {
+      "id": "/datum/advclass/hunter/spear",
+      "name": "Spear-Hunter",
+      "stats": {
+        "strength": 2,
+        "constitution": 1,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/hunter.dm#L90",
+      "group": "hunter"
+    },
+    {
+      "id": "/datum/advclass/mage/spellfist",
+      "name": "Spellfist",
+      "stats": {
+        "strength": 2,
+        "willpower": 1,
+        "constitution": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/mage.dm#L299",
+      "group": "mage"
+    },
+    {
+      "id": "/datum/advclass/mage/spellsinger",
+      "name": "Spellsinger",
+      "stats": {
+        "intelligence": 2,
+        "speed": 2,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/mage.dm#L246",
+      "group": "mage"
+    },
+    {
+      "id": "/datum/advclass/hand/spymaster",
+      "name": "Spymaster",
+      "stats": {
+        "speed": 3,
+        "perception": 2,
+        "intelligence": 2,
+        "fortune": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/courtier/hand.dm#L109",
+      "group": "hand"
+    },
+    {
+      "id": "/datum/advclass/squire/footman",
+      "name": "Squire at Arms",
+      "stats": {
+        "strength": 1,
+        "speed": 1,
+        "perception": 1,
+        "constitution": 1,
+        "intelligence": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/retinue/squire.dm#L99",
+      "group": "squire"
+    },
+    {
+      "id": "/datum/advclass/noble/squire",
+      "name": "Squire Errant",
+      "stats": {
+        "intelligence": 2,
+        "strength": 1,
+        "perception": 1,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/noble.dm#L541",
+      "group": "noble"
+    },
+    {
+      "id": "/datum/advclass/manorguard/standard_bearer",
+      "name": "Standard Bearer",
+      "stats": {
+        "strength": 2,
+        "constitution": 3,
+        "willpower": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/garrison/manatarms.dm#L419",
+      "group": "manorguard"
+    },
+    {
+      "id": "/datum/advclass/steward",
+      "name": "Steward",
+      "stats": {
+        "intelligence": 2,
+        "perception": 2,
+        "speed": 2,
+        "constitution": 1,
+        "strength": -2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/courtier/steward.dm#L33",
+      "group": "steward"
+    },
+    {
+      "id": "/datum/advclass/heartfelt/hand/steward",
+      "name": "Steward of Heartfelt",
+      "stats": {
+        "speed": 2,
+        "intelligence": 2,
+        "willpower": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfelthand.dm#L112",
+      "group": "heartfelt"
+    },
+    {
+      "id": "/datum/advclass/rogue/swashbuckler",
+      "name": "Swashbuckler",
+      "stats": {
+        "speed": 2,
+        "strength": 1,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/rogue.dm#L197",
+      "group": "rogue"
+    },
+    {
+      "id": "/datum/advclass/foreigner/shepherd",
+      "name": "Sz\u00f6r\u00e9ndn\u00ed\u017eine Shepherd",
+      "stats": {
+        "willpower": 1,
+        "perception": 2,
+        "constitution": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner.dm#L351",
+      "group": "foreigner"
+    },
+    {
+      "id": "/datum/advclass/tailor",
+      "name": "Tailor",
+      "stats": {
+        "intelligence": 2,
+        "perception": 1,
+        "speed": 1,
+        "strength": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/burghers/tailor.dm#L27",
+      "group": "tailor"
+    },
+    {
+      "id": "/datum/advclass/tapster",
+      "name": "Tapster",
+      "stats": {
+        "constitution": 1,
+        "willpower": 1,
+        "intelligence": 1,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/peasants/tapster.dm#L30",
+      "group": "tapster"
+    },
+    {
+      "id": "/datum/advclass/veteran/calvaryman",
+      "name": "Tarnished Knight",
+      "stats": {
+        "constitution": 2,
+        "willpower": 2,
+        "strength": 1,
+        "perception": 1,
+        "intelligence": 1,
+        "speed": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/veteran.dm#L270",
+      "group": "veteran"
+    },
+    {
+      "id": "/datum/advclass/templar/crusader",
+      "name": "Templar",
+      "stats": {
+        "willpower": 3,
+        "strength": 2,
+        "constitution": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/church/templar.dm#L41",
+      "group": "templar"
+    },
+    {
+      "id": "/datum/advclass/vagabond_accursed",
+      "name": "The Accursed",
+      "stats": {
+        "strength": -2,
+        "willpower": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/vagabond/accursed.dm#L1",
+      "group": "vagabond_accursed"
+    },
+    {
+      "id": "/datum/advclass/vagabond_unraveled",
+      "name": "The Unraveled",
+      "stats": {
+        "intelligence": -2,
+        "fortune": -2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/vagabond/unraveled.dm#L1",
+      "group": "vagabond_unraveled"
+    },
+    {
+      "id": "/datum/advclass/vagabond_original",
+      "name": "The Vagabond",
+      "stats": {
+        "constitution": -1,
+        "willpower": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/vagabond/the_original.dm#L1",
+      "group": "vagabond_original"
+    },
+    {
+      "id": "/datum/advclass/foreigner/bronzeclad",
+      "name": "Thespian-Errant",
+      "stats": {
+        "strength": 1,
+        "willpower": 3,
+        "constitution": 2,
+        "speed": -2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner.dm#L480",
+      "group": "foreigner"
+    },
+    {
+      "id": "/datum/advclass/rogue/thief",
+      "name": "Thief",
+      "stats": {
+        "strength": -1,
+        "intelligence": 1,
+        "perception": 1,
+        "willpower": 1,
+        "speed": 3
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/rogue.dm#L68",
+      "group": "rogue"
+    },
+    {
+      "id": "/datum/advclass/torso",
+      "name": "Torso",
+      "stats": {
+        "strength": 3,
+        "willpower": 3,
+        "constitution": 3,
+        "perception": 2,
+        "speed": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/special/torso.dm#L1",
+      "group": "torso"
+    },
+    {
+      "id": "/datum/advclass/elder",
+      "name": "Town Elder",
+      "stats": {
+        "intelligence": 3,
+        "perception": 2,
+        "willpower": 2,
+        "constitution": 1,
+        "speed": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/townelder.dm#L1",
+      "group": "elder"
+    },
+    {
+      "id": "/datum/advclass/rogue",
+      "name": "Treasure Hunter",
+      "stats": {
+        "strength": -1,
+        "intelligence": 1,
+        "perception": 1,
+        "willpower": 1,
+        "speed": 3
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/rogue.dm#L1",
+      "group": "rogue"
+    },
+    {
+      "id": "/datum/advclass/mercenary/trollslayer",
+      "name": "Trollslayer",
+      "stats": {
+        "strength": 2,
+        "constitution": 5,
+        "willpower": 2,
+        "intelligence": -3,
+        "speed": -1,
+        "perception": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/slayer.dm#L1",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/wretch/ancient_spellblade",
+      "name": "Unbound Ancient Azurcaephan",
+      "stats": {
+        "intelligence": 2,
+        "willpower": 2,
+        "perception": 1,
+        "speed": -1,
+        "strength": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/ancient_spellblade.dm#L1",
+      "group": "wretch"
+    },
+    {
+      "id": "/datum/advclass/wretch/ancient_deathknight",
+      "name": "Unbound Ancient Death Knight",
+      "stats": {
+        "strength": 3,
+        "willpower": 1,
+        "speed": -1,
+        "intelligence": -2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/ancient_deathknight.dm#L1",
+      "group": "wretch"
+    },
+    {
+      "id": "/datum/advclass/mercenary/underdweller",
+      "name": "Underdweller",
+      "stats": {
+        "constitution": 2,
+        "willpower": 2,
+        "speed": 1,
+        "strength": 1,
+        "fortune": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/underdweller.dm#L2",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/lord/warrior",
+      "name": "Valiant Warrior",
+      "stats": {
+        "fortune": 5,
+        "intelligence": 3,
+        "willpower": 3,
+        "perception": 2,
+        "speed": 1,
+        "strength": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/nobility/lord.dm#L165",
+      "group": "lord"
+    },
+    {
+      "id": "/datum/advclass/vampbard",
+      "name": "Vampiric Bard",
+      "stats": {
+        "intelligence": 2,
+        "speed": 2,
+        "willpower": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/other/vampire_guard_subclasses.dm#L354",
+      "group": "vampbard"
+    },
+    {
+      "id": "/datum/advclass/vampseigemage",
+      "name": "Vampiric Battlemage",
+      "stats": {
+        "intelligence": 4,
+        "strength": -1,
+        "willpower": 2,
+        "perception": 3
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/other/vampire_guard_subclasses.dm#L435",
+      "group": "vampseigemage"
+    },
+    {
+      "id": "/datum/advclass/vampdeathknight",
+      "name": "Vampiric Death Knight",
+      "stats": {
+        "strength": 2,
+        "willpower": 2,
+        "intelligence": 2,
+        "constitution": 2,
+        "perception": 3,
+        "fortune": 1,
+        "speed": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/other/vampire_spawn_subclasses.dm#L25",
+      "group": "vampdeathknight"
+    },
+    {
+      "id": "/datum/advclass/vampduelist",
+      "name": "Vampiric Duelist",
+      "stats": {
+        "intelligence": 1,
+        "strength": 1,
+        "willpower": 2,
+        "speed": 2,
+        "perception": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/other/vampire_guard_subclasses.dm#L205",
+      "group": "vampduelist"
+    },
+    {
+      "id": "/datum/advclass/vampguardsman",
+      "name": "Vampiric Footsoldier",
+      "stats": {
+        "strength": 2,
+        "willpower": 2,
+        "intelligence": 1,
+        "constitution": 1,
+        "perception": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/other/vampire_guard_subclasses.dm#L10",
+      "group": "vampguardsman"
+    },
+    {
+      "id": "/datum/advclass/vampforgemaster",
+      "name": "Vampiric Forgemaster",
+      "stats": {
+        "willpower": 2,
+        "constitution": 2,
+        "strength": 2,
+        "fortune": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/other/vampire_servant_subclasses.dm#L88",
+      "group": "vampforgemaster"
+    },
+    {
+      "id": "/datum/advclass/vampbomber",
+      "name": "Vampiric Fyre-Pugilist",
+      "stats": {
+        "intelligence": 2,
+        "willpower": 2,
+        "speed": 1,
+        "constitution": 3
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/other/vampire_guard_subclasses.dm#L300",
+      "group": "vampbomber"
+    },
+    {
+      "id": "/datum/advclass/vampnoble",
+      "name": "Vampiric Noble Spy",
+      "stats": {
+        "intelligence": 2,
+        "willpower": 2,
+        "speed": 2,
+        "perception": 3,
+        "fortune": 4
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/other/vampire_spawn_subclasses.dm#L194",
+      "group": "vampnoble"
+    },
+    {
+      "id": "/datum/advclass/vampphysician",
+      "name": "Vampiric Physician",
+      "stats": {
+        "speed": 2,
+        "intelligence": 4,
+        "perception": 1,
+        "fortune": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/other/vampire_servant_subclasses.dm#L169",
+      "group": "vampphysician"
+    },
+    {
+      "id": "/datum/advclass/vampservant",
+      "name": "Vampiric Servant",
+      "stats": {
+        "speed": 2,
+        "intelligence": 2,
+        "perception": 2,
+        "fortune": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/other/vampire_servant_subclasses.dm#L15",
+      "group": "vampservant"
+    },
+    {
+      "id": "/datum/advclass/vampskirmisher",
+      "name": "Vampiric Skirmisher",
+      "stats": {
+        "speed": 1,
+        "willpower": 2,
+        "strength": 1,
+        "perception": 4
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/other/vampire_guard_subclasses.dm#L131",
+      "group": "vampskirmisher"
+    },
+    {
+      "id": "/datum/advclass/mercenary/vaquero",
+      "name": "Vaquero",
+      "stats": {
+        "speed": 3,
+        "intelligence": 2,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/mercenary/vaquero.dm#L1",
+      "group": "mercenary"
+    },
+    {
+      "id": "/datum/advclass/veteran/battlemaster",
+      "name": "Veteran Battlemaster",
+      "stats": {
+        "intelligence": 2,
+        "strength": 1,
+        "speed": 1,
+        "willpower": 1,
+        "constitution": 1,
+        "perception": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/veteran.dm#L49",
+      "group": "veteran"
+    },
+    {
+      "id": "/datum/advclass/voice",
+      "name": "Voice of the Seas",
+      "stats": {
+        "strength": -1,
+        "constitution": 2,
+        "willpower": 3,
+        "perception": 2,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/church/painter.dm#L95",
+      "group": "voice"
+    },
+    {
+      "id": "/datum/advclass/trader/servant",
+      "name": "Wandering Servant",
+      "stats": {
+        "intelligence": 2,
+        "speed": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/trader/maid.dm#L1",
+      "group": "trader"
+    },
+    {
+      "id": "/datum/advclass/vagabond_wanted",
+      "name": "Wanted",
+      "stats": {
+        "perception": 2,
+        "speed": 2,
+        "intelligence": -1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/sidefolk/vagabond/wanted.dm#L1",
+      "group": "vagabond_wanted"
+    },
+    {
+      "id": "/datum/advclass/warden/warden",
+      "name": "Warden",
+      "stats": {
+        "perception": 2,
+        "intelligence": 1,
+        "constitution": 1,
+        "willpower": 2,
+        "speed": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/garrison/warden.dm#L46",
+      "group": "warden"
+    },
+    {
+      "id": "/datum/advclass/ranger/wayfarer",
+      "name": "Wayfarer",
+      "stats": {
+        "perception": 2,
+        "speed": 2,
+        "willpower": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/combat/ranger.dm#L73",
+      "group": "ranger"
+    },
+    {
+      "id": "/datum/advclass/thug/wiseguy",
+      "name": "Wise Guy",
+      "stats": {
+        "willpower": -2,
+        "constitution": -2,
+        "strength": -1,
+        "speed": 2,
+        "intelligence": 2
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/thug.dm#L81",
+      "group": "thug"
+    },
+    {
+      "id": "/datum/advclass/witch",
+      "name": "Witch",
+      "stats": {
+        "intelligence": 3,
+        "speed": 2,
+        "fortune": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/witch.dm#L1",
+      "group": "witch"
+    },
+    {
+      "id": "/datum/advclass/woodworker",
+      "name": "Woodworker",
+      "stats": {
+        "strength": 2,
+        "willpower": 1,
+        "constitution": 1,
+        "perception": 1
+      },
+      "choices": [],
+      "description": "",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/woodworker.dm#L1",
+      "group": "woodworker"
+    }
+  ],
+  "statpacks": [
+    {
+      "id": "/datum/statpack/mental/adept",
+      "name": "Adept",
+      "stats": {
+        "perception": 1,
+        "intelligence": 1,
+        "speed": 1,
+        "strength": -1,
+        "constitution": -1
+      },
+      "choices": [],
+      "description": "Your will leads the way.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/mental.dm#L26",
+      "group": "mental"
+    },
+    {
+      "id": "/datum/statpack/physical/tactician",
+      "name": "Alert",
+      "stats": {
+        "strength": 1,
+        "perception": 1,
+        "intelligence": 1,
+        "constitution": -1,
+        "willpower": -1
+      },
+      "choices": [],
+      "description": "You sharpened both your body and your mind as best you were able, and vigilance has been your reward.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/physical.dm#L15",
+      "group": "physical"
+    },
+    {
+      "id": "/datum/statpack/wildcard/austere",
+      "name": "Austere",
+      "stats": {},
+      "choices": [],
+      "description": "You've kept your humors balanced, your body honed and mind sharp enough. Fate has left you mostly unchanged, in every way.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/wildcard.dm#L85",
+      "group": "wildcard"
+    },
+    {
+      "id": "/datum/statpack/mental/aware",
+      "name": "Aware",
+      "stats": {
+        "perception": 2,
+        "speed": 1,
+        "willpower": -1,
+        "constitution": -1
+      },
+      "choices": [],
+      "description": "Your keen senses have not led you astray.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/mental.dm#L32",
+      "group": "mental"
+    },
+    {
+      "id": "/datum/statpack/agile/deft",
+      "name": "Deft",
+      "stats": {
+        "perception": 1,
+        "speed": 1,
+        "willpower": 1,
+        "strength": -1
+      },
+      "choices": [],
+      "description": "Being quick on the draw has left you weaker when they live past your first strike.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/agile.dm#L38",
+      "group": "agile"
+    },
+    {
+      "id": "/datum/statpack/agile/dextrous",
+      "name": "Dextrous",
+      "stats": {
+        "speed": 2,
+        "perception": 1,
+        "willpower": -1,
+        "fortune": -1
+      },
+      "choices": [],
+      "description": "You see. You dash. You spring. You dodge. Can you keep it up?",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/agile.dm#L32",
+      "group": "agile"
+    },
+    {
+      "id": "/datum/statpack/mental/diligent",
+      "name": "Diligent",
+      "stats": {
+        "intelligence": 2,
+        "willpower": 1,
+        "speed": -1
+      },
+      "choices": [],
+      "description": "You take your time, but you have a lot of it to spare.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/mental.dm#L44",
+      "group": "mental"
+    },
+    {
+      "id": "/datum/statpack/physical/enduring",
+      "name": "Enduring",
+      "stats": {
+        "constitution": 3,
+        "willpower": 3,
+        "speed": -4
+      },
+      "choices": [],
+      "description": "You've spent yils willingly submitting your body through a most perilous journey. Stalwart in your faith, you've sworn to never flee again.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/physical.dm#L39",
+      "group": "physical"
+    },
+    {
+      "id": "/datum/statpack/wildcard/fated",
+      "name": "Fated",
+      "stats": {
+        "strength": [
+          -2,
+          2
+        ],
+        "perception": [
+          -2,
+          2
+        ],
+        "intelligence": [
+          -2,
+          2
+        ],
+        "constitution": [
+          -2,
+          2
+        ],
+        "willpower": [
+          -2,
+          2
+        ],
+        "speed": [
+          -2,
+          2
+        ],
+        "fortune": [
+          -2,
+          2
+        ]
+      },
+      "choices": [],
+      "description": "The first or the last - let destiny's fickle loom decree what your fate shall be. Allows for a second virtue and a quirk. Xylixians get better odds!",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/wildcard.dm#L9",
+      "group": "wildcard"
+    },
+    {
+      "id": "/datum/statpack/mental/augury",
+      "name": "Foresighted",
+      "stats": {
+        "perception": 2,
+        "intelligence": 1,
+        "strength": -1,
+        "willpower": -1
+      },
+      "choices": [],
+      "description": "You see what is and what will sometimes be.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/mental.dm#L20",
+      "group": "mental"
+    },
+    {
+      "id": "/datum/statpack/wildcard/frail",
+      "name": "Frail",
+      "stats": {
+        "strength": -4,
+        "perception": -4,
+        "intelligence": -4,
+        "constitution": -4,
+        "willpower": -4,
+        "speed": -4,
+        "fortune": -4
+      },
+      "choices": [],
+      "description": "The growing dark limns your vision more with every passing day: your flesh and mind are failing you, and destiny has turned her gaze from you. How will your tale endure such hardship?",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/wildcard.dm#L79",
+      "group": "wildcard"
+    },
+    {
+      "id": "/datum/statpack/agile/hardy",
+      "name": "Hardy",
+      "stats": {
+        "constitution": 3,
+        "willpower": 3,
+        "strength": -2,
+        "speed": -2
+      },
+      "choices": [],
+      "description": "Uniquely Pestran fortitude affords you the means to shrug off illnesses and poisons that others might not.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/agile.dm#L8",
+      "group": "agile"
+    },
+    {
+      "id": "/datum/statpack/mental/industrious",
+      "name": "Industrious",
+      "stats": {
+        "intelligence": 2,
+        "speed": 1,
+        "constitution": -1,
+        "perception": -1
+      },
+      "choices": [],
+      "description": "You waste no time. You know enough to get by, and strive towards it.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/mental.dm#L50",
+      "group": "mental"
+    },
+    {
+      "id": "/datum/statpack/physical/muscular",
+      "name": "Muscular",
+      "stats": {
+        "strength": 2,
+        "constitution": 1,
+        "perception": -1,
+        "speed": -2
+      },
+      "choices": [],
+      "description": "Hard labor has honed you into a mass of sinew - a valuable trait in a world where might makes right.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/physical.dm#L9",
+      "group": "physical"
+    },
+    {
+      "id": "/datum/statpack/mental/precise",
+      "name": "Precise",
+      "stats": {
+        "perception": 2,
+        "strength": 1,
+        "willpower": -1,
+        "constitution": -1
+      },
+      "choices": [],
+      "description": "You've seen it all. You've heard it all. An eye to the horizon, and an ear to the ground, and the right place to strike.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/mental.dm#L38",
+      "group": "mental"
+    },
+    {
+      "id": "/datum/statpack/mental/faithdriven",
+      "name": "Resolute",
+      "stats": {
+        "intelligence": 1,
+        "constitution": 1,
+        "willpower": 1,
+        "perception": -1,
+        "fortune": -1
+      },
+      "choices": [],
+      "description": "Look ever to the Gods for guidance in these trying times - and so you have, to the exclusion of the world around you.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/mental.dm#L8",
+      "group": "mental"
+    },
+    {
+      "id": "/datum/statpack/physical/struggler",
+      "name": "Struggler",
+      "stats": {
+        "strength": 2,
+        "constitution": 2,
+        "willpower": 2,
+        "intelligence": -3,
+        "perception": -3,
+        "fortune": -2
+      },
+      "choices": [],
+      "description": "Lyfe's dealt you a poor hand, so you've opted to simply flip the table instead.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/physical.dm#L33",
+      "group": "physical"
+    },
+    {
+      "id": "/datum/statpack/mental/scholarly",
+      "name": "Studious",
+      "stats": {
+        "intelligence": 2,
+        "perception": 1,
+        "strength": -1,
+        "willpower": -1
+      },
+      "choices": [],
+      "description": "Your understanding of the world avails you, more often than not.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/mental.dm#L2",
+      "group": "mental"
+    },
+    {
+      "id": "/datum/statpack/agile/swift",
+      "name": "Swift",
+      "stats": {
+        "speed": 2,
+        "willpower": 1,
+        "intelligence": -2,
+        "constitution": -1
+      },
+      "choices": [],
+      "description": "With the wind in your hair and trouble at your back, your speed has oft been your salvation.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/agile.dm#L2",
+      "group": "agile"
+    },
+    {
+      "id": "/datum/statpack/physical/taut",
+      "name": "Taut",
+      "stats": {
+        "strength": 1,
+        "willpower": 1,
+        "speed": 1,
+        "perception": -2,
+        "constitution": -1
+      },
+      "choices": [],
+      "description": "Wound tight like the limbs of a time-teller, your physicality is poised to strike - or flee - at a moment's notice.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/physical.dm#L21",
+      "group": "physical"
+    },
+    {
+      "id": "/datum/statpack/agile/thug",
+      "name": "Thuggish",
+      "stats": {
+        "strength": 2,
+        "perception": 1,
+        "fortune": 1,
+        "constitution": -1,
+        "willpower": -1,
+        "speed": -1
+      },
+      "choices": [],
+      "description": "Your robust physique and keen eyes oft been your most valuable friends in such trying times.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/agile.dm#L20",
+      "group": "agile"
+    },
+    {
+      "id": "/datum/statpack/physical/toil",
+      "name": "Toil-hardened",
+      "stats": {
+        "willpower": 2,
+        "constitution": 1,
+        "perception": -1,
+        "intelligence": -1
+      },
+      "choices": [],
+      "description": "Your lyfe, hard-lyved, has imparted one solitary adage: carry on above all else. And so you endure.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/physical.dm#L27",
+      "group": "physical"
+    },
+    {
+      "id": "/datum/statpack/physical/trained",
+      "name": "Trained",
+      "stats": {
+        "strength": 1,
+        "constitution": 1,
+        "willpower": 1,
+        "perception": -1,
+        "intelligence": -1
+      },
+      "choices": [],
+      "description": "Years honing your physique has left you with a physical edge, but your faculties have been somewhat neglected.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/physical.dm#L3",
+      "group": "physical"
+    },
+    {
+      "id": "/datum/statpack/agile/tricky",
+      "name": "Tricky",
+      "stats": {
+        "perception": 1,
+        "intelligence": 1,
+        "speed": 1,
+        "fortune": 1,
+        "willpower": -1,
+        "strength": -1
+      },
+      "choices": [],
+      "description": "Swift feet with a mind to match and a tiny sliver of the Ten's own luck.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/agile.dm#L14",
+      "group": "agile"
+    },
+    {
+      "id": "/datum/statpack/wildcard/virtuous",
+      "name": "Virtuous",
+      "stats": {},
+      "choices": [],
+      "description": "The breadth of my being is one of many, distinguished talents.   (Allows access to a second virtue, as well as a quirk. Take two vices for a second quirk slot.)",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/wildcard.dm#L90",
+      "group": "wildcard"
+    },
+    {
+      "id": "/datum/statpack/agile/wary",
+      "name": "Wary",
+      "stats": {
+        "perception": 3,
+        "intelligence": 3,
+        "strength": -2,
+        "constitution": -2
+      },
+      "choices": [],
+      "description": "Eyes forward, ever and always. A careful course has always seen you through... so far.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/agile.dm#L26",
+      "group": "agile"
+    },
+    {
+      "id": "/datum/statpack/wildcard/wretched",
+      "name": "Wretched",
+      "stats": {
+        "strength": -2,
+        "perception": -2,
+        "intelligence": -2,
+        "constitution": -2,
+        "willpower": -2,
+        "speed": -2,
+        "fortune": 3
+      },
+      "choices": [],
+      "description": "The cruelty of Enigma leaves many in its wake - you among them. But with her terrible eye turned elsewhere, perhaps it is time for your fortune to be made...",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/wildcard.dm#L3",
+      "group": "wildcard"
+    },
+    {
+      "id": "/datum/statpack/mental/zealous",
+      "name": "Zealous",
+      "stats": {
+        "strength": 1,
+        "intelligence": 1,
+        "willpower": 1,
+        "perception": -1,
+        "speed": -1
+      },
+      "choices": [],
+      "description": "Faith in something drives your body and mind to match what neither can see.",
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/statpacks/mental.dm#L14",
+      "group": "mental"
+    }
+  ],
+  "ages": [
+    {
+      "id": "adult",
+      "name": "Adult",
+      "stats": {},
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/stats.dm"
+    },
+    {
+      "id": "middleaged",
+      "name": "Middle-Aged",
+      "stats": {
+        "speed": -1,
+        "willpower": 1,
+        "fortune": 1
+      },
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/stats.dm"
+    },
+    {
+      "id": "old",
+      "name": "Old",
+      "stats": {
+        "strength": -1,
+        "speed": -2,
+        "perception": -1,
+        "constitution": -2,
+        "intelligence": 2,
+        "fortune": 1
+      },
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/modules/mob/living/stats.dm"
+    }
+  ],
+  "buffs": [
+    {
+      "id": "vigilant",
+      "name": "Vigilant Guardsman",
+      "stats": {
+        "constitution": 1,
+        "willpower": 1,
+        "speed": 1
+      },
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/datums/status_effects/rogue/roguebuff.dm#L494"
+    },
+    {
+      "id": "warden",
+      "name": "Warden",
+      "stats": {
+        "perception": 2,
+        "willpower": 1,
+        "speed": 1
+      },
+      "source": "https://github.com/Azure-Peak/Azure-Peak/blob/2f55782da57c1f27a3049414264742311fc25a1d/code/datums/status_effects/rogue/roguebuff.dm#L477"
+    }
+  ]
+}
