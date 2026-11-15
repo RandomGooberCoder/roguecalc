@@ -85,7 +85,9 @@ jobs:
       - name: Extract current repository stats
         run: |
           python scripts/build_data.py upstream
+          python scripts/build_combat.py upstream data/stats.json
           python scripts/build_data.py upstream-azure --repository https://github.com/Azure-Peak/Azure-Peak --output data/azure.json
+          python scripts/build_combat.py upstream-azure data/azure.json
       - name: Check extraction and calculator
         run: |
           python -m unittest discover -s tests -p 'test_*.py'
@@ -93,7 +95,7 @@ jobs:
       - name: Assemble static site
         run: |
           mkdir -p _site/data
-          cp index.html style.css app.js calc.mjs icon.svg .nojekyll _site/
+          cp index.html style.css app.js calc.mjs combat.mjs combat-ui.js icon.svg .nojekyll _site/
           cp data/*.json _site/data/
       - name: Save snapshot for recording after successful deployment
         uses: actions/upload-artifact@v4

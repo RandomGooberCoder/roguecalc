@@ -120,3 +120,23 @@ Manual Azure data refresh:
 python scripts/build_data.py ../azure-source --repository https://github.com/Azure-Peak/Azure-Peak --output data/azure.json
 node --test tests/*.test.mjs
 ```
+
+## Combat / DPS tab
+
+The Combat tab adds build-specific melee weapon/intent selection, one/two-handed grips, raw damage per hit and raw DPS, class-derived weapon and athletics skills with manual overrides, stamina and energy pools, recovery per eligible tick, and parry against an editable virtual enemy. Select Base, Vigilant or Warden stats. Random statpack results enumerate relevant integer stat combinations and display metric ranges. Combat controls are local to the current session and are not included in shared character links.
+
+The imported weapon catalog intentionally offers only supported zero-charge, zero-windup standard melee intents. DPS assumes normal stance, pristine weapon, healthy arms, standing, all attacks landing, no armor or special effects. It is a raw damage-rate estimate, not a full combat simulator or sustained DPS. Weapon skill comes from `subclass_skills`; conditional outfit weapon training is not automatically applied. Override it to match the actual character. Enemy skill and armor settings are explicit editable scenario inputs. Parry is the conditional roll chance for an eligible player-like armed attack, not overall avoidance.
+
+STR damage uses the source soft cap and each build's post-cap multiplier; the intent damage delta is added after STR/minimum-STR scaling. Azure intent damage bounds apply. WDEF includes the wielding bonus. Swift weapon parry effects depend on speed differences, target zone, favorable PER/INT differences, and light/no armor. The old martial bonus is Ratwood-only. Other status effects, special grips, weapon binding, quality, enchantments, virtues, armor mitigation, dodge and cooldown availability remain outside this estimate.
+
+Fatigue recovery is shown per **eligible update**, not continuous regeneration: recovery itself resets `last_fatigued`, and the source requires more than two seconds before another recovery update. WIL affects capacity but does not increase the base recovery amount at a fixed energy percentage. Attack counts assume a fresh fatigue bar, no regeneration or incoming attacks, and no cost-modifying traits.
+
+Refresh combat data after the normal importer:
+
+```sh
+python scripts/build_combat.py ../ratwood-source data/stats.json
+python scripts/build_combat.py ../azure-source data/azure.json
+node --test tests/*.test.mjs
+```
+
+The deployment workflow now runs both combat importers and publishes `combat.mjs` and `combat-ui.js`. Upload all updated files, including scripts/tests/workflow. Formula source links are in the expandable mechanics section. Source constants, weapons, intent fields and class skill lists refresh automatically; major procedural formula rewrites still require updating the corresponding JavaScript implementation.

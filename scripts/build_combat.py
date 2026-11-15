@@ -1,0 +1,122 @@
+"""Append source-derived melee combat data to a stat snapshot."""
+import ast
+import json
+from pathlib import Path
+import re
+import subprocess
+import sys
+from build_data import strip_comments, list_body
+
+
+def build(root, snapshot):
+    def read(path):
+        return subprocess.check_output(['git', '-C', str(root), 'show', 'HEAD:' + path], text=True)
+    files = subprocess.check_output(['git', '-C', str(root), 'ls-tree', '-r', '--name-only', 'HEAD'], text=True).splitlines()
+    defines = {}
+    for file in files:
+        if file.startswith('code/__DEFINES/') and file.endswith('.dm'):
+            # Only relevant define files, avoiding a full-tree download.
+            if not any(x in file for x in ('combat', 'roguetown', 'skills')):
+                continue
+            for key, value in re.findall(r'^#define\s+(\w+)\s+([^\n]+)', strip_comments(read(file)), re.M):
+                defines[key] = value.strip()
+    defines.update(TRUE='1', FALSE='0')
+    def number(value, seen=()):
+        value = value.strip()
+        if value in defines and value not in seen:
+            return number(defines[value], (*seen, value))
+        node = ast.parse(value, mode='eval').body
+        def ev(n):
+            if isinstance(n, ast.Constant) and isinstance(n.value, (int,float)): return n.value
+            if isinstance(n, ast.Name): return number(n.id, seen)
+            if isinstance(n, ast.UnaryOp) and isinstance(n.op, ast.USub): return -ev(n.operand)
+            if isinstance(n, ast.BinOp):
+                a,b = ev(n.left),ev(n.right)
+                if isinstance(n.op, ast.Add): return a+b
+                if isinstance(n.op, ast.Sub): return a-b
+                if isinstance(n.op, ast.Mult): return a*b
+                if isinstance(n.op, ast.Div): return a/b
+            raise ValueError(value)
+        return ev(node)
+    definitions = {}
+    sources = [f for f in files if f.endswith('.dm') and (f.startswith('code/game/objects/items/rogueweapons/') or f.startswith('code/modules/jobs/job_types/roguetown/'))]
+    sources.append('code/game/objects/items.dm')
+    for file in sources:
+        text = strip_comments(read(file))
+        for key,value in re.findall(r'^#define[ \t]+(\w+)[ \t]+([^\n]+)',text,re.M):
+            defines[key]=value.strip()
+        headers = list(re.finditer(r'^(/[\w/]+)[ 	]*$', text, re.M))
+        for i,m in enumerate(headers):
+            end = headers[i+1].start() if i+1<len(headers) else len(text)
+            body = re.split(r'^/[^\n]*', text[m.end():end], maxsplit=1, flags=re.M)[0]
+            entry = definitions.setdefault(m[1], {})
+            entry.update(file=file,line=text[:m.start()].count('\n')+1)
+            for field,value in re.findall(r'^	(?:var/(?:list/)?)?(\w+)[ 	]*=[ 	]*([^\n]+)', body, re.M):
+                entry[field] = value.strip()
+            for field in ('possible_item_intents','gripped_intents','subclass_skills','secondary_skills'):
+                match = re.search(r'^	'+field+r'\s*=\s*list\s*\(',body,re.M)
+                if match:entry[field]= 'list('+list_body(body,body.index('(',match.start()))+')'
+    def resolve(path, field, seen=()):
+        if not path or path in seen:return None
+        entry=definitions.get(path,{})
+        if field in entry:return entry[field]
+        return resolve(entry.get('parent_type',path.rsplit('/',1)[0]),field,(*seen,path))
+    def num(path,field):
+        raw=resolve(path,field)
+        if raw is None:raise ValueError(f'Missing {path}.{field}')
+        return number(raw)
+    data=json.loads(snapshot.read_text())
+    def link(path):
+        e=definitions[path]
+        return f"{data['repository']}/blob/{data['commit']}/{e['file']}#L{e['line']}"
+    weapons=[]
+    candidates=['sword','sword/long','sword/short','sword/sabre','sword/rapier','mace/steel','mace/warhammer/steel','flail/sflail','greataxe/steel','spear','spear/boar','halberd','knife/dagger/steel']
+    for suffix in candidates:
+        path='/obj/item/rogueweapon/'+suffix
+        if path not in definitions:continue
+        try:
+            fields={k:num(path,k) for k in ['force','force_wielded','wdefense','wdefense_wbonus','minstr','wbalance','can_parry']}
+        except (ValueError,TypeError,SyntaxError,KeyError):continue
+        if not fields['can_parry']:continue
+        item=dict(id=path,name=resolve(path,'name').strip('"'),skill=resolve(path,'associated_skill'),source=link(path),**fields)
+        item['secondarySkills']={}
+        secondary=resolve(path,'secondary_skills') or ''
+        for skill,value in re.findall(r'(/datum/skill/[\w/]+)\s*=\s*([\d.]+)',secondary):item['secondarySkills'][skill]=float(value)
+        item['intents']={}
+        for mode,field in [('one','possible_item_intents'),('two','gripped_intents')]:
+            raw=resolve(path,field) or ''
+            if raw in defines:raw=defines[raw]
+            intents=[]
+            for ipath in re.findall(r'/datum/intent/[\w/]+',raw):
+                try:
+                    vals={k:num(ipath,k) for k in ['damfactor','clickcd','swingdelay','chargetime','releasedrain']}
+                except (ValueError,TypeError,SyntaxError,KeyError):continue
+                if 'Azure-Peak/Azure-Peak' in data['repository']:
+                    vals.update(minDamage=num(ipath,'min_intent_damage'), maxDamage=num(ipath,'max_intent_damage'))
+                # Exact standard repeat cadence only: charge/windup intent overrides excluded.
+                if vals['chargetime'] or vals['swingdelay'] or vals['clickcd']<=0:continue
+                intents.append(dict(id=ipath,name=(resolve(ipath,'name') or ipath.rsplit('/',1)[1]).strip('"'),source=link(ipath),**vals))
+            item['intents'][mode]=intents
+        if any(item['intents'].values()):weapons.append(item)
+    for job in data['jobs']:
+        raw=resolve(job['id'],'subclass_skills')
+        job['skillsKnown']=raw is not None
+        job['skills']={}
+        if raw:
+            for skill,value in re.findall(r'(/datum/skill/[\w/]+)\s*=\s*(SKILL_LEVEL_\w+|\d+)',raw):
+                job['skills'][skill]=number(value)
+    def constant(key):return number(key)
+    rules={k:constant(k) for k in ['STRENGTH_SOFTCAP','STRENGTH_MULT','STRENGTH_CAPPEDMULT','BASE_PARRY_STAMINA_DRAIN','SWIFTCAP_CHEST','SWIFTCAP_LIMBS','SWIFTCAP_PRECISE']}
+    azure='Azure-Peak/Azure-Peak' in data['repository']
+    rules.update(azure=azure,skillParry=constant('PARRY_PER_SKILL_LEVEL') if azure else 20,wdefParry=constant('PARRY_PER_WDEF_POINT') if azure else 10,oldParry=0 if azure else 20)
+    if azure:rules.update(staminaBase=constant('WILLPOWER_STARTING_STAMINA'),staminaPerWill=constant('WILLPOWER_MODIFIER'))
+    tick = re.search(r'^\s*wait\s*=\s*(\d+)', read('code/controllers/subsystem/mobs.dm').split('/datum/controller/')[0], re.M)
+    if not tick: tick = re.search(r'var/wait\s*=\s*(\d+)',read('code/controllers/subsystem.dm'))
+    if not tick: raise ValueError('Unknown mob tick interval')
+    rules['tickSeconds']=int(tick[1])/10
+    data['combat']={'weapons':sorted(weapons,key=lambda x:x['name']),'rules':rules,'sources':{k:f"{data['repository']}/blob/{data['commit']}/{v}" for k,v in {'Damage':'code/_onclick/item_attack.dm','Parry':'code/modules/mob/living/combat/parry.dm','Stamina':'code/modules/mob/living/carbon/energystamina.dm','Tick':'code/controllers/subsystem.dm','Constants':'code/__DEFINES/combat.dm'}.items()}}
+    if not weapons:raise ValueError('No supported combat weapons')
+    snapshot.write_text(json.dumps(data,indent=2)+'\n')
+    print(f'{snapshot}: {len(weapons)} melee weapons; {sum(j["skillsKnown"] for j in data["jobs"])} class skill lists')
+
+if __name__=='__main__':build(Path(sys.argv[1]),Path(sys.argv[2]))

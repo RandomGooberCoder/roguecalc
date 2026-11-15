@@ -7,8 +7,8 @@
   <meta name="description" content="Build a Ratwood character and compare race, job, statpack, and area buff stats.">
   <title>Ratwood | Stat Calculator</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=multi-build-1">
-  <script src="app.js?v=multi-build-1" type="module"></script>
+  <link rel="stylesheet" href="style.css?v=combat-1">
+  <script src="app.js?v=combat-1" type="module"></script>
 </head>
 <body>
   <div class="page">
@@ -33,12 +33,52 @@
           <p id="pack-description" class="pack-description"></p>
           <div class="build-actions"><span class="formula">10 + race + job + statpack + age + choice</span><button id="share" class="button secondary" type="button">Copy build link</button></div>
         </section>
-        <section class="results" aria-labelledby="result-title">
+        <div class="view-tabs" role="group" aria-label="Calculator view"><button id="stats-tab" type="button" aria-pressed="true">Stats</button><button id="combat-tab" type="button" aria-pressed="false">Combat / DPS</button></div><div id="stats-view"><section class="results" aria-labelledby="result-title">
           <div class="section-head"><h2 id="result-title"><span class="step">02</span> Your stats</h2><span class="badge">LIVE CALCULATION</span></div>
           <div class="table-wrap"><table class="stats-table"><caption class="sr-only">Base stats and separate area buff comparisons</caption><thead><tr><th scope="col">ATTRIBUTE</th><th scope="col">Base <small>No area buff</small></th><th scope="col" class="vigilant">Vigilant <small>Guardsman buff</small></th><th scope="col" class="warden">Warden <small>Woodsman buff</small></th></tr></thead><tbody id="stats-body"></tbody></table></div>
           <div class="results-note"><span class="dot"></span><p>Buff columns are separate scenarios. Their bonuses are not stacked. Eligibility and area restrictions still apply in game.</p></div>
         </section>
         <section class="breakdown-section"><button id="breakdown-toggle" class="breakdown-toggle" type="button" aria-expanded="false" aria-controls="breakdown-panel"><span id="breakdown-label">See the stat breakdown</span><span class="chev" aria-hidden="true">&#9662;</span></button><div id="breakdown-panel" class="breakdown-panel" role="region" aria-labelledby="breakdown-label" hidden><div class="table-wrap"><table><caption class="sr-only">Individual contributions for each attribute</caption><thead><tr><th>Attribute</th><th>Starting</th><th>Race</th><th>Job</th><th>Statpack</th><th>Age</th><th>Species choice</th><th>Total</th></tr></thead><tbody id="breakdown-body"></tbody></table></div></div></section>
+        </div>
+        <section id="combat-view" hidden aria-label="Combat estimator">
+          <div class="combat-controls">
+            <label>Weapon<select id="combat-weapon"></select></label>
+            <label>Grip<select id="combat-grip"><option value="one">One hand</option><option value="two">Two hands</option></select></label>
+            <label>Attack intent<select id="combat-intent"></select></label>
+            <label>Stats scenario<select id="combat-scenario"><option value="base">Base</option><option value="0">Vigilant</option><option value="1">Warden</option></select></label>
+          </div>
+          <div class="combat-controls">
+            <label>Weapon skill<select id="combat-skill"></select></label>
+            <label>Athletics<select id="combat-athletics"></select></label>
+            <label>Energy remaining (%)<input id="combat-energy" type="number" min="0" max="100" step="1" value="100"></label>
+            <label>Enemy weapon skill<input id="combat-enemy-skill" type="number" min="0" max="6" step="0.1" value="3"></label>
+          </div>
+          <details class="enemy-options"><summary>Virtual enemy &amp; parry conditions</summary>
+            <div class="combat-controls">
+              <label>Enemy SPD<input id="combat-enemy-speed" type="number" min="1" max="20" value="10"></label>
+              <label>Enemy PER<input id="combat-enemy-perception" type="number" min="1" max="20" value="10"></label>
+              <label>Enemy INT<input id="combat-enemy-intelligence" type="number" min="1" max="20" value="10"></label>
+              <label>Enemy targets<select id="combat-zone"><option value="chest">Chest</option><option value="limbs">Limb / head</option><option value="precise">Precise zone</option></select></label>
+            </div>
+            <div class="combat-checks">
+              <label><input id="combat-light" type="checkbox" checked> Your armor is light / none</label>
+              <label><input id="combat-trained" type="checkbox" checked> Trained in worn armor</label>
+              <label><input id="combat-enemy-swift" type="checkbox"> Enemy uses a swift weapon</label>
+              <label><input id="combat-enemy-light" type="checkbox" checked> Enemy armor is light / none</label>
+              <label><input id="combat-mage" type="checkbox"> Mage armor trait (old-age parry exception)</label>
+            </div>
+          </details>
+          <p id="combat-warning" role="status"></p>
+          <div id="combat-metrics" class="combat-metrics" aria-live="polite"></div>
+          <p id="combat-explanation" class="combat-caption"></p>
+          <details class="enemy-options"><summary>Mechanics, assumptions &amp; source</summary><div class="combat-caption">
+            <p>Raw DPS assumes every hit lands on an unarmored target, a pristine weapon, normal attack stance, standing, and healthy arms. It excludes dodge, armor, wounds, criticals, quality, enchantments, special grips, traits, tempo and weapon binding. Only source-defined zero-charge, zero-windup melee intents are offered. It is not sustained combat DPS.</p>
+            <p>Class skills come from subclass_skills, not conditional outfit choices or training. Override the skill when your loadout grants a higher rank. Azure uses the best scaled primary/secondary skill. Armor checkboxes and enemy stats are explicit scenario assumptions, not inferred equipment.</p>
+            <p>Parry is the roll chance per eligible incoming attack, facing a player-like armed enemy, with an empty offhand (or two-handed grip), enough stamina, no parry cooldown, no impairments and no special traits. It is not overall avoidance or an outgoing hit probability. Swift attackers use SPD difference reduced by PER/INT according to target zone; only Ratwood grants the old martial +20 bonus.</p>
+            <p>Stamina is a fatigue budget; energy is the long-term reserve. Regen shown is fatigue recovered per eligible mob update after more than 2 seconds without spending stamina, at the chosen fixed energy percentage. Short-burst attack count starts fresh and ignores interruptions, incoming parries and regeneration. Each recovery update itself resets the fatigue timestamp, so recovery is not continuous every tick. WIL increases the pool, not the baseline tick amount at a fixed energy percentage.</p>
+            <p id="combat-sources"></p>
+          </div></details>
+        </section>
       </div>
     </main>
     <footer><span id="buff-sources"></span><span>RATWOOD <span class="footer-divider">/</span> STAT CALCULATOR</span><span id="data-info">Static site. No account needed.</span></footer>

@@ -1,3 +1,4 @@
+import { initCombat, renderCombat } from './combat-ui.js?v=combat-1';
 import { LABELS, calculate, display } from './calc.mjs';
 
 const $ = id => document.getElementById(id);
@@ -103,6 +104,7 @@ function render() {
     detail.append(cell('td', display(row.base)));
     $('breakdown-body').append(detail);
   }
+  renderCombat(data, selected.job, rows, age);
 }
 function writeHash() {
   history.replaceState(null, '', '#' + new URLSearchParams({build: activeBuild, ...chosen}).toString());
@@ -163,6 +165,7 @@ async function loadBuild(id, useHash = false) {
   }
 }
 async function init() {
+  initCombat();
   $('breakdown-toggle').addEventListener('click', () => {
     const open = $('breakdown-panel').hidden;
     $('breakdown-panel').hidden = !open;
