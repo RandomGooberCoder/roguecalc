@@ -1,7 +1,7 @@
 {
   "repository": "https://github.com/Rotwood-Vale/Ratwood-2.0",
-  "commit": "6a3ff7fc1d5c9a8b06691af2a705b76a820157a3",
-  "generatedAt": "2026-11-15T02:12:41.693759+00:00",
+  "commit": "32179e44fa967b26419fa5903a867fbf583e966e",
+  "generatedAt": "2026-11-15T09:37:21.034861+00:00",
   "base": 10,
   "stats": [
     "strength",
@@ -69,7 +69,7 @@
         }
       ],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/roguetown/other/aasimar.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/roguetown/other/aasimar.dm#L4",
       "group": "aasimar"
     },
     {
@@ -81,7 +81,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/furry/arachnid.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/furry/arachnid.dm#L4",
       "group": "arachnid"
     },
     {
@@ -93,7 +93,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/furry/akula.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/furry/akula.dm#L4",
       "group": "akula"
     },
     {
@@ -104,7 +104,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/furry/anthromorphsmall.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/furry/anthromorphsmall.dm#L4",
       "group": "anthromorphsmall"
     },
     {
@@ -116,7 +116,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/roguetown/elf/elfd.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/roguetown/elf/elfd.dm#L4",
       "group": "elf"
     },
     {
@@ -129,7 +129,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/roguetown/construct/doll.dm#L5",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/roguetown/construct/doll.dm#L5",
       "group": "construct"
     },
     {
@@ -140,7 +140,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/furry/dracon.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/furry/dracon.dm#L4",
       "group": "dracon"
     },
     {
@@ -152,7 +152,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/roguetown/dwarf/dwarfm.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/roguetown/dwarf/dwarfm.dm#L4",
       "group": "dwarf"
     },
     {
@@ -163,7 +163,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/roguetown/elf/elfs.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/roguetown/elf/elfs.dm#L4",
       "group": "elf"
     },
     {
@@ -174,7 +174,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/furry/moth.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/furry/moth.dm#L4",
       "group": "moth"
     },
     {
@@ -186,7 +186,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/roguetown/dwarf/gnome.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/roguetown/dwarf/gnome.dm#L4",
       "group": "dwarf"
     },
     {
@@ -197,7 +197,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/roguetown/goblin/goblinp.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/roguetown/goblin/goblinp.dm#L4",
       "group": "goblinp"
     },
     {
@@ -208,7 +208,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/roguetown/other/halforc.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/roguetown/other/halforc.dm#L4",
       "group": "halforc"
     },
     {
@@ -220,7 +220,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/roguetown/other/halfelf.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/roguetown/other/halfelf.dm#L4",
       "group": "human"
     },
     {
@@ -232,7 +232,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/furry/demihuman.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/furry/demihuman.dm#L4",
       "group": "demihuman"
     },
     {
@@ -247,7 +247,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/furry/harpy.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/furry/harpy.dm#L4",
       "group": "harpy"
     },
     {
@@ -259,7 +259,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/roguetown/human/humen.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/roguetown/human/humen.dm#L4",
       "group": "human"
     },
     {
@@ -270,7 +270,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/furry/kobold.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/furry/kobold.dm#L4",
       "group": "kobold"
     },
     {
@@ -282,7 +282,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/furry/lamia.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/furry/lamia.dm#L4",
       "group": "lamia"
     },
     {
@@ -294,7 +294,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/furry/lupian.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/furry/lupian.dm#L4",
       "group": "lupian"
     },
     {
@@ -306,7 +306,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/roguetown/construct/constructm.dm#L5",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/roguetown/construct/constructm.dm#L5",
       "group": "construct"
     },
     {
@@ -319,7 +319,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/roguetown/other/ooze.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/roguetown/other/ooze.dm#L1",
       "group": "ooze"
     },
     {
@@ -333,7 +333,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/roguetown/other/orc.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/roguetown/other/orc.dm#L1",
       "group": "orc"
     },
     {
@@ -345,7 +345,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/furry/lizardfolk.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/furry/lizardfolk.dm#L4",
       "group": "lizardfolk"
     },
     {
@@ -356,7 +356,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/furry/tabaxi.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/furry/tabaxi.dm#L4",
       "group": "tabaxi"
     },
     {
@@ -368,7 +368,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/roguetown/other/tiefling.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/roguetown/other/tiefling.dm#L4",
       "group": "tieberian"
     },
     {
@@ -380,7 +380,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/furry/vulpkanin.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/furry/vulpkanin.dm#L4",
       "group": "vulpkanin"
     },
     {
@@ -392,7 +392,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/carbon/human/species_types/furry/anthromorph.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/carbon/human/species_types/furry/anthromorph.dm#L4",
       "group": "anthromorph"
     }
   ],
@@ -407,7 +407,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_mercenary.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_mercenary.dm#L4",
       "group": "slaver"
     },
     {
@@ -420,7 +420,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_slave.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_slave.dm#L1",
       "group": "slaver"
     },
     {
@@ -432,7 +432,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/avar.dm#L3",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/avar.dm#L3",
       "group": "foreigner"
     },
     {
@@ -445,7 +445,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/Inquisition/absolutionist.dm#L42",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/Inquisition/absolutionist.dm#L42",
       "group": "absolver"
     },
     {
@@ -458,7 +458,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/church/monk.dm#L90",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/church/monk.dm#L90",
       "group": "acolyte"
     },
     {
@@ -472,7 +472,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/adjudicator.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/adjudicator.dm#L4",
       "group": "psydoniantemplar"
     },
     {
@@ -487,7 +487,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/hand.dm#L171",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/hand.dm#L171",
       "group": "hand"
     },
     {
@@ -500,7 +500,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfelthand.dm#L184",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfelthand.dm#L184",
       "group": "heartfelt"
     },
     {
@@ -509,7 +509,7 @@
       "stats": {},
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L686",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L686",
       "group": "sfighter"
     },
     {
@@ -522,7 +522,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/courier.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/courier.dm#L1",
       "group": "vagabond_courier"
     },
     {
@@ -538,7 +538,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/ancient.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/ancient.dm#L1",
       "group": "wretch"
     },
     {
@@ -551,7 +551,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/courtier/apothecary.dm#L31",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/courtier/apothecary.dm#L31",
       "group": "apothecary"
     },
     {
@@ -564,7 +564,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/arbalist.dm#L6",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/arbalist.dm#L6",
       "group": "arbalist"
     },
     {
@@ -579,7 +579,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/Inquisition/puritanclasses/arbiter.dm#L5",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/Inquisition/puritanclasses/arbiter.dm#L5",
       "group": "puritan"
     },
     {
@@ -594,7 +594,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/builder.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/builder.dm#L1",
       "group": "builder"
     },
     {
@@ -607,7 +607,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/yeomen/archivist.dm#L38",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/yeomen/archivist.dm#L38",
       "group": "archivist"
     },
     {
@@ -622,7 +622,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfeltlord.dm#L102",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfeltlord.dm#L102",
       "group": "heartfelt"
     },
     {
@@ -635,7 +635,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_slave.dm#L155",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_slave.dm#L155",
       "group": "slaver"
     },
     {
@@ -648,7 +648,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/mage.dm#L273",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/mage.dm#L273",
       "group": "mage"
     },
     {
@@ -662,7 +662,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/noble.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/noble.dm#L1",
       "group": "noble"
     },
     {
@@ -677,7 +677,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/grenzelhoft.dm#L133",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/grenzelhoft.dm#L133",
       "group": "mercenary"
     },
     {
@@ -694,7 +694,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/antag/assassin/poisoner.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/antag/assassin/poisoner.dm#L1",
       "group": "assassin_poisoner"
     },
     {
@@ -711,7 +711,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/antag/assassin/hitman.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/antag/assassin/hitman.dm#L1",
       "group": "assassin_hitman"
     },
     {
@@ -726,7 +726,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/antag/assassin/ranger.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/antag/assassin/ranger.dm#L1",
       "group": "assassin_ranger"
     },
     {
@@ -741,7 +741,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/atgervi.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/atgervi.dm#L1",
       "group": "mercenary"
     },
     {
@@ -754,7 +754,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/rookie.dm#L119",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/rookie.dm#L119",
       "group": "rookie"
     },
     {
@@ -768,7 +768,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L208",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L208",
       "group": "sfighter"
     },
     {
@@ -780,7 +780,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/barbersurgeon.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/barbersurgeon.dm#L1",
       "group": "barbersurgeon"
     },
     {
@@ -793,7 +793,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/rogue.dm#L124",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/rogue.dm#L124",
       "group": "rogue"
     },
     {
@@ -806,7 +806,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/peasants/bathmaid.dm#L39",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/peasants/bathmaid.dm#L39",
       "group": "nightmaiden"
     },
     {
@@ -820,7 +820,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/yeomen/nightmaster.dm#L32",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/yeomen/nightmaster.dm#L32",
       "group": "bathmaster"
     },
     {
@@ -834,7 +834,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_slave.dm#L63",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_slave.dm#L63",
       "group": "slaver"
     },
     {
@@ -847,7 +847,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L1",
       "group": "sfighter"
     },
     {
@@ -861,7 +861,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/beggar.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/beggar.dm#L1",
       "group": "vagabond_beggar"
     },
     {
@@ -876,7 +876,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/berserker.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/berserker.dm#L1",
       "group": "wretch"
     },
     {
@@ -891,7 +891,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_squire.dm#L227",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_squire.dm#L227",
       "group": "kj_squire_bidower"
     },
     {
@@ -904,7 +904,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/ranger.dm#L167",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/ranger.dm#L167",
       "group": "ranger"
     },
     {
@@ -919,7 +919,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/church/priest.dm#L72",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/church/priest.dm#L72",
       "group": "bishop"
     },
     {
@@ -934,7 +934,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/blackoak.dm#L2",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/blackoak.dm#L2",
       "group": "wretch"
     },
     {
@@ -949,7 +949,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/blackoak.dm#L2",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/blackoak.dm#L2",
       "group": "mercenary"
     },
     {
@@ -963,7 +963,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/blackoak.dm#L85",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/blackoak.dm#L85",
       "group": "mercenary"
     },
     {
@@ -978,7 +978,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/unknightly_heretic_journey/ukj_varlet.dm#L3",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/unknightly_heretic_journey/ukj_varlet.dm#L3",
       "group": "ukj_varlet"
     },
     {
@@ -994,7 +994,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/blacksmith.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/blacksmith.dm#L1",
       "group": "blacksmith"
     },
     {
@@ -1008,7 +1008,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/hand.dm#L51",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/hand.dm#L51",
       "group": "hand"
     },
     {
@@ -1021,7 +1021,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/ranger.dm#L121",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/ranger.dm#L121",
       "group": "ranger"
     },
     {
@@ -1034,7 +1034,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/hunter.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/hunter.dm#L1",
       "group": "hunter"
     },
     {
@@ -1048,7 +1048,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/trader/brewer.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/trader/brewer.dm#L1",
       "group": "trader"
     },
     {
@@ -1064,7 +1064,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/antag/brigand.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/antag/brigand.dm#L1",
       "group": "brigand"
     },
     {
@@ -1078,7 +1078,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/busker.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/busker.dm#L1",
       "group": "vagabond_busker"
     },
     {
@@ -1091,7 +1091,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/courtier/servant.dm#L121",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/courtier/servant.dm#L121",
       "group": "servant"
     },
     {
@@ -1106,7 +1106,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_followers/kj_campwright.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_followers/kj_campwright.dm#L1",
       "group": "kj_follower"
     },
     {
@@ -1119,7 +1119,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/cleric.dm#L447",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/cleric.dm#L447",
       "group": "cleric"
     },
     {
@@ -1134,7 +1134,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/manorguard/gormless.dm#L5",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/manorguard/gormless.dm#L5",
       "group": "manorguard"
     },
     {
@@ -1148,7 +1148,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/manorguard/cavalry.dm#L3",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/manorguard/cavalry.dm#L3",
       "group": "manorguard"
     },
     {
@@ -1161,7 +1161,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/cheesemaker.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/cheesemaker.dm#L1",
       "group": "cheesemaker"
     },
     {
@@ -1175,7 +1175,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/courtier/butler.dm#L117",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/courtier/butler.dm#L117",
       "group": "seneschal"
     },
     {
@@ -1192,7 +1192,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfeltlord.dm#L183",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfeltlord.dm#L183",
       "group": "heartfelt"
     },
     {
@@ -1207,7 +1207,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_followers/kj_chirurgeon.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_followers/kj_chirurgeon.dm#L1",
       "group": "kj_follower"
     },
     {
@@ -1219,7 +1219,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/youngfolk/churchling.dm#L33",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/youngfolk/churchling.dm#L33",
       "group": "churchling"
     },
     {
@@ -1233,7 +1233,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/townguard.dm#L63",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/townguard.dm#L63",
       "group": "guardsman"
     },
     {
@@ -1247,7 +1247,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/clerk.dm#L30",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/clerk.dm#L30",
       "group": "clerk"
     },
     {
@@ -1261,7 +1261,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/homesteader.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/homesteader.dm#L1",
       "group": "homesteader"
     },
     {
@@ -1274,7 +1274,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/peasants/bathmaid.dm#L91",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/peasants/bathmaid.dm#L91",
       "group": "nightmaiden"
     },
     {
@@ -1288,7 +1288,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/condottiero.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/condottiero.dm#L1",
       "group": "mercenary"
     },
     {
@@ -1302,7 +1302,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/confessor.dm#L3",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/confessor.dm#L3",
       "group": "confessor"
     },
     {
@@ -1315,7 +1315,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/peasants/cook.dm#L30",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/peasants/cook.dm#L30",
       "group": "cook"
     },
     {
@@ -1330,7 +1330,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/courtier/councillor.dm#L30",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/courtier/councillor.dm#L30",
       "group": "councillor"
     },
     {
@@ -1344,7 +1344,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/courtier/chaplain.dm#L33",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/courtier/chaplain.dm#L33",
       "group": "chaplain"
     },
     {
@@ -1359,7 +1359,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/courtier/magician.dm#L34",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/courtier/magician.dm#L34",
       "group": "courtmage"
     },
     {
@@ -1372,7 +1372,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/peasants/bathmaid.dm#L229",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/peasants/bathmaid.dm#L229",
       "group": "nightmaiden"
     },
     {
@@ -1385,7 +1385,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_slave.dm#L206",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_slave.dm#L206",
       "group": "slaver"
     },
     {
@@ -1400,7 +1400,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/crocs.dm#L172",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/crocs.dm#L172",
       "group": "mercenary"
     },
     {
@@ -1414,7 +1414,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/crocs.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/crocs.dm#L1",
       "group": "mercenary"
     },
     {
@@ -1425,7 +1425,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/drow.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/drow.dm#L1",
       "group": "foreigner"
     },
     {
@@ -1440,7 +1440,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/special/crusader.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/special/crusader.dm#L1",
       "group": "crusader"
     },
     {
@@ -1454,7 +1454,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/trader/cuisiner.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/trader/cuisiner.dm#L1",
       "group": "trader"
     },
     {
@@ -1469,7 +1469,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/czwarteki/czwartekiheir.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/czwarteki/czwartekiheir.dm#L1",
       "group": "czwarteki"
     },
     {
@@ -1485,7 +1485,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/czwarteki/czwartekihussar.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/czwarteki/czwartekihussar.dm#L1",
       "group": "czwarteki"
     },
     {
@@ -1501,7 +1501,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/czwarteki/czwartekilord.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/czwarteki/czwartekilord.dm#L1",
       "group": "czwarteki"
     },
     {
@@ -1515,7 +1515,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/czwarteki/czwartekiretainer.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/czwarteki/czwartekiretainer.dm#L1",
       "group": "czwarteki"
     },
     {
@@ -1529,7 +1529,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/czwarteki/czwartekiservant.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/czwarteki/czwartekiservant.dm#L1",
       "group": "czwarteki"
     },
     {
@@ -1544,7 +1544,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/prince.dm#L38",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/prince.dm#L38",
       "group": "heir"
     },
     {
@@ -1555,7 +1555,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/deprived.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/deprived.dm#L1",
       "group": "vagabond_deprived"
     },
     {
@@ -1569,7 +1569,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/desertrider.dm#L160",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/desertrider.dm#L160",
       "group": "mercenary"
     },
     {
@@ -1583,7 +1583,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/desertrider.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/desertrider.dm#L1",
       "group": "mercenary"
     },
     {
@@ -1596,7 +1596,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/desertrider.dm#L83",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/desertrider.dm#L83",
       "group": "mercenary"
     },
     {
@@ -1611,7 +1611,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/deserter.dm#L210",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/deserter.dm#L210",
       "group": "wretch"
     },
     {
@@ -1624,7 +1624,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/destitute_scholar.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/destitute_scholar.dm#L1",
       "group": "vagabond_scholar"
     },
     {
@@ -1639,7 +1639,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/disciple.dm#L3",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/disciple.dm#L3",
       "group": "disciple"
     },
     {
@@ -1653,7 +1653,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/deserter.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/deserter.dm#L1",
       "group": "wretch"
     },
     {
@@ -1667,7 +1667,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/trader/doomsayer.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/trader/doomsayer.dm#L1",
       "group": "trader"
     },
     {
@@ -1682,7 +1682,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/grenzelhoft.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/grenzelhoft.dm#L1",
       "group": "mercenary"
     },
     {
@@ -1696,7 +1696,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/church/druid.dm#L33",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/church/druid.dm#L33",
       "group": "druid"
     },
     {
@@ -1709,7 +1709,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L114",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L114",
       "group": "sfighter"
     },
     {
@@ -1721,7 +1721,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/zybantu.dm#L3",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/zybantu.dm#L3",
       "group": "foreigner"
     },
     {
@@ -1734,7 +1734,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/dungeoneer.dm#L53",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/dungeoneer.dm#L53",
       "group": "dungeoneer"
     },
     {
@@ -1747,7 +1747,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/eastern.dm#L65",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/eastern.dm#L65",
       "group": "foreigner"
     },
     {
@@ -1760,7 +1760,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/eastern.dm#L3",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/eastern.dm#L3",
       "group": "foreigner"
     },
     {
@@ -1775,7 +1775,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/suitor.dm#L29",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/suitor.dm#L29",
       "group": "suitor"
     },
     {
@@ -1787,7 +1787,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/etrusca.dm#L5",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/etrusca.dm#L5",
       "group": "foreigner"
     },
     {
@@ -1802,7 +1802,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/veteran.dm#L582",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/veteran.dm#L582",
       "group": "veteran"
     },
     {
@@ -1815,7 +1815,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/excommunicado.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/excommunicado.dm#L1",
       "group": "vagabond_excommunicated"
     },
     {
@@ -1829,7 +1829,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/failed_apprentice.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/failed_apprentice.dm#L1",
       "group": "vagabond_mage"
     },
     {
@@ -1842,7 +1842,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L470",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L470",
       "group": "sfighter"
     },
     {
@@ -1857,7 +1857,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/peasant.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/peasant.dm#L1",
       "group": "peasant"
     },
     {
@@ -1870,7 +1870,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/fisher.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/fisher.dm#L1",
       "group": "fisher"
     },
     {
@@ -1884,7 +1884,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/knight/knight_foot.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/knight/knight_foot.dm#L1",
       "group": "knight"
     },
     {
@@ -1898,7 +1898,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/manorguard/footman.dm#L2",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/manorguard/footman.dm#L2",
       "group": "manorguard"
     },
     {
@@ -1913,7 +1913,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/squire.dm#L103",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/squire.dm#L103",
       "group": "squire"
     },
     {
@@ -1925,7 +1925,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/grenzelhoft.dm#L75",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/grenzelhoft.dm#L75",
       "group": "foreigner"
     },
     {
@@ -1939,7 +1939,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/warden.dm#L142",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/warden.dm#L142",
       "group": "warden"
     },
     {
@@ -1952,7 +1952,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/forlorn.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/forlorn.dm#L1",
       "group": "mercenary"
     },
     {
@@ -1967,7 +1967,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/veteran.dm#L474",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/veteran.dm#L474",
       "group": "veteran"
     },
     {
@@ -1983,7 +1983,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/unknightly_heretic_journey/ukj_dark_itinerant.dm#L3",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/unknightly_heretic_journey/ukj_dark_itinerant.dm#L3",
       "group": "ukj_dark_itinerant"
     },
     {
@@ -1996,7 +1996,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/freifechter.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/freifechter.dm#L1",
       "group": "mercenary"
     },
     {
@@ -2010,7 +2010,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/freifechter.dm#L65",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/freifechter.dm#L65",
       "group": "mercenary"
     },
     {
@@ -2023,7 +2023,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/freifechter.dm#L126",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/freifechter.dm#L126",
       "group": "mercenary"
     },
     {
@@ -2036,7 +2036,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/rookie.dm#L46",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/rookie.dm#L46",
       "group": "rookie"
     },
     {
@@ -2053,7 +2053,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/suitor.dm#L138",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/suitor.dm#L138",
       "group": "suitor"
     },
     {
@@ -2066,7 +2066,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/drunkard.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/drunkard.dm#L1",
       "group": "drunkard"
     },
     {
@@ -2081,7 +2081,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/grenzelhoft.dm#L199",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/grenzelhoft.dm#L199",
       "group": "mercenary"
     },
     {
@@ -2097,7 +2097,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/antag/gnoll/gnoll_berserker.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/antag/gnoll/gnoll_berserker.dm#L1",
       "group": "gnoll"
     },
     {
@@ -2111,7 +2111,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/antag/gnoll/gnoll_knight.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/antag/gnoll/gnoll_knight.dm#L1",
       "group": "gnoll"
     },
     {
@@ -2126,7 +2126,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/antag/gnoll/gnoll_shaman.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/antag/gnoll/gnoll_shaman.dm#L1",
       "group": "gnoll"
     },
     {
@@ -2140,7 +2140,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/antag/gnoll/gnoll_templar.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/antag/gnoll/gnoll_templar.dm#L1",
       "group": "gnoll"
     },
     {
@@ -2154,7 +2154,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/grenzelhoft.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/grenzelhoft.dm#L4",
       "group": "foreigner"
     },
     {
@@ -2167,7 +2167,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/retainer.dm#L172",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/retainer.dm#L172",
       "group": "baron_retainer"
     },
     {
@@ -2179,7 +2179,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/gronn.dm#L3",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/gronn.dm#L3",
       "group": "foreigner"
     },
     {
@@ -2194,7 +2194,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/grudgebearer.dm#L2",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/grudgebearer.dm#L2",
       "group": "mercenary"
     },
     {
@@ -2208,7 +2208,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/grudgebearer.dm#L70",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/grudgebearer.dm#L70",
       "group": "mercenary"
     },
     {
@@ -2221,7 +2221,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/youngfolk/smith_apprentice.dm#L30",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/youngfolk/smith_apprentice.dm#L30",
       "group": "gapprentice"
     },
     {
@@ -2236,7 +2236,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/yeomen/guildsman.dm#L32",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/yeomen/guildsman.dm#L32",
       "group": "guildsman"
     },
     {
@@ -2251,7 +2251,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/yeomen/guildsman.dm#L108",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/yeomen/guildsman.dm#L108",
       "group": "guildsman"
     },
     {
@@ -2265,7 +2265,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/yeomen/guildmaster.dm#L36",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/yeomen/guildmaster.dm#L36",
       "group": "guildmaster"
     },
     {
@@ -2278,7 +2278,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/rare/heartfelthand.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/rare/heartfelthand.dm#L1",
       "group": "heartfelthand"
     },
     {
@@ -2292,7 +2292,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/hangyaku.dm#L102",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/hangyaku.dm#L102",
       "group": "mercenary"
     },
     {
@@ -2308,7 +2308,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/hangyaku.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/hangyaku.dm#L1",
       "group": "mercenary"
     },
     {
@@ -2322,7 +2322,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/trader/harlequin.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/trader/harlequin.dm#L1",
       "group": "trader"
     },
     {
@@ -2336,7 +2336,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/unknightly_heretic_journey/ukj_varlet.dm#L258",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/unknightly_heretic_journey/ukj_varlet.dm#L258",
       "group": "ukj_varlet_harrier"
     },
     {
@@ -2350,7 +2350,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/scavenger.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/scavenger.dm#L1",
       "group": "scavenger"
     },
     {
@@ -2364,7 +2364,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/courtier/butler.dm#L82",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/courtier/butler.dm#L82",
       "group": "seneschal"
     },
     {
@@ -2380,7 +2380,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/courtier/physician.dm#L32",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/courtier/physician.dm#L32",
       "group": "physician"
     },
     {
@@ -2395,7 +2395,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltmagos.dm#L2",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltmagos.dm#L2",
       "group": "heartfelt"
     },
     {
@@ -2410,7 +2410,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltcourtier.dm#L2",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltcourtier.dm#L2",
       "group": "heartfelt"
     },
     {
@@ -2425,7 +2425,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltwarriors.dm#L2",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltwarriors.dm#L2",
       "group": "heartfelt"
     },
     {
@@ -2440,7 +2440,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltwarriors.dm#L113",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltwarriors.dm#L113",
       "group": "heartfelt"
     },
     {
@@ -2454,7 +2454,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltphyscian.dm#L2",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltphyscian.dm#L2",
       "group": "heartfelt"
     },
     {
@@ -2469,7 +2469,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltprior.dm#L2",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltprior.dm#L2",
       "group": "heartfelt"
     },
     {
@@ -2482,7 +2482,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltworkers.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltworkers.dm#L1",
       "group": "heartfelt"
     },
     {
@@ -2498,7 +2498,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltwarriors.dm#L223",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/retinue/heartfeltwarriors.dm#L223",
       "group": "heartfelt"
     },
     {
@@ -2514,7 +2514,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/consort.dm#L32",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/consort.dm#L32",
       "group": "lady"
     },
     {
@@ -2529,7 +2529,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/knight/knight_heavy.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/knight/knight_heavy.dm#L1",
       "group": "knight"
     },
     {
@@ -2544,7 +2544,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/antag/hedgeknight.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/antag/hedgeknight.dm#L1",
       "group": "hedgeknight"
     },
     {
@@ -2560,7 +2560,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/antag/hedgemage.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/antag/hedgemage.dm#L1",
       "group": "hedgemage"
     },
     {
@@ -2575,7 +2575,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/grenzelhoft.dm#L70",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/grenzelhoft.dm#L70",
       "group": "mercenary"
     },
     {
@@ -2589,7 +2589,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/retainer.dm#L32",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/retainer.dm#L32",
       "group": "baron_retainer"
     },
     {
@@ -2602,7 +2602,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/herald_of_progress.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/herald_of_progress.dm#L1",
       "group": "wretch"
     },
     {
@@ -2615,7 +2615,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/heretic.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/heretic.dm#L1",
       "group": "wretch"
     },
     {
@@ -2631,7 +2631,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/heretic.dm#L564",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/heretic.dm#L564",
       "group": "wretch"
     },
     {
@@ -2646,7 +2646,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/heretic.dm#L311",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/heretic.dm#L311",
       "group": "wretch"
     },
     {
@@ -2660,7 +2660,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/ferentia.dm#L238",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/ferentia.dm#L238",
       "group": "mercenary"
     },
     {
@@ -2676,7 +2676,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_squire.dm#L115",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_squire.dm#L115",
       "group": "kj_squire_hobelar"
     },
     {
@@ -2691,7 +2691,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/consort.dm#L133",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/consort.dm#L133",
       "group": "lady"
     },
     {
@@ -2704,7 +2704,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/peasants/slave.dm#L45",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/peasants/slave.dm#L45",
       "group": "slave"
     },
     {
@@ -2717,7 +2717,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/byos/tribalguard.dm#L43",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/byos/tribalguard.dm#L43",
       "group": "tribalguard"
     },
     {
@@ -2732,7 +2732,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/byos/triballackey.dm#L46",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/byos/triballackey.dm#L46",
       "group": "tribalrabble"
     },
     {
@@ -2746,7 +2746,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/courtier/councillor.dm#L53",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/courtier/councillor.dm#L53",
       "group": "councillor"
     },
     {
@@ -2760,7 +2760,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/antag/Iconoclast.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/antag/Iconoclast.dm#L1",
       "group": "iconoclast"
     },
     {
@@ -2774,7 +2774,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/antag/gnoll/gnoll_impure.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/antag/gnoll/gnoll_impure.dm#L1",
       "group": "gnoll_impure"
     },
     {
@@ -2790,7 +2790,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/lord.dm#L266",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/lord.dm#L266",
       "group": "lord"
     },
     {
@@ -2806,7 +2806,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/prince.dm#L239",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/prince.dm#L239",
       "group": "heir"
     },
     {
@@ -2821,7 +2821,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/yeomen/barkeep.dm#L30",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/yeomen/barkeep.dm#L30",
       "group": "barkeep"
     },
     {
@@ -2836,7 +2836,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/Inquisition/puritanclasses/inspector.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/Inquisition/puritanclasses/inspector.dm#L4",
       "group": "puritan"
     },
     {
@@ -2851,7 +2851,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/prince.dm#L100",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/prince.dm#L100",
       "group": "heir"
     },
     {
@@ -2864,7 +2864,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L358",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/warrior.dm#L358",
       "group": "sfighter"
     },
     {
@@ -2878,7 +2878,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/squire.dm#L166",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/squire.dm#L166",
       "group": "squire"
     },
     {
@@ -2892,7 +2892,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/trader/jeweler.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/trader/jeweler.dm#L1",
       "group": "trader"
     },
     {
@@ -2905,7 +2905,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_followers/kj_jongleur.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_followers/kj_jongleur.dm#L1",
       "group": "kj_follower"
     },
     {
@@ -2920,7 +2920,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/church/keeper.dm#L42",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/church/keeper.dm#L42",
       "group": "keeper"
     },
     {
@@ -2936,7 +2936,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/gronnheavy.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/gronnheavy.dm#L1",
       "group": "mercenary"
     },
     {
@@ -2952,7 +2952,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/antag/knave.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/antag/knave.dm#L1",
       "group": "knave"
     },
     {
@@ -2968,7 +2968,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_knight.dm#L3",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_knight.dm#L3",
       "group": "kj_knight"
     },
     {
@@ -2984,7 +2984,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/captain.dm#L76",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/captain.dm#L76",
       "group": "captain"
     },
     {
@@ -3001,7 +3001,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/bailiff.dm#L92",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/bailiff.dm#L92",
       "group": "marshal"
     },
     {
@@ -3015,7 +3015,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/noble.dm#L63",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/noble.dm#L63",
       "group": "noble"
     },
     {
@@ -3030,7 +3030,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/unknightly_heretic_journey/ukj_dark_itinerant.dm#L189",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/unknightly_heretic_journey/ukj_dark_itinerant.dm#L189",
       "group": "ukj_dark_itinerant_harbinger"
     },
     {
@@ -3046,7 +3046,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfeltknight.dm#L45",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfeltknight.dm#L45",
       "group": "heartfelt"
     },
     {
@@ -3061,7 +3061,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_knight.dm#L162",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_knight.dm#L162",
       "group": "kj_knight_outrider"
     },
     {
@@ -3074,7 +3074,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/peasants/slave.dm#L79",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/peasants/slave.dm#L79",
       "group": "slave"
     },
     {
@@ -3089,7 +3089,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/squire.dm#L49",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/squire.dm#L49",
       "group": "squire"
     },
     {
@@ -3103,7 +3103,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/baron.dm#L84",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/baron.dm#L84",
       "group": "baron"
     },
     {
@@ -3118,7 +3118,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/ferentia.dm#L312",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/ferentia.dm#L312",
       "group": "mercenary"
     },
     {
@@ -3131,7 +3131,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/goatherd.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/goatherd.dm#L1",
       "group": "vagabond_goatherd"
     },
     {
@@ -3145,7 +3145,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/ferentia.dm#L382",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/ferentia.dm#L382",
       "group": "mercenary"
     },
     {
@@ -3161,7 +3161,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfeltlord.dm#L23",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfeltlord.dm#L23",
       "group": "heartfelt"
     },
     {
@@ -3177,7 +3177,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/rare/heartfelt.dm#L2",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/rare/heartfelt.dm#L2",
       "group": "heartfeltlord"
     },
     {
@@ -3193,7 +3193,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/lunacyembracer.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/lunacyembracer.dm#L1",
       "group": "wretch"
     },
     {
@@ -3205,7 +3205,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/peasants/lunatic.dm#L31",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/peasants/lunatic.dm#L31",
       "group": "lunatic"
     },
     {
@@ -3218,7 +3218,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/courtier/mage_associate.dm#L96",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/courtier/mage_associate.dm#L96",
       "group": "wapprentice"
     },
     {
@@ -3231,7 +3231,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/courtier/mage_associate.dm#L41",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/courtier/mage_associate.dm#L41",
       "group": "wapprentice"
     },
     {
@@ -3246,7 +3246,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/lord.dm#L227",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/lord.dm#L227",
       "group": "lord"
     },
     {
@@ -3259,7 +3259,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/courtier/servant.dm#L77",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/courtier/servant.dm#L77",
       "group": "servant"
     },
     {
@@ -3273,7 +3273,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/plaguebearer.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/plaguebearer.dm#L1",
       "group": "wretch"
     },
     {
@@ -3290,7 +3290,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/bailiff.dm#L54",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/bailiff.dm#L54",
       "group": "marshal"
     },
     {
@@ -3305,7 +3305,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfelthand.dm#L36",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfelthand.dm#L36",
       "group": "heartfelt"
     },
     {
@@ -3320,7 +3320,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/church/martyr/martyr.dm#L51",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/church/martyr/martyr.dm#L51",
       "group": "martyr"
     },
     {
@@ -3336,7 +3336,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/rare/Lsmith.dm#L3",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/rare/Lsmith.dm#L3",
       "group": "masterblacksmith"
     },
     {
@@ -3348,7 +3348,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/rare/Lchef.dm#L3",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/rare/Lchef.dm#L3",
       "group": "masterchef"
     },
     {
@@ -3364,7 +3364,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/rare/Lpeasant.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/rare/Lpeasant.dm#L1",
       "group": "farmermaster"
     },
     {
@@ -3377,7 +3377,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/rare/Lfish.dm#L3",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/rare/Lfish.dm#L3",
       "group": "fishermaster"
     },
     {
@@ -3393,7 +3393,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/rare/Lminer.dm#L3",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/rare/Lminer.dm#L3",
       "group": "minermaster"
     },
     {
@@ -3409,7 +3409,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/wardenmaster.dm#L61",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/wardenmaster.dm#L61",
       "group": "wardenmaster"
     },
     {
@@ -3422,7 +3422,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/yeomen/merchant.dm#L31",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/yeomen/merchant.dm#L31",
       "group": "merchant"
     },
     {
@@ -3437,7 +3437,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/lord.dm#L181",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/lord.dm#L181",
       "group": "lord"
     },
     {
@@ -3451,7 +3451,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/miner.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/miner.dm#L1",
       "group": "miner"
     },
     {
@@ -3465,7 +3465,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/minstrel.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/minstrel.dm#L1",
       "group": "minstrel"
     },
     {
@@ -3479,7 +3479,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/cleric.dm#L599",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/cleric.dm#L599",
       "group": "cleric"
     },
     {
@@ -3494,7 +3494,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/mistwalker.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/mistwalker.dm#L1",
       "group": "wretch"
     },
     {
@@ -3506,7 +3506,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/cleric.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/cleric.dm#L1",
       "group": "cleric"
     },
     {
@@ -3521,7 +3521,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/knight/knight_mounted.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/knight/knight_mounted.dm#L1",
       "group": "knight"
     },
     {
@@ -3536,7 +3536,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/warscholar.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/warscholar.dm#L1",
       "group": "mercenary"
     },
     {
@@ -3549,7 +3549,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/warscholar.dm#L88",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/warscholar.dm#L88",
       "group": "mercenary"
     },
     {
@@ -3562,7 +3562,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/naledi.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/naledi.dm#L1",
       "group": "foreigner"
     },
     {
@@ -3575,7 +3575,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/warscholar.dm#L209",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/warscholar.dm#L209",
       "group": "mercenary"
     },
     {
@@ -3589,7 +3589,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/necromancer.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/necromancer.dm#L1",
       "group": "wretch"
     },
     {
@@ -3602,7 +3602,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/youngfolk/churchling.dm#L104",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/youngfolk/churchling.dm#L104",
       "group": "churchling"
     },
     {
@@ -3619,7 +3619,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/prince.dm#L311",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/prince.dm#L311",
       "group": "heir"
     },
     {
@@ -3633,7 +3633,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/newmoon.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/newmoon.dm#L1",
       "group": "mercenary"
     },
     {
@@ -3647,7 +3647,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/special/nakedandafraid.dm#L2",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/special/nakedandafraid.dm#L2",
       "group": "nudist"
     },
     {
@@ -3661,7 +3661,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/oathmarked.dm#L76",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/oathmarked.dm#L76",
       "group": "mercenary"
     },
     {
@@ -3676,7 +3676,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/oathmarked.dm#L12",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/oathmarked.dm#L12",
       "group": "mercenary"
     },
     {
@@ -3691,7 +3691,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/Inquisition/puritanclasses/ordinator.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/Inquisition/puritanclasses/ordinator.dm#L4",
       "group": "puritan"
     },
     {
@@ -3705,7 +3705,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/otava.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/otava.dm#L1",
       "group": "foreigner"
     },
     {
@@ -3720,7 +3720,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/routier.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/routier.dm#L1",
       "group": "mercenary"
     },
     {
@@ -3735,7 +3735,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/outlaw.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/outlaw.dm#L1",
       "group": "wretch"
     },
     {
@@ -3748,7 +3748,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/cleric.dm#L202",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/cleric.dm#L202",
       "group": "cleric"
     },
     {
@@ -3761,7 +3761,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/trader/peddler.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/trader/peddler.dm#L1",
       "group": "trader"
     },
     {
@@ -3777,7 +3777,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/antag/pioneer.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/antag/pioneer.dm#L1",
       "group": "pioneer"
     },
     {
@@ -3791,7 +3791,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/poacher.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/poacher.dm#L1",
       "group": "wretch"
     },
     {
@@ -3805,7 +3805,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/potter.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/potter.dm#L1",
       "group": "potter"
     },
     {
@@ -3820,7 +3820,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/scavenger.dm#L74",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/scavenger.dm#L74",
       "group": "scavenger"
     },
     {
@@ -3833,7 +3833,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/psyalmist.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/psyalmist.dm#L4",
       "group": "psyaltrist"
     },
     {
@@ -3846,7 +3846,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/pyromaniac.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/pyromaniac.dm#L1",
       "group": "wretch"
     },
     {
@@ -3859,7 +3859,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/warden.dm#L66",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/warden.dm#L66",
       "group": "warden"
     },
     {
@@ -3874,7 +3874,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/manorguard/retainer.dm#L2",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/manorguard/retainer.dm#L2",
       "group": "manorguard"
     },
     {
@@ -3889,7 +3889,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/retainer.dm#L99",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/retainer.dm#L99",
       "group": "baron_retainer"
     },
     {
@@ -3904,7 +3904,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/veteran.dm#L158",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/veteran.dm#L158",
       "group": "veteran"
     },
     {
@@ -3918,7 +3918,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/veteran.dm#L373",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/veteran.dm#L373",
       "group": "veteran"
     },
     {
@@ -3932,7 +3932,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/roguemage.dm#L2",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/roguemage.dm#L2",
       "group": "wretch"
     },
     {
@@ -3946,7 +3946,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/knight/knight_champion.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/knight/knight_champion.dm#L1",
       "group": "knight"
     },
     {
@@ -3961,7 +3961,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/rumaclan.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/rumaclan.dm#L1",
       "group": "mercenary"
     },
     {
@@ -3976,7 +3976,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/rumaclan.dm#L55",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/rumaclan.dm#L55",
       "group": "mercenary"
     },
     {
@@ -3989,7 +3989,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/runner.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/runner.dm#L1",
       "group": "vagabond_runner"
     },
     {
@@ -4004,7 +4004,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/byos/tribalguard.dm#L202",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/byos/tribalguard.dm#L202",
       "group": "tribalguard"
     },
     {
@@ -4017,7 +4017,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/antag/sawbones.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/antag/sawbones.dm#L1",
       "group": "sawbones"
     },
     {
@@ -4032,7 +4032,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/suitor.dm#L86",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/suitor.dm#L86",
       "group": "suitor"
     },
     {
@@ -4046,7 +4046,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/seamstress.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/seamstress.dm#L1",
       "group": "seamstress"
     },
     {
@@ -4060,7 +4060,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/ferentia.dm#L176",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/ferentia.dm#L176",
       "group": "mercenary"
     },
     {
@@ -4075,7 +4075,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/ferentia.dm#L10",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/ferentia.dm#L10",
       "group": "mercenary"
     },
     {
@@ -4090,7 +4090,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/ferentia.dm#L102",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/ferentia.dm#L102",
       "group": "mercenary"
     },
     {
@@ -4105,7 +4105,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/antag/sellsword.dm#L2",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/antag/sellsword.dm#L2",
       "group": "sellsword"
     },
     {
@@ -4119,7 +4119,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/courtier/butler.dm#L31",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/courtier/butler.dm#L31",
       "group": "seneschal"
     },
     {
@@ -4131,7 +4131,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/ranger.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/ranger.dm#L1",
       "group": "ranger"
     },
     {
@@ -4146,7 +4146,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/sergeant.dm#L51",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/sergeant.dm#L51",
       "group": "sergeant"
     },
     {
@@ -4159,7 +4159,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/courtier/servant.dm#L32",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/courtier/servant.dm#L32",
       "group": "servant"
     },
     {
@@ -4173,7 +4173,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_slave.dm#L6",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_slave.dm#L6",
       "group": "slaver"
     },
     {
@@ -4186,7 +4186,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_followers/kj_servitor.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_followers/kj_servitor.dm#L1",
       "group": "kj_follower"
     },
     {
@@ -4201,7 +4201,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/prince.dm#L168",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/prince.dm#L168",
       "group": "heir"
     },
     {
@@ -4214,7 +4214,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/youngfolk/shophand.dm#L30",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/youngfolk/shophand.dm#L30",
       "group": "shophand"
     },
     {
@@ -4229,7 +4229,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/baron.dm#L52",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/baron.dm#L52",
       "group": "baron"
     },
     {
@@ -4242,7 +4242,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/manorguard/skirmisher.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/manorguard/skirmisher.dm#L4",
       "group": "manorguard"
     },
     {
@@ -4255,7 +4255,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/peasants/slave.dm#L116",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/peasants/slave.dm#L116",
       "group": "slave"
     },
     {
@@ -4268,7 +4268,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/yeomen/slaver.dm#L34",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/yeomen/slaver.dm#L34",
       "group": "slaver"
     },
     {
@@ -4283,7 +4283,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/peasants/soilson.dm#L33",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/peasants/soilson.dm#L33",
       "group": "soilson"
     },
     {
@@ -4297,7 +4297,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/sojourner.dm#L4",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/Inquisition/orthoclasses/sojourner.dm#L4",
       "group": "sojourner"
     },
     {
@@ -4310,7 +4310,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/mage.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/mage.dm#L1",
       "group": "mage"
     },
     {
@@ -4323,7 +4323,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/hunter.dm#L97",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/hunter.dm#L97",
       "group": "hunter"
     },
     {
@@ -4337,7 +4337,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/mage.dm#L63",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/mage.dm#L63",
       "group": "mage"
     },
     {
@@ -4350,7 +4350,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/mage.dm#L221",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/mage.dm#L221",
       "group": "mage"
     },
     {
@@ -4364,7 +4364,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/hand.dm#L107",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/hand.dm#L107",
       "group": "hand"
     },
     {
@@ -4378,7 +4378,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/noble.dm#L186",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/noble.dm#L186",
       "group": "noble"
     },
     {
@@ -4394,7 +4394,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_squire.dm#L3",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_squire.dm#L3",
       "group": "kj_squire"
     },
     {
@@ -4409,7 +4409,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/unknightly_heretic_journey/ukj_varlet.dm#L130",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/unknightly_heretic_journey/ukj_varlet.dm#L130",
       "group": "ukj_varlet_stablehand"
     },
     {
@@ -4422,7 +4422,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/manorguard/standard_bearer.dm#L6",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/manorguard/standard_bearer.dm#L6",
       "group": "manorguard"
     },
     {
@@ -4437,7 +4437,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/steward.dm#L31",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/steward.dm#L31",
       "group": "steward"
     },
     {
@@ -4452,7 +4452,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfelthand.dm#L119",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/heartfelt/heartfelthand.dm#L119",
       "group": "heartfelt"
     },
     {
@@ -4466,7 +4466,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/cleric.dm#L750",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/cleric.dm#L750",
       "group": "cleric"
     },
     {
@@ -4479,7 +4479,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/rogue.dm#L210",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/rogue.dm#L210",
       "group": "rogue"
     },
     {
@@ -4493,7 +4493,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_chaplain.dm#L3",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_chaplain.dm#L3",
       "group": "kj_chaplain"
     },
     {
@@ -4507,7 +4507,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_chaplain.dm#L159",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/knightly_journey/kj_chaplain.dm#L159",
       "group": "kj_chaplain_stigmata"
     },
     {
@@ -4520,7 +4520,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/czwarteki.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/czwarteki.dm#L1",
       "group": "foreigner"
     },
     {
@@ -4534,7 +4534,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/yeomen/tailor.dm#L27",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/yeomen/tailor.dm#L27",
       "group": "tailor"
     },
     {
@@ -4548,7 +4548,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/peasants/knavewench.dm#L29",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/peasants/knavewench.dm#L29",
       "group": "tapster"
     },
     {
@@ -4564,7 +4564,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/veteran.dm#L264",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/veteran.dm#L264",
       "group": "veteran"
     },
     {
@@ -4577,7 +4577,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/church/templar.dm#L60",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/church/templar.dm#L60",
       "group": "templar"
     },
     {
@@ -4589,7 +4589,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/unraveled.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/unraveled.dm#L1",
       "group": "vagabond_unraveled"
     },
     {
@@ -4601,7 +4601,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/the_original.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/the_original.dm#L1",
       "group": "vagabond_original"
     },
     {
@@ -4615,7 +4615,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/thespian.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/thespian.dm#L1",
       "group": "foreigner"
     },
     {
@@ -4630,7 +4630,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/rogue.dm#L69",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/rogue.dm#L69",
       "group": "rogue"
     },
     {
@@ -4644,7 +4644,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/peasants/bathmaid.dm#L181",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/peasants/bathmaid.dm#L181",
       "group": "nightmaiden"
     },
     {
@@ -4657,7 +4657,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/artificer.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/artificer.dm#L1",
       "group": "artificer"
     },
     {
@@ -4672,7 +4672,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/special/torso.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/special/torso.dm#L1",
       "group": "torso"
     },
     {
@@ -4685,7 +4685,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/yeomen/crier.dm#L29",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/yeomen/crier.dm#L29",
       "group": "towncrier"
     },
     {
@@ -4700,7 +4700,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/townelder.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/townelder.dm#L1",
       "group": "elder"
     },
     {
@@ -4714,7 +4714,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/trader/scholar.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/trader/scholar.dm#L1",
       "group": "trader"
     },
     {
@@ -4729,7 +4729,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/rogue.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/rogue.dm#L1",
       "group": "rogue"
     },
     {
@@ -4744,7 +4744,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/byos/tribalshaman.dm#L35",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/byos/tribalshaman.dm#L35",
       "group": "tribalshaman"
     },
     {
@@ -4759,7 +4759,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/consort.dm#L80",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/consort.dm#L80",
       "group": "lady"
     },
     {
@@ -4773,7 +4773,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/underdweller.dm#L2",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/underdweller.dm#L2",
       "group": "foreigner"
     },
     {
@@ -4789,7 +4789,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/byos/tribalchief.dm#L101",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/byos/tribalchief.dm#L101",
       "group": "tribalchieftain"
     },
     {
@@ -4805,7 +4805,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/nobility/lord.dm#L138",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/nobility/lord.dm#L138",
       "group": "lord"
     },
     {
@@ -4821,7 +4821,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/other/vampire_spawn.dm#L25",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/other/vampire_spawn.dm#L25",
       "group": "vampire_spawn"
     },
     {
@@ -4834,7 +4834,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/vanguard.dm#L58",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/vanguard.dm#L58",
       "group": "vanguard"
     },
     {
@@ -4849,7 +4849,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/vanguard.dm#L109",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/vanguard.dm#L109",
       "group": "vanguard"
     },
     {
@@ -4862,7 +4862,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/vaquero.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/vaquero.dm#L1",
       "group": "mercenary"
     },
     {
@@ -4878,7 +4878,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/veteran.dm#L49",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/veteran.dm#L49",
       "group": "veteran"
     },
     {
@@ -4891,7 +4891,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/wanted.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/youngfolk/vagabond/wanted.dm#L1",
       "group": "vagabond_wanted"
     },
     {
@@ -4906,7 +4906,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/byos/tribalguard.dm#L120",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/byos/tribalguard.dm#L120",
       "group": "tribalguard"
     },
     {
@@ -4921,7 +4921,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/garrison/watchcaptain.dm#L47",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/garrison/watchcaptain.dm#L47",
       "group": "watchcaptain"
     },
     {
@@ -4934,7 +4934,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/ranger.dm#L71",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/ranger.dm#L71",
       "group": "ranger"
     },
     {
@@ -4949,7 +4949,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/special/whitecheesemaker.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/special/whitecheesemaker.dm#L1",
       "group": "whitecheese"
     },
     {
@@ -4962,7 +4962,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/witch.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/witch.dm#L1",
       "group": "witch"
     },
     {
@@ -4976,7 +4976,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/woodcutter.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/pilgrim/woodcutter.dm#L1",
       "group": "woodworker"
     },
     {
@@ -4990,7 +4990,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/unknightly_heretic_journey/ukj_dark_chaplain.dm#L3",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/unknightly_heretic_journey/ukj_dark_chaplain.dm#L3",
       "group": "ukj_dark_chaplain"
     },
     {
@@ -5005,7 +5005,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/wretchedtoiler.dm#L1",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/wretch/wretchedtoiler.dm#L1",
       "group": "wretch"
     },
     {
@@ -5021,7 +5021,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/mercenaries/classes/atgervi.dm#L86",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/mercenaries/classes/atgervi.dm#L86",
       "group": "mercenary"
     },
     {
@@ -5034,7 +5034,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/slavers.dm#L2",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/combat/foreigner/slavers.dm#L2",
       "group": "foreigner"
     },
     {
@@ -5050,7 +5050,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_mercenary.dm#L8",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_mercenary.dm#L8",
       "group": "slaver"
     },
     {
@@ -5065,7 +5065,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_mercenary.dm#L160",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_mercenary.dm#L160",
       "group": "slaver"
     },
     {
@@ -5081,7 +5081,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_master.dm#L2",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_master.dm#L2",
       "group": "slaver"
     },
     {
@@ -5097,7 +5097,7 @@
       },
       "choices": [],
       "description": "",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_mercenary.dm#L84",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/jobs/job_types/roguetown/adventurer/types/migrant/slavers/slaver_mercenary.dm#L84",
       "group": "slaver"
     }
   ],
@@ -5114,7 +5114,7 @@
       },
       "choices": [],
       "description": "Your will leads the way.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/mental.dm#L22",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/mental.dm#L22",
       "group": "mental"
     },
     {
@@ -5129,7 +5129,7 @@
       },
       "choices": [],
       "description": "You sharpened both your body and your mind as best you were able, and vigilance has been your reward.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/physical.dm#L13",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/physical.dm#L13",
       "group": "physical"
     },
     {
@@ -5138,7 +5138,7 @@
       "stats": {},
       "choices": [],
       "description": "You've kept your humors balanced, your body honed and mind sharp enough. Fate has left you mostly unchanged, in every way.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/wildcard.dm#L18",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/wildcard.dm#L18",
       "group": "wildcard"
     },
     {
@@ -5152,7 +5152,7 @@
       },
       "choices": [],
       "description": "Your keen senses have not led you astray.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/mental.dm#L27",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/mental.dm#L27",
       "group": "mental"
     },
     {
@@ -5166,7 +5166,7 @@
       },
       "choices": [],
       "description": "Being quick on the draw has left you weaker when they live past your first strike.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/agile.dm#L32",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/agile.dm#L32",
       "group": "agile"
     },
     {
@@ -5180,7 +5180,7 @@
       },
       "choices": [],
       "description": "You see. You dash. You spring. You dodge. Can you keep it up?",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/agile.dm#L27",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/agile.dm#L27",
       "group": "agile"
     },
     {
@@ -5193,7 +5193,7 @@
       },
       "choices": [],
       "description": "You take your time, but you have a lot of it to spare.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/mental.dm#L37",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/mental.dm#L37",
       "group": "mental"
     },
     {
@@ -5206,7 +5206,7 @@
       },
       "choices": [],
       "description": "You've spent yils willingly submitting your body through a most perilous journey. Stalwart in your faith, you've sworn to never flee again.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/physical.dm#L33",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/physical.dm#L33",
       "group": "physical"
     },
     {
@@ -5244,7 +5244,7 @@
       },
       "choices": [],
       "description": "The first or the last - let destiny's fickle loom decree what your fate shall be.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/wildcard.dm#L8",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/wildcard.dm#L8",
       "group": "wildcard"
     },
     {
@@ -5258,7 +5258,7 @@
       },
       "choices": [],
       "description": "You see what is and what will sometimes be.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/mental.dm#L17",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/mental.dm#L17",
       "group": "mental"
     },
     {
@@ -5275,7 +5275,7 @@
       },
       "choices": [],
       "description": "The growing dark lines your vision more with every passing day: your flesh and mind are failing you, and destiny has turned her gaze from you. How will your tale endure such hardship?",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/wildcard.dm#L13",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/wildcard.dm#L13",
       "group": "wildcard"
     },
     {
@@ -5289,7 +5289,7 @@
       },
       "choices": [],
       "description": "Uniquely Pestran fortitude affords you the means to shrug off illnesses and poisons that others might not.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/agile.dm#L7",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/agile.dm#L7",
       "group": "agile"
     },
     {
@@ -5303,7 +5303,7 @@
       },
       "choices": [],
       "description": "You waste no time. You know enough to get by, and strive towards it.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/mental.dm#L42",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/mental.dm#L42",
       "group": "mental"
     },
     {
@@ -5317,7 +5317,7 @@
       },
       "choices": [],
       "description": "Hard labor has honed you into a mass of sinew - a valuable trait in a world where might makes right.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/physical.dm#L8",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/physical.dm#L8",
       "group": "physical"
     },
     {
@@ -5331,7 +5331,7 @@
       },
       "choices": [],
       "description": "You've seen it all. You've heard it all. An eye to the horizon, and an ear to the ground, and the right place to strike.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/mental.dm#L32",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/mental.dm#L32",
       "group": "mental"
     },
     {
@@ -5346,7 +5346,7 @@
       },
       "choices": [],
       "description": "Look ever to the Gods for guidance in these trying times - and so you have, to the exclusion of the world around you.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/mental.dm#L7",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/mental.dm#L7",
       "group": "mental"
     },
     {
@@ -5362,7 +5362,7 @@
       },
       "choices": [],
       "description": "Lyfe's dealt you a poor hand, so you've opted to simply flip the table instead.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/physical.dm#L28",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/physical.dm#L28",
       "group": "physical"
     },
     {
@@ -5376,7 +5376,7 @@
       },
       "choices": [],
       "description": "Your understanding of the world avails you, more often than not.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/mental.dm#L2",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/mental.dm#L2",
       "group": "mental"
     },
     {
@@ -5390,7 +5390,7 @@
       },
       "choices": [],
       "description": "With the wind in your hair and trouble at your back, your speed has oft been your salvation.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/agile.dm#L2",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/agile.dm#L2",
       "group": "agile"
     },
     {
@@ -5405,7 +5405,7 @@
       },
       "choices": [],
       "description": "Wound tight like the limbs of a time-teller, your physicality is poised to strike - or flee - at a moment's notice.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/physical.dm#L18",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/physical.dm#L18",
       "group": "physical"
     },
     {
@@ -5421,7 +5421,7 @@
       },
       "choices": [],
       "description": "Your robust physique and keen eyes oft been your most valuable friends in such trying times.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/agile.dm#L17",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/agile.dm#L17",
       "group": "agile"
     },
     {
@@ -5435,7 +5435,7 @@
       },
       "choices": [],
       "description": "Your lyfe, hard-lyved, has imparted one solitary adage: carry on above all else. And so you endure.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/physical.dm#L23",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/physical.dm#L23",
       "group": "physical"
     },
     {
@@ -5450,7 +5450,7 @@
       },
       "choices": [],
       "description": "Years honing your physique has left you with a physical edge, but your faculties have been somewhat neglected.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/physical.dm#L3",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/physical.dm#L3",
       "group": "physical"
     },
     {
@@ -5466,7 +5466,7 @@
       },
       "choices": [],
       "description": "Swift feet with a mind to match and a tiny sliver of the Ten's own luck.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/agile.dm#L12",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/agile.dm#L12",
       "group": "agile"
     },
     {
@@ -5475,7 +5475,7 @@
       "stats": {},
       "choices": [],
       "description": "The breadth of my being is one of many, distinguished talents.   (Allows access to 'virtues', special traits/quirks that replace the bonus normally given by a statpack.)",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/wildcard.dm#L22",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/wildcard.dm#L22",
       "group": "wildcard"
     },
     {
@@ -5489,7 +5489,7 @@
       },
       "choices": [],
       "description": "Eyes forward, ever and always. A careful course has always seen you through... so far.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/agile.dm#L22",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/agile.dm#L22",
       "group": "agile"
     },
     {
@@ -5506,7 +5506,7 @@
       },
       "choices": [],
       "description": "The cruelty of Enigma leaves many in its wake - you among them. But with her terrible eye turned elsewhere, perhaps it is time for your fortune to be made...",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/wildcard.dm#L3",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/wildcard.dm#L3",
       "group": "wildcard"
     },
     {
@@ -5521,7 +5521,7 @@
       },
       "choices": [],
       "description": "Faith in something drives your body and mind to match what neither can see.",
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/modular_azurepeak/statpacks/mental.dm#L12",
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/modular_azurepeak/statpacks/mental.dm#L12",
       "group": "mental"
     }
   ],
@@ -5530,7 +5530,7 @@
       "id": "adult",
       "name": "Adult",
       "stats": {},
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/stats.dm"
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/stats.dm"
     },
     {
       "id": "middleaged",
@@ -5540,7 +5540,7 @@
         "willpower": 1,
         "fortune": 1
       },
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/stats.dm"
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/stats.dm"
     },
     {
       "id": "old",
@@ -5553,7 +5553,7 @@
         "intelligence": 3,
         "fortune": 1
       },
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/modules/mob/living/stats.dm"
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/modules/mob/living/stats.dm"
     }
   ],
   "buffs": [
@@ -5566,7 +5566,7 @@
         "speed": 1,
         "perception": 2
       },
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/datums/status_effects/rogue/roguebuff.dm#L541"
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/datums/status_effects/rogue/roguebuff.dm#L541"
     },
     {
       "id": "warden",
@@ -5575,7 +5575,7 @@
         "speed": 1,
         "perception": 3
       },
-      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/6a3ff7fc1d5c9a8b06691af2a705b76a820157a3/code/datums/status_effects/rogue/roguebuff.dm#L499"
+      "source": "https://github.com/Rotwood-Vale/Ratwood-2.0/blob/32179e44fa967b26419fa5903a867fbf583e966e/code/datums/status_effects/rogue/roguebuff.dm#L499"
     }
   ]
 }
