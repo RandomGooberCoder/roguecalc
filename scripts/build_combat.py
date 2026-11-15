@@ -16,7 +16,7 @@ def build(root, snapshot):
     for file in files:
         if file.startswith('code/__DEFINES/') and file.endswith('.dm'):
             # Only relevant define files, avoiding a full-tree download.
-            if not any(x in file for x in ('combat', 'roguetown', 'skills', 'armor')):
+            if not any(x in file for x in ('combat', 'roguetown', 'skills', 'armor', 'inventory')):
                 continue
             for key, value in re.findall(r'^#define\s+(\w+)\s+([^\n]+)', strip_comments(read(file)), re.M):
                 defines[key] = value.strip()
@@ -81,6 +81,7 @@ def build(root, snapshot):
         if not fields['can_parry']:continue
         item=dict(id=path,name=resolve(path,'name').strip('"'),skill=resolve(path,'associated_skill'),source=link(path),**fields)
         item['sharp']=bool(num(path,'sharpness'))
+        item['wlength']=num(path,'wlength')
         item['secondarySkills']={}
         secondary=resolve(path,'secondary_skills') or ''
         for skill,value in re.findall(r'(/datum/skill/[\w/]+)\s*=\s*([\d.]+)',secondary):item['secondarySkills'][skill]=float(value)
@@ -97,6 +98,9 @@ def build(root, snapshot):
                     vals.update(minDamage=num(ipath,'min_intent_damage'), maxDamage=num(ipath,'max_intent_damage'))
                 # Exact standard repeat cadence only: charge/windup intent overrides excluded.
                 if vals['chargetime'] or vals['swingdelay'] or vals['clickcd']<=0:continue
+                vals['bladeClass']=(resolve(ipath,'blade_class') or 'BCLASS_BLUNT')
+                vals['accuracy']=num(ipath,'accuracy_modifier')
+                vals['misscost']=num(ipath,'misscost')
                 vals['damageType']=(resolve(ipath,'item_d_type') or '"blunt"').strip('"')
                 intents.append(dict(id=ipath,name=(resolve(ipath,'name') or ipath.rsplit('/',1)[1]).strip('"'),source=link(ipath),**vals))
             item['intents'][mode]=intents
@@ -129,6 +133,23 @@ def build(root, snapshot):
         armors.append(dict(id=path,name=resolve(path,'name').strip('"'),ratings=ratings,
             integrity=num(path,'max_integrity'),failure=num(path,'integrity_failure'),
             deflection=number(resolve(path,'damage_deflection') or '0'),source=link(path)))
+    def coverage_names(value, seen=()):
+        names=set(re.findall(r'\b[A-Z][A-Z_]+\b',value))
+        result=set()
+        for name in names:
+            if name in defines and name not in seen:
+                result.update(coverage_names(defines[name],(*seen,name)))
+            result.add(name)
+        return result
+    for armor in armors:
+        armor['coverage']=sorted(coverage_names(resolve(armor['id'],'body_parts_covered') or 'CHEST'))
+    rules['accuracy']={k:constant(k) for k in defines if k.startswith('ACC_') and re.fullmatch(r'ACC_(MAJOR_ZONE_BONUS|FACE_SUBZONE_PENALTY|PER_BONUS_PER_POINT|PER_BONUS_CAP|PER_PENALTY_PER_POINT|SKILL_BONUS_PER_LEVEL|STAB_BONUS|PICK_BONUS|CUT_BONUS|BLUNT_PRECISE_PENALTY|SHORT_WEAPON_BONUS|AIMED_BONUS|SWIFT_PENALTY|MIN|MAX)',k)}
+    for k in ['STAM_DRAIN_PER_STR_DIFF_HEAVY_BAL','CLICK_CD_MOD_SWIFT','CLICK_CD_MOD_AIMED','CLICK_CD_INTENTCAP','EXTRA_STAMDRAIN_SWIFSTRONG','STRONG_STANCE_DMG_BONUS']:
+        rules[k]=constant(k)
+    rules['parryCooldown']=1.2
+    for label,file in [('Accuracy','code/modules/mob/living/combat/accuracy_checks.dm'),('Target mapping','code/modules/mob/mob_helpers.dm'),('Target reach','code/modules/mob/living/living.dm'),('Stances','code/_onclick/click.dm')]:
+        data['combat']['sources'][label]=f"{data['repository']}/blob/{data['commit']}/{file}"
+
     data['combat']['armors']=armors
     data['combat']['rules']['armorMinimum']=constant('PEN_PASSTHROUGH_MINIMUM')
     data['combat']['rules']['armorRatio']=constant('PEN_PASSTHROUGH_RATIO')

@@ -51,3 +51,5 @@
 @media(max-width:760px){.combat-controls,.combat-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.combat-controls{gap:7px}.combat-metric{padding:8px}.combat-metric strong{font-size:18px}.view-tabs{margin-top:8px}}
 
 .combat-comparison{display:grid;grid-template-columns:1fr 1fr;gap:14px}.combat-comparison section{min-width:0}.combat-comparison h3{font-size:12px;color:var(--gold);margin:8px 0}.combat-comparison .combat-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.combat-comparison .combat-metric{padding:7px 9px}.combat-comparison .combat-metric strong{font-size:18px}@media(max-width:760px){.combat-comparison{grid-template-columns:1fr}.combat-comparison .combat-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.target-table th,.target-table td{font-size:11px;padding:6px 10px}.target-table tr.selected{outline:1px solid var(--gold)}#fatigue-metrics{grid-template-columns:repeat(4,minmax(0,1fr))}@media(max-width:760px){#fatigue-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.target-table{min-width:580px}}

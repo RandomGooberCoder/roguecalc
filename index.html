@@ -7,8 +7,8 @@
   <meta name="description" content="Build a Ratwood character and compare race, job, statpack, and area buff stats.">
   <title>Ratwood | Stat Calculator</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=armor-1">
-  <script src="app.js?v=armor-1" type="module"></script>
+  <link rel="stylesheet" href="style.css?v=targeting-1">
+  <script src="app.js?v=targeting-1" type="module"></script>
 </head>
 <body>
   <div class="page">
@@ -54,7 +54,7 @@
             <label>Enemy weapon skill<input id="combat-enemy-skill" type="number" min="0" max="6" step="0.1" value="3"></label>
           </div>
           <div class="combat-controls opponent-controls">
-            <label>Enemy armor (single chest piece)<select id="opponent-armor"></select></label>
+            <label>Enemy armor (coverage from source)<select id="opponent-armor"></select></label>
             <label>Armor condition (%)<input id="opponent-condition" type="number" min="0" max="100" value="100"></label>
             <label>Enemy weapon<select id="opponent-weapon"></select></label>
             <label>Enemy grip<select id="opponent-grip"><option value="one">One hand</option><option value="two">Two hands</option></select></label>
@@ -62,9 +62,23 @@
           <div class="combat-controls">
             <label>Enemy STR<input id="opponent-str" type="number" min="1" max="20" value="10"></label>
             <label>Enemy age<select id="opponent-age"><option value="adult">Adult</option><option value="middleaged">Middle-Aged</option><option value="old">Old</option></select></label>
-            <label>Your attack targets<select id="opponent-zone"><option value="chest">Chest (armor covered)</option></select></label>
+            <label>Your attack targets<select id="opponent-zone"></select></label>
             <label>Other hit / contact chance (%)<input id="opponent-contact" type="number" min="0" max="100" value="100"></label>
           </div>
+          <div class="combat-controls">
+            <label>Your stance<select id="combat-stance"><option value="normal">Normal</option><option value="aimed">Aimed</option><option value="swift">Swift</option><option value="strong">Strong</option></select></label>
+            <label>Enemy attack intent<select id="enemy-intent"></select></label>
+            <label>Enemy stance<select id="enemy-stance"><option value="normal">Normal</option><option value="aimed">Aimed</option><option value="swift">Swift</option><option value="strong">Strong</option></select></label>
+            <label>Enemy behavior<select id="enemy-behavior"><option value="attack">Attack and parry</option><option value="defend">Only parry</option></select></label>
+          </div>
+          <details class="enemy-options"><summary>Stamina race inputs</summary><div class="combat-controls">
+            <label>Enemy WIL<input id="enemy-will" type="number" min="1" max="20" value="10"></label>
+            <label>Enemy athletics<input id="enemy-athletics" type="number" min="0" max="6" value="3"></label>
+            <label>Enemy energy (%)<input id="enemy-energy" type="number" min="0" max="100" value="100"></label>
+            <label>Enemy fortune<input id="enemy-fortune" type="number" min="1" max="20" value="10"></label>
+            <label>Your starting fatigue (%)<input id="your-fatigue" type="number" min="0" max="99" value="0"></label>
+            <label>Enemy starting fatigue (%)<input id="enemy-fatigue" type="number" min="0" max="99" value="0"></label>
+          </div></details>
           <details class="enemy-options"><summary>Virtual enemy &amp; parry conditions</summary>
             <div class="combat-controls">
               <label>Enemy SPD<input id="combat-enemy-speed" type="number" min="1" max="20" value="10"></label>
@@ -84,12 +98,14 @@
           </details>
           <p id="combat-warning" role="status"></p>
           <div class="combat-comparison"><section><h3>Clean damage / resources</h3><div id="combat-metrics" class="combat-metrics" aria-live="polite"></div></section><section><h3>Against virtual opponent</h3><div id="opponent-metrics" class="combat-metrics" aria-live="polite"></div></section></div><p id="opponent-note" class="combat-caption"></p>
+          <details class="enemy-options" open><summary>Body-part accuracy comparison</summary><div class="table-wrap"><table class="target-table"><thead><tr><th>Target</th><th>Reachable</th><th>Exact target %</th><th>Parent fallback %</th><th>Chest fallback %</th></tr></thead><tbody id="target-rows"></tbody></table></div><p class="combat-caption">Conditional on getting past defenses. A failed aim may still hit another body part; it is not a clean miss. Standing attacker and conscious standing enemy. Foot targeting requires a long/great weapon in this scenario.</p></details>
+          <section aria-label="Stamina pressure"><h3>Stamina pressure — expected fatigue race</h3><div id="fatigue-metrics" class="combat-metrics"></div><p id="fatigue-verdict" class="combat-caption"></p></section>
           <p id="combat-explanation" class="combat-caption"></p>
           <details class="enemy-options"><summary>Mechanics, assumptions &amp; source</summary><div class="combat-caption">
-            <p>Clean DPS is the raw weapon/stat baseline. The opponent column separately applies armor and expected landing probability after enemy parry and your contact setting. Both use normal stance and healthy arms. Automatic dodge/accuracy, wounds, criticals, quality, enchantments, special grips, traits, tempo and binding are not simulated; use contact chance for other misses. Only source-defined zero-charge, zero-windup melee intents are offered. It is not sustained combat DPS.</p>
+            <p>Clean DPS is the raw weapon/stat baseline. The opponent column separately applies armor and expected landing probability after enemy parry and your contact setting. Selected stances, source melee accuracy, fortune misses and parry cooldown are included. Healthy arms and fixed pristine weapons are used. Dodge, wounds, critical effects, quality, enchantments, special grips, traits, tempo and binding are not simulated; use contact chance for additional misses. Only source-defined zero-charge, zero-windup melee intents are offered. It is not sustained combat DPS.</p>
             <p>Class skills come from subclass_skills, not conditional outfit choices or training. Override the skill when your loadout grants a higher rank. Azure uses the best scaled primary/secondary skill. Armor checkboxes and enemy stats are explicit scenario assumptions, not inferred equipment.</p>
-            <p>Parry is the roll chance per eligible incoming attack, facing a player-like armed enemy, with an empty offhand (or two-handed grip), enough stamina, no parry cooldown, no impairments and no special traits. It is not overall avoidance or an outgoing hit probability. Swift attackers use SPD difference reduced by PER/INT according to target zone; only Ratwood grants the old martial +20 bonus.</p>
-            <p>Stamina is a fatigue budget; energy is the long-term reserve. Regen shown is fatigue recovered per eligible mob update after more than 2 seconds without spending stamina, at the chosen fixed energy percentage. Short-burst attack count starts fresh and ignores interruptions, incoming parries and regeneration. Each recovery update itself resets the fatigue timestamp, so recovery is not continuous every tick. WIL increases the pool, not the baseline tick amount at a fixed energy percentage.</p>
+            <p>Parry is the roll chance per eligible incoming attack, facing a player-like armed enemy, with an empty offhand (or two-handed grip), enough stamina, no impairments and no special traits. Eligible roll and cadence-adjusted parry are shown separately. It is not overall avoidance or an outgoing hit probability. Swift attackers use SPD difference reduced by PER/INT according to target zone; only Ratwood grants the old martial +20 bonus.</p>
+            <p>Stamina is a fatigue budget; energy is the long-term reserve. Regen shown is fatigue recovered per eligible mob update after more than 2 seconds without spending stamina, at the chosen fixed energy percentage. The clean short-burst count ignores interruptions and incoming attacks. The separate expected-fatigue race includes both combatants, successful-parry costs, normal cooldown and recovery events, and stops at first exhaustion. Each recovery update itself resets the fatigue timestamp, so recovery is not continuous every tick. WIL increases the pool, not the baseline tick amount at a fixed energy percentage.</p>
             <p id="combat-sources"></p>
           </div></details>
         </section>
