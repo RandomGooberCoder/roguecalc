@@ -1,4 +1,4 @@
-import {clamp, damage, stamina, parry, armorImpact} from './combat.mjs?v=targeting-1';
+import {clamp, damage, stamina, parry, armorImpact} from './combat.mjs?v=matchup-1';
 export const ZONES=[
  ['chest','Chest','chest','CHEST',false],['head','Head','head','HEAD',true],
  ['l_arm','Left arm','l_arm','ARM_LEFT',false],['r_arm','Right arm','r_arm','ARM_RIGHT',false],
@@ -76,7 +76,7 @@ export function versusTarget(stats,weapon,intent,skill,stance,two,enemy,enemyWea
 }
 // Deterministic expected-fatigue trajectory; it is not a stochastic win-probability simulator.
 export function fatigueRace(you,enemy,r,horizon=180){
- const actors=[you,enemy].map(a=>({...a,fatigue:a.pool*a.startFatigue/100,energy:a.maxEnergy*a.energyPercent/100,lastSpend:-100,lastParry:-100,nextAttack:0,nextTick:r.tickSeconds,time:null,attacks:0,parries:0}));
+ const actors=[you,enemy].map(a=>({...a,fatigue:a.pool*a.startFatigue/100,energy:a.maxEnergy*a.energyPercent/100,lastSpend:-100,lastParry:-100,nextAttack:0,nextTick:r.tickSeconds,time:null,attacks:0,parries:0,dodgeDelay:0,dodgeMod:0,defenseSpend:0}));
  let t=0;
  for(let events=0;events<12000;events++){
   t=Math.min(...actors.flatMap(a=>[a.active?a.nextAttack:Infinity,a.nextTick]));if(t>horizon)break;
@@ -91,9 +91,26 @@ export function fatigueRace(you,enemy,r,horizon=180){
    if(!due[i])return;
    const d=actors[1-i];a.attacks++;a.nextAttack+=a.interval;
    additions[i]+=a.cost*(1-a.miss);
-   if(t>=d.lastParry+r.parryCooldown-1e-8){
-    d.lastParry=t;const expected=(1-a.miss)*a.contact*d.parryChance/100;
-    additions[1-i]+=expected*d.parryCost;d.parries+=expected;
+   const roll=d.profile?defenseRoll(d.profile,a.profile,r,d.dodgeDelay,d.dodgeMod):{chance:d.parryChance,cost:d.parryCost,cooldown:r.parryCooldown};
+   const opportunity=(1-a.miss)*a.contact;
+   const dodge=d.profile?.opts.mode==='dodge';
+   let expected=0;
+   if(opportunity>0&&t>=d.lastParry+roll.cooldown-1e-8){
+    d.lastParry=t;expected=opportunity*roll.chance/100;
+    const spend=expected*roll.cost;
+    additions[1-i]+=spend;d.defenseSpend+=spend;d.parries+=expected;
+    if(dodge&&roll.delay!==undefined){
+     d.dodgeDelay=clamp(roll.delay+(roll.degrades?expected:0),0,r.dodge.CLICK_CD_DODGE);
+     d.dodgeMod=clamp(roll.mod-(roll.degrades?expected*roll.loss:0),r.dodge.MAX_DODGE_FLOOR,r.dodge.MAX_DODGE_CEIL);
+     additions[i]+=expected*a.misscost;
+    }
+   }
+   if(a.profile&&a.healthContact>0){
+    const direct=(opportunity-expected)*a.healthContact;
+    a.dodgeDelay=Math.max(0,a.dodgeDelay-2*direct);
+    a.dodgeMod=Math.min(r.dodge.MAX_DODGE_CEIL,a.dodgeMod+3*direct);
+    d.dodgeDelay=Math.max(0,d.dodgeDelay-8*direct);
+    d.dodgeMod=Math.min(r.dodge.MAX_DODGE_CEIL,d.dodgeMod+Math.min(5*direct,d.dodgeMod<r.dodge.MAX_DODGE_CLAMP?r.dodge.MAX_DODGE_CLAMP-d.dodgeMod:Infinity));
    }
   });
   additions.forEach((cost,i)=>{if(cost>0){const a=actors[i];a.fatigue+=cost;a.energy=Math.max(0,a.energy-cost);a.lastSpend=t;if(a.fatigue>=a.pool&&a.time===null)a.time=t;}});
@@ -101,5 +118,61 @@ export function fatigueRace(you,enemy,r,horizon=180){
  }
  return {yourTime:actors[0].time??Infinity,enemyTime:actors[1].time??Infinity,
   yourFatigue:Math.min(100,actors[0].fatigue/actors[0].pool*100),enemyFatigue:Math.min(100,actors[1].fatigue/actors[1].pool*100),
-  yourParryCost:you.parryCost,enemyParryCost:enemy.parryCost,horizon};
+  yourDefSpend:actors[0].defenseSpend,enemyDefSpend:actors[1].defenseSpend,horizon};
+}
+
+// Defend (riposte) skips weapon-parry cooldown. It does not activate Guard.
+export function defenseRoll(def,att,r,delay=0,mod=0){
+ const {stats,weapon,skill,two,opts}=def, gap=stats.speed-att.stats.speed;
+ if(opts.mode==='dodge'){
+  if(!opts.trained || att.intent.dodgeable===false)return {chance:0,cost:0,cooldown:0,loss:0};
+  const d=r.dodge, expert=opts.expert&&opts.light;
+  const recovery=delay;
+  const degrades=!r.azure||(expert&&stats.speed>=10);
+  let raw=d.base+10*gap+10*(opts.matchSkill-att.skill)+(expert&&!r.azure?5*stats.speed:0);
+  if((att.weapon.wbalance===1&&gap<0)||(att.weapon.wbalance===-1&&gap>0))raw+=10*gap;
+  if(expert&&stats.speed>=10){
+   raw=90;
+   if(opts.shield&&(!r.azure||!opts.shield.buckler)){mod=d.MAX_DODGE_FLOOR;delay=d.CLICK_CD_DODGE;}
+  }
+  const swift=att.stance==='swift'&&att.weapon.wbalance!==-1&&delay<=d.CLICK_CD_FAST?Math.floor((d.CLICK_CD_HEAVY-delay)/2):0;
+  const speed=r.azure&&weapon.wbalance!==-1?Math.max(0,-gap):0;
+  return {chance:clamp(raw+mod,5,90+mod),cost:Math.max(5,8+2*(att.skill-skill)+swift+speed),cooldown:recovery/10,degrades,loss:1+(r.azure?Math.max(0,att.skill-skill):0),delay,mod};
+ }
+ const shield=two?null:opts.shield, ss=shield?.buckler?skill:opts.shieldSkill;
+ const usesShield=!!shield&&(ss-skill)*r.skillParry+(shield.wdefense-weapon.wdefense)*r.wdefParry>0;
+ const chance=att.intent.parryable===false?0:parry(stats,att.stats,usesShield?{...shield,wbalance:0}:weapon,two,usesShield?ss:skill,att.skill,
+  {...opts,light:opts.light&&!shield,enemyLight:att.opts.light,enemySwift:att.weapon.wbalance===1,zone:zoneType(att.zone)},r).chance;
+ return {chance,cost:chance?parryDrain(att.stats,stats,att.weapon,opts.trained,r):0,cooldown:0,usesShield};
+}
+
+export function attackMatch(att,def,r){
+ const {stats,weapon,intent,skill,stance,two,zone}=att;
+ const aim=accuracy(stats,weapon,intent,skill,zone,stance,r),raw=stanceAttack(stats,weapon,intent,two,stance,r);
+ const defense=defenseRoll(def,att,r);
+ const contact=aim.reachable?(1-criticalMiss(stats))*att.contact:0;
+ const eligibility=1/Math.max(1,Math.ceil((defense.cooldown-1e-9)/raw.interval));
+ const land=contact*(1-defense.chance/100*eligibility);
+ let health=0,healthContact=0;
+ const pieces=def.gear.map(({item,condition})=>({item,condition,wear:0}));
+ for(const {id,p} of aim.distribution){
+  const type=intent.damageType;
+  const wornOrder=['head','arms','body','feet','legs'];
+  const covered=pieces.filter(x=>x.condition>x.item.failure*100&&x.item.coverage.includes(zoneOf(id).coverage)&&(!r.azure||x.item.ratings[type]>0));
+  const worn=[...covered].sort((a,b)=>wornOrder.indexOf(a.item.slot)-wornOrder.indexOf(b.item.slot));
+  const best=[...worn].filter(x=>x.item.ratings[type]>0).sort((a,b)=>b.item.ratings[type]-a.item.ratings[type])[0];
+  const impact=armorImpact(raw.hit,stats,weapon,intent,best?.item??null,r);
+  const hp=impact.health;
+  health+=p*hp;if(hp>0)healthContact+=p;
+  if(type==='blunt'&&covered.length){
+   const factors=[weapon.intdamage_factor??1,intent.intent_intdamage_factor??1];
+   const factor=Math.max(...factors)>1?Math.max(...factors):Math.min(...factors);
+   const layers=r.azure?worn:covered;
+   layers.forEach((x,i)=>{const damage=raw.hit*factor/(1+r.bluntDR*(best?.item.ratings.blunt??0))/(i+1);x.wear+=p*(damage<x.item.deflection?1:Math.round(damage*10)/10);});
+  }else if(best&&best.item.ratings[type]>0)best.wear+=p*impact.wear;
+ }
+ for(const x of pieces){const left=x.item.integrity*Math.max(0,x.condition/100-x.item.failure);
+  x.wearRate=x.wear*land/raw.interval;x.breakTime=left<=1e-8?0:x.wearRate>0?left/x.wearRate:Infinity;
+ }
+ return {...raw,aim,defense,pieces,healthHit:health,healthDps:health*land/raw.interval,land,exactLandedPercent:aim.exact*land*100,healthContact};
 }

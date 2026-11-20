@@ -40,8 +40,9 @@ def build(root, snapshot):
         return ev(node)
     definitions = {}
     sources = [f for f in files if f.endswith('.dm') and (f.startswith('code/game/objects/items/rogueweapons/') or f.startswith('code/modules/jobs/job_types/roguetown/'))]
-    sources.extend(['code/game/objects/items.dm','code/modules/clothing/clothing.dm'])
+    sources.extend(['code/game/objects/items.dm','code/modules/clothing/clothing.dm','code/modules/clothing/rogueclothes/feet.dm'])
     sources.extend(f for f in files if f.startswith('code/modules/clothing/rogueclothes/armor/') and f.endswith('.dm'))
+    sources.extend(f for f in files if re.match(r'code/modules/clothing/rogueclothes/(headwear/|pants/|gloves/|shoes/|wrists/)', f) and f.endswith('.dm'))
     for file in sources:
         text = strip_comments(read(file))
         for key,value in re.findall(r'^#define[ \t]+(\w+)[ \t]+([^\n]+)',text,re.M):
@@ -101,6 +102,9 @@ def build(root, snapshot):
                 vals['bladeClass']=(resolve(ipath,'blade_class') or 'BCLASS_BLUNT')
                 vals['accuracy']=num(ipath,'accuracy_modifier')
                 vals['misscost']=num(ipath,'misscost')
+                azure_build='Azure-Peak/Azure-Peak' in data['repository']
+                vals['parryable']=bool(num(ipath,'canparry' if azure_build else 'parriable_intent'))
+                vals['dodgeable']=bool(num(ipath,'candodge' if azure_build else 'dodgeable_intent'))
                 vals['damageType']=(resolve(ipath,'item_d_type') or '"blunt"').strip('"')
                 intents.append(dict(id=ipath,name=(resolve(ipath,'name') or ipath.rsplit('/',1)[1]).strip('"'),source=link(ipath),**vals))
             item['intents'][mode]=intents
@@ -123,14 +127,19 @@ def build(root, snapshot):
     rules['tickSeconds']=int(tick[1])/10
     data['combat']={'weapons':sorted(weapons,key=lambda x:x['name']),'rules':rules,'sources':{k:f"{data['repository']}/blob/{data['commit']}/{v}" for k,v in {'Damage':'code/_onclick/item_attack.dm','Parry':'code/modules/mob/living/combat/parry.dm','Stamina':'code/modules/mob/living/carbon/energystamina.dm','Tick':'code/controllers/subsystem.dm','Constants':'code/__DEFINES/combat.dm'}.items()}}
     armors=[]
-    for suffix in ['plate','plate/iron','chainmail','chainmail/hauberk','brigandine','leather','gambeson']:
-        path='/obj/item/clothing/suit/roguetown/armor/'+suffix
+    armor_paths=[('body','suit/roguetown/armor/'+suffix) for suffix in ['plate','plate/iron','chainmail','chainmail/hauberk','brigandine','leather','gambeson']]
+    armor_paths += [('head','head/roguetown/helmet'+suffix) for suffix in ['', '/kettle', '/heavy/barbute']]
+    armor_paths += [('legs','under/roguetown/platelegs'+suffix) for suffix in ['', '/iron']]
+    armor_paths += [('arms','gloves/roguetown/plate'+suffix) for suffix in ['', '/iron']]
+    armor_paths += [('feet','shoes/roguetown/boots'+suffix) for suffix in ['/armor','/leather/reinforced']]
+    for slot,suffix in armor_paths:
+        path='/obj/item/clothing/'+suffix
         if path not in definitions:continue
         raw=resolve(path,'armor') or ''
         if raw in defines:raw=defines[raw]
         ratings={k:number(v) for k,v in re.findall(r'"(blunt|slash|stab)"\s*=\s*(\w+)',raw)}
         if len(ratings)!=3:continue
-        armors.append(dict(id=path,name=resolve(path,'name').strip('"'),ratings=ratings,
+        armors.append(dict(id=path,slot=slot,armorClass=(resolve(path,'armor_class') or 'ARMOR_CLASS_NONE'),name=resolve(path,'name').strip('"'),ratings=ratings,
             integrity=num(path,'max_integrity'),failure=num(path,'integrity_failure'),
             deflection=number(resolve(path,'damage_deflection') or '0'),source=link(path)))
     def coverage_names(value, seen=()):
@@ -150,6 +159,12 @@ def build(root, snapshot):
     for label,file in [('Accuracy','code/modules/mob/living/combat/accuracy_checks.dm'),('Target mapping','code/modules/mob/mob_helpers.dm'),('Target reach','code/modules/mob/living/living.dm'),('Stances','code/_onclick/click.dm')]:
         data['combat']['sources'][label]=f"{data['repository']}/blob/{data['commit']}/{file}"
 
+    shield_paths=[f'/obj/item/rogueweapon/shield/{kind}' for kind in ['wood','iron','tower','heater','buckler']]
+    data['combat']['shields']=[dict(id=path,name=resolve(path,'name').strip('"'),wdefense=num(path,'wdefense'),source=link(path),buckler=path.endswith('/buckler')) for path in shield_paths if path in definitions]
+    rules['dodge']={k:constant(k) for k in ['CLICK_CD_DODGE','CLICK_CD_FAST','CLICK_CD_HEAVY','MAX_DODGE_FLOOR','MAX_DODGE_CEIL','MAX_DODGE_CLAMP']}
+    rules['dodge']['base']=int(re.search(r'var/defprob\s*=\s*(\d+)',read('code/modules/mob/living/living_defines.dm'))[1])
+    for label,path in [('Dodge','code/modules/mob/living/combat/dodge.dm'),('Defend intent','code/game/objects/items/rogueweapons/rmb_intents.dm')]:
+        data['combat']['sources'][label]=f"{data['repository']}/blob/{data['commit']}/{path}"
     data['combat']['armors']=armors
     data['combat']['rules']['armorMinimum']=constant('PEN_PASSTHROUGH_MINIMUM')
     data['combat']['rules']['armorRatio']=constant('PEN_PASSTHROUGH_RATIO')
