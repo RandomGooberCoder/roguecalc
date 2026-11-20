@@ -5,6 +5,7 @@ from pathlib import Path
 import re
 import subprocess
 import sys
+from armor_catalog import catalog
 from build_data import strip_comments, list_body
 
 
@@ -16,37 +17,47 @@ def build(root, snapshot):
     for file in files:
         if file.startswith('code/__DEFINES/') and file.endswith('.dm'):
             # Only relevant define files, avoiding a full-tree download.
-            if not any(x in file for x in ('combat', 'roguetown', 'skills', 'armor', 'inventory')):
+            if not any(x in file for x in ('combat', 'roguetown', 'skills', 'armor', 'inventory', 'clothing')):
                 continue
-            for key, value in re.findall(r'^#define\s+(\w+)\s+([^\n]+)', strip_comments(read(file)), re.M):
-                defines[key] = value.strip()
+            for key, value in re.findall(r'^#define[ \t]+(\w+)[ \t]+([^\n]+)', strip_comments(read(file)).replace('\\\n', ' '), re.M):
+                defines[key] = strip_comments(value).strip()
     defines.update(TRUE='1', FALSE='0')
     def number(value, seen=()):
         value = value.strip()
+        if value in seen or value == "null":
+            if value == "null": return 0
+            raise ValueError(f"Circular constant: {value}")
         if value in defines and value not in seen:
             return number(defines[value], (*seen, value))
+        if '//' in value or '"' in value: raise ValueError(value)
         node = ast.parse(value, mode='eval').body
         def ev(n):
             if isinstance(n, ast.Constant) and isinstance(n.value, (int,float)): return n.value
-            if isinstance(n, ast.Name): return number(n.id, seen)
+            if isinstance(n, ast.Name) and n.id in defines: return number(n.id, seen)
             if isinstance(n, ast.UnaryOp) and isinstance(n.op, ast.USub): return -ev(n.operand)
+            if isinstance(n, ast.UnaryOp) and isinstance(n.op, ast.Invert): return ~ev(n.operand)
             if isinstance(n, ast.BinOp):
                 a,b = ev(n.left),ev(n.right)
                 if isinstance(n.op, ast.Add): return a+b
                 if isinstance(n.op, ast.Sub): return a-b
                 if isinstance(n.op, ast.Mult): return a*b
                 if isinstance(n.op, ast.Div): return a/b
+                if isinstance(n.op, ast.BitOr): return a|b
+                if isinstance(n.op, ast.BitAnd): return a&b
+                if isinstance(n.op, ast.BitXor): return a^b
+                if isinstance(n.op, ast.LShift): return a<<b
+                if isinstance(n.op, ast.RShift): return a>>b
             raise ValueError(value)
         return ev(node)
     definitions = {}
     sources = [f for f in files if f.endswith('.dm') and (f.startswith('code/game/objects/items/rogueweapons/') or f.startswith('code/modules/jobs/job_types/roguetown/'))]
-    sources.extend(['code/game/objects/items.dm','code/modules/clothing/clothing.dm','code/modules/clothing/rogueclothes/feet.dm'])
-    sources.extend(f for f in files if f.startswith('code/modules/clothing/rogueclothes/armor/') and f.endswith('.dm'))
-    sources.extend(f for f in files if re.match(r'code/modules/clothing/rogueclothes/(headwear/|pants/|gloves/|shoes/|wrists/)', f) and f.endswith('.dm'))
+    # Search the whole game tree for clothing declarations, including event gear outside the clothing folder.
+    clothing = subprocess.run(['git','-C',str(root),'grep','-l','-E',r'^/obj/item/clothing(/|[[:space:]]|$)','HEAD','--','*.dm'], capture_output=True, text=True, check=True)
+    sources = sorted(set(sources + [line.split(':',1)[1] for line in clothing.stdout.splitlines()] + ['code/game/objects/items.dm','code/game/objects/objs.dm']))
     for file in sources:
         text = strip_comments(read(file))
         for key,value in re.findall(r'^#define[ \t]+(\w+)[ \t]+([^\n]+)',text,re.M):
-            defines[key]=value.strip()
+            defines[key]=strip_comments(value).strip()
         headers = list(re.finditer(r'^(/[\w/]+)[ 	]*$', text, re.M))
         for i,m in enumerate(headers):
             end = headers[i+1].start() if i+1<len(headers) else len(text)
@@ -54,7 +65,10 @@ def build(root, snapshot):
             entry = definitions.setdefault(m[1], {})
             entry.update(file=file,line=text[:m.start()].count('\n')+1)
             for field,value in re.findall(r'^	(?:var/(?:list/)?)?(\w+)[ 	]*=[ 	]*([^\n]+)', body, re.M):
-                entry[field] = value.strip()
+                entry[field] = strip_comments(value).strip()
+            armor_list = re.search(r'^\tarmor[ \t]*=[ \t]*list[ \t]*\(', body, re.M)
+            if armor_list:
+                entry['armor'] = 'list('+list_body(body, armor_list.end()-1)+')'
             for field in ('possible_item_intents','gripped_intents','subclass_skills','secondary_skills'):
                 match = re.search(r'^	'+field+r'\s*=\s*list\s*\(',body,re.M)
                 if match:entry[field]= 'list('+list_body(body,body.index('(',match.start()))+')'
@@ -126,32 +140,10 @@ def build(root, snapshot):
     if not tick: raise ValueError('Unknown mob tick interval')
     rules['tickSeconds']=int(tick[1])/10
     data['combat']={'weapons':sorted(weapons,key=lambda x:x['name']),'rules':rules,'sources':{k:f"{data['repository']}/blob/{data['commit']}/{v}" for k,v in {'Damage':'code/_onclick/item_attack.dm','Parry':'code/modules/mob/living/combat/parry.dm','Stamina':'code/modules/mob/living/carbon/energystamina.dm','Tick':'code/controllers/subsystem.dm','Constants':'code/__DEFINES/combat.dm'}.items()}}
-    armors=[]
-    armor_paths=[('body','suit/roguetown/armor/'+suffix) for suffix in ['plate','plate/iron','chainmail','chainmail/hauberk','brigandine','leather','gambeson']]
-    armor_paths += [('head','head/roguetown/helmet'+suffix) for suffix in ['', '/kettle', '/heavy/barbute']]
-    armor_paths += [('legs','under/roguetown/platelegs'+suffix) for suffix in ['', '/iron']]
-    armor_paths += [('arms','gloves/roguetown/plate'+suffix) for suffix in ['', '/iron']]
-    armor_paths += [('feet','shoes/roguetown/boots'+suffix) for suffix in ['/armor','/leather/reinforced']]
-    for slot,suffix in armor_paths:
-        path='/obj/item/clothing/'+suffix
-        if path not in definitions:continue
-        raw=resolve(path,'armor') or ''
-        if raw in defines:raw=defines[raw]
-        ratings={k:number(v) for k,v in re.findall(r'"(blunt|slash|stab)"\s*=\s*(\w+)',raw)}
-        if len(ratings)!=3:continue
-        armors.append(dict(id=path,slot=slot,armorClass=(resolve(path,'armor_class') or 'ARMOR_CLASS_NONE'),name=resolve(path,'name').strip('"'),ratings=ratings,
-            integrity=num(path,'max_integrity'),failure=num(path,'integrity_failure'),
-            deflection=number(resolve(path,'damage_deflection') or '0'),source=link(path)))
-    def coverage_names(value, seen=()):
-        names=set(re.findall(r'\b[A-Z][A-Z_]+\b',value))
-        result=set()
-        for name in names:
-            if name in defines and name not in seen:
-                result.update(coverage_names(defines[name],(*seen,name)))
-            result.add(name)
-        return result
-    for armor in armors:
-        armor['coverage']=sorted(coverage_names(resolve(armor['id'],'body_parts_covered') or 'CHEST'))
+    armors, armor_slots, armor_skipped = catalog(definitions, resolve, number, defines, link)
+    data['combat']['armorSlots'] = armor_slots
+    data['combat']['armorSkipped'] = armor_skipped
+    rules['lightArmorClass'] = constant('ARMOR_CLASS_LIGHT')
     rules['accuracy']={k:constant(k) for k in defines if k.startswith('ACC_') and re.fullmatch(r'ACC_(MAJOR_ZONE_BONUS|FACE_SUBZONE_PENALTY|PER_BONUS_PER_POINT|PER_BONUS_CAP|PER_PENALTY_PER_POINT|SKILL_BONUS_PER_LEVEL|STAB_BONUS|PICK_BONUS|CUT_BONUS|BLUNT_PRECISE_PENALTY|SHORT_WEAPON_BONUS|AIMED_BONUS|SWIFT_PENALTY|MIN|MAX)',k)}
     for k in ['STAM_DRAIN_PER_STR_DIFF_HEAVY_BAL','CLICK_CD_MOD_SWIFT','CLICK_CD_MOD_AIMED','CLICK_CD_INTENTCAP','EXTRA_STAMDRAIN_SWIFSTRONG','STRONG_STANCE_DMG_BONUS']:
         rules[k]=constant(k)
@@ -172,8 +164,9 @@ def build(root, snapshot):
     for label,file in [('Armor','code/modules/mob/living/carbon/human/human_defense.dm'),('Penetration','code/modules/mob/living/living_defense.dm'),('Break threshold','code/game/objects/obj_defense.dm')]:
         data['combat']['sources'][label]=f"{data['repository']}/blob/{data['commit']}/{file}"
 
+    if not armors:raise ValueError('No wearable melee armor discovered')
     if not weapons:raise ValueError('No supported combat weapons')
     snapshot.write_text(json.dumps(data,indent=2)+'\n')
-    print(f'{snapshot}: {len(weapons)} melee weapons; {sum(j["skillsKnown"] for j in data["jobs"])} class skill lists')
+    print(f'{snapshot}: {len(weapons)} melee weapons; {len(armors)} armor types ({armor_skipped}); {sum(j["skillsKnown"] for j in data["jobs"])} class skill lists')
 
 if __name__=='__main__':build(Path(sys.argv[1]),Path(sys.argv[2]))

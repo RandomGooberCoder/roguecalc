@@ -7,7 +7,7 @@ const rw=data('stats'),az=data('azure');
 const stats={strength:10,speed:10};
 const w={wbalance:0,sharp:true,intdamage_factor:1};
 const cut={damageType:'slash',penfactor:0,intent_intdamage_factor:1};
-const plate=rw.combat.armors[0];
+const plate=rw.combat.armors.find(a=>a.id==='/obj/item/clothing/suit/roguetown/armor/plate');
 test('nonpenetrating cut wears armor and blocks HP damage',()=>{
  const x=armorImpact(30,stats,w,cut,plate,rw.combat.rules);
  assert.equal(x.health,0);assert.equal(x.wear,30);
@@ -40,5 +40,22 @@ test('both builds import armor ratings and exact source attribution',()=>{
  for(const d of [rw,az]){
  assert.ok(d.combat.armors.length>=5);
  for(const a of d.combat.armors){assert.ok(a.integrity>0);assert.ok(a.failure>0&&a.failure<1);assert.ok(a.source.startsWith(d.repository+'/blob/'+d.commit));}
+ }
+});
+
+test('discovered armor has unique type IDs, valid ratings, and selectable layered slots',()=>{
+ for(const d of [rw,az]){
+  const {armors,armorSlots}=d.combat;
+  assert.ok(armors.length>700);
+  assert.equal(new Set(armors.map(a=>a.id)).size,armors.length);
+  const slots=new Set(armorSlots.map(s=>s.id));
+  for(const id of ['body','shirt','head','neck','wrists','mask','arms','feet','legs'])assert.ok(slots.has(id));
+  for(const a of armors){
+   assert.ok(a.slots.length&&a.slots.every(s=>slots.has(s)));
+   assert.ok(a.coverage.length);
+   assert.ok(['blunt','slash','stab'].some(key=>a.ratings[key]>0));
+   assert.ok(Object.values(a.ratings).every(Number.isFinite));
+  }
+  assert.ok(armors.some(a=>a.slots.length>1));
  }
 });

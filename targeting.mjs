@@ -157,7 +157,7 @@ export function attackMatch(att,def,r){
  const pieces=def.gear.map(({item,condition})=>({item,condition,wear:0}));
  for(const {id,p} of aim.distribution){
   const type=intent.damageType;
-  const wornOrder=['head','arms','body','feet','legs'];
+  const wornOrder=r.azure?['head','mask','wrists','arms','neck','cloak','body','shirt','feet','legs','backr','backl','belt','glasses','ears','ring']:['body','head','mask','glasses','ears','neck','arms','feet','wrists','shirt','legs','belt','ring','cloak','backr','backl'];
   const covered=pieces.filter(x=>x.condition>x.item.failure*100&&x.item.coverage.includes(zoneOf(id).coverage)&&(!r.azure||x.item.ratings[type]>0));
   const worn=[...covered].sort((a,b)=>wornOrder.indexOf(a.item.slot)-wornOrder.indexOf(b.item.slot));
   const best=[...worn].filter(x=>x.item.ratings[type]>0).sort((a,b)=>b.item.ratings[type]-a.item.ratings[type])[0];
@@ -167,7 +167,7 @@ export function attackMatch(att,def,r){
   if(type==='blunt'&&covered.length){
    const factors=[weapon.intdamage_factor??1,intent.intent_intdamage_factor??1];
    const factor=Math.max(...factors)>1?Math.max(...factors):Math.min(...factors);
-   const layers=r.azure?worn:covered;
+   const layers=worn;
    layers.forEach((x,i)=>{const damage=raw.hit*factor/(1+r.bluntDR*(best?.item.ratings.blunt??0))/(i+1);x.wear+=p*(damage<x.item.deflection?1:Math.round(damage*10)/10);});
   }else if(best&&best.item.ratings[type]>0)best.wear+=p*impact.wear;
  }

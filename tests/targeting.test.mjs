@@ -36,7 +36,7 @@ test('poor fortune true misses are distinct from accuracy fallback',()=>{
  assert.equal(criticalMiss({...stats,fortune:8}),.08);assert.equal(criticalMiss(stats),0);
 });
 test('head targets bypass torso plate while fallback can hit protected chest',()=>{
- const gear=data.combat.armors[0],enemy={...stats};
+ const gear=data.combat.armors.find(a=>a.id==='/obj/item/clothing/suit/roguetown/armor/plate'),enemy={...stats};
  const opts={light:true,enemyLight:true,trained:true,old:false,mage:false};
  const chest=versusTarget(stats,w,intent,4,'normal',false,enemy,w,false,3,'chest',gear,100,1,opts,r);
  const head=versusTarget(stats,w,intent,4,'normal',false,enemy,w,false,3,'head',gear,100,1,opts,r);

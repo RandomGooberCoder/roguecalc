@@ -1,4 +1,4 @@
-import { initCombat, renderCombat } from './combat-ui.js?v=matchup-1';
+import { initCombat, renderCombat } from './combat-ui.js?v=armor-catalog-1';
 import { LABELS, calculate, display, weightedTotal } from './calc.mjs?v=baseline-1';
 
 const $ = id => document.getElementById(id);

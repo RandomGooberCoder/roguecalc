@@ -1,8 +1,9 @@
-import {classSkill, stamina} from './combat.mjs?v=matchup-1';
-import {ZONES,zoneOf,accuracy,stanceAttack,criticalMiss,attackMatch,fatigueRace} from './targeting.mjs?v=matchup-1';
+import {classSkill, stamina} from './combat.mjs?v=armor-catalog-1';
+import {ZONES,zoneOf,accuracy,stanceAttack,criticalMiss,attackMatch,fatigueRace} from './targeting.mjs?v=armor-catalog-1';
 const $=id=>document.getElementById(id);
 let state=null,key='',activeWeapon='',enemyIntentKey='';
-const slots=['body','head','arms','feet','legs'];
+const sides=['your','enemy'];
+const defaultEnemyArmor='/obj/item/clothing/suit/roguetown/armor/plate';
 const none={id:'none',name:'None'};
 const balance=w=>w.wbalance===1?'swift':w.wbalance===-1?'heavy':'normal';
 const rank=['None','Novice','Apprentice','Journeyman','Expert','Master','Legendary'];
@@ -16,11 +17,40 @@ export function initCombat(){
  }
  $('stats-tab').addEventListener('click',()=>tab(false));
  $('combat-tab').addEventListener('click',()=>tab(true));
- for(const el of $('combat-view').querySelectorAll('input,select'))el.addEventListener('input',()=>draw());
+ $('combat-view').addEventListener('input',event=>{
+  const side=sides.find(side=>event.target.id===`${side}-armor-filter`);
+  if(side)refreshArmorOptions(side);
+  else draw();
+ });
 }
 function tab(combat){
  $('stats-view').hidden=combat;$('combat-view').hidden=!combat;
  $('stats-tab').setAttribute('aria-pressed',String(!combat));$('combat-tab').setAttribute('aria-pressed',String(combat));
+}
+function refreshArmorOptions(side){
+ const {armors,armorSlots}=state.data.combat;
+ const query=$(`${side}-armor-filter`).value.trim().toLowerCase();
+ for(const {id} of armorSlots){
+  const el=$(`${side}-${id}`),selected=el.value||'none';
+  const items=armors.filter(a=>a.slots.includes(id));
+  const counts=new Map();for(const a of items)counts.set(a.name,(counts.get(a.name)||0)+1);
+  items.sort((a,b)=>a.name.localeCompare(b.name)||a.id.localeCompare(b.id));
+  options(el,[none,...items.filter(a=>a.id===selected||`${a.name} ${a.id}`.toLowerCase().includes(query)).map(a=>({id:a.id,
+    name:counts.get(a.name)>1?`${a.name} — ${a.id.split('/').slice(-3).join('/')}`:a.name}))]);
+  el.value=Array.from(el.options).some(o=>o.value===selected)?selected:'none';
+ }
+}
+function buildArmorControls(side,previous){
+ const parent=$(`${side}-armor-controls`), slots=state.data.combat.armorSlots;
+ parent.replaceChildren(...slots.map(({id,name})=>{
+  const before=previous.get(id), selected=before?.selected||(side==='enemy'&&id==='body'?defaultEnemyArmor:'none');
+  const div=document.createElement('div');div.className='combat-controls';
+  const slot=document.createElement('label'), condition=document.createElement('label');slot.textContent=name;condition.textContent='Condition (%)';
+  const select=document.createElement('select');select.id=`${side}-${id}`;select.add(new Option('',selected));slot.append(select);
+  const input=document.createElement('input');input.type='number';input.id=`${side}-${id}-condition`;input.min=0;input.max=100;input.value=before?.condition??100;condition.append(input);
+  div.append(slot,condition);return div;
+ }));
+ refreshArmorOptions(side);
 }
 export function renderCombat(data,job,rows,age){
  state={data,job,rows,age};
@@ -35,9 +65,10 @@ export function renderCombat(data,job,rows,age){
   $('combat-skill').value='auto';$('combat-athletics').value='auto';
   const refresh=(id,items,fallback)=>{const prior=$(id).value;options($(id),items);if(items.some(x=>x.id===prior))$(id).value=prior;else if(fallback)$(id).value=fallback;};
   refresh('opponent-weapon',data.combat.weapons);
-  for(const side of ['your','enemy']){
+  for(const side of sides){
    refresh(`${side}-shield`,[none,...data.combat.shields]);
-   for(const slot of slots)refresh(`${side}-${slot}`,[none,...data.combat.armors.filter(a=>a.slot===slot)],side==='enemy'&&slot==='body'?data.combat.armors[0]?.id:null);
+   const previous=new Map([...$(`${side}-armor-controls`).querySelectorAll('select')].map(el=>[el.id.slice(side.length+1),{selected:el.value,condition:$(`${el.id}-condition`).value}]));
+   buildArmorControls(side,previous);
   }
   enemyIntentKey='';
   activeWeapon='';key=nextKey;
@@ -79,14 +110,14 @@ function draw(){
  const enemyStats={strength:num('opponent-str',1,20),speed:num('combat-enemy-speed',1,20),perception:num('combat-enemy-perception',1,20),intelligence:num('combat-enemy-intelligence',1,20),willpower:num('enemy-will',1,20),fortune:num('enemy-fortune',1,20),constitution:num('enemy-con',1,20)};
  const enemySkill=num('combat-enemy-skill',0,6);
  function loadout(side,two,old){
-  const gear=slots.flatMap(slot=>{const el=$(`${side}-${slot}`);const item=data.combat.armors.find(a=>a.id===el.value);const condition=$(`${side}-${slot}-condition`);condition.disabled=!item;return item?[{item,condition:num(condition.id,0,100)}]:[];});
+  const gear=data.combat.armorSlots.flatMap(({id:slot})=>{const el=$(`${side}-${slot}`);const item=data.combat.armors.find(a=>a.id===el.value);const condition=$(`${side}-${slot}-condition`);condition.disabled=!item;return item?[{item:{...item,slot},condition:num(condition.id,0,100)}]:[];});
   const shieldSelect=$(`${side}-shield`);shieldSelect.disabled=two;
   const shield=!two?data.combat.shields.find(x=>x.id===shieldSelect.value):null;
   $(`${side}-shield-skill`).disabled=!shield||shield.buckler;
   const trained=$(side==='your'?'combat-trained':'opponent-trained').checked;
   const mode=$(`${side}-mode`).value;
   $(`${side}-match-skill`).disabled=mode!=='dodge';
-  const light=gear.every(({item})=>!(['body','legs'].includes(item.slot)||(r.azure&&item.slot==='head'&&!trained))||!['ARMOR_CLASS_HEAVY','ARMOR_CLASS_MEDIUM'].includes(item.armorClass));
+  const light=gear.every(({item})=>!(['body','shirt','legs'].includes(item.slot)||(r.azure&&item.slot==='head'&&!trained))||item.armorClass<=r.lightArmorClass);
   return {gear,opts:{mode,light,trained,old,mage:$(side==='your'?'combat-mage':'opponent-mage').checked,expert:$(`${side}-expert`).checked,shield,shieldSkill:num(`${side}-shield-skill`,0,6),matchSkill:num(`${side}-match-skill`,0,6)}};
  }
  const you={...loadout('your',two,age.id==='old'),stats:mid,weapon,intent,two,skill,zone:$('opponent-zone').value,stance:'defend',contact:num('opponent-contact',0,100)/100};

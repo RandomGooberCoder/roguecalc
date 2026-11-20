@@ -23,7 +23,7 @@ for(const build of ['stats','azure']){
  });
  test(`${build}: matchup routes armor both ways and stamina race uses selected defense`,()=>{
   const a=make('steel mace'),d=make();a.stats.strength=17;
-  const naked=attackMatch(a,d,r);d.gear=[{item:armors[0],condition:100}];const armored=attackMatch(a,d,r);
+  const naked=attackMatch(a,d,r);d.gear=[{item:armors.find(a=>a.id==='/obj/item/clothing/suit/roguetown/armor/plate'),condition:100}];const armored=attackMatch(a,d,r);
   assert.ok(naked.healthDps>armored.healthDps);assert.ok(armored.pieces[0].wearRate>0);
   const actor=(profile,active,attack)=>({...attack,profile,active,pool:100,maxEnergy:1000,energyPercent:100,startFatigue:0,miss:0,contact:1});
   const blocks=fatigueRace(actor(a,true,armored),actor(d,false,attackMatch(d,a,r)),r);
