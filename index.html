@@ -7,8 +7,8 @@
   <meta name="description" content="Build a Ratwood character and compare race, job, statpack, and area buff stats.">
   <title>Ratwood | Stat Calculator</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=targeting-1">
-  <script src="app.js?v=targeting-1" type="module"></script>
+  <link rel="stylesheet" href="style.css?v=weights-1">
+  <script src="app.js?v=weights-1" type="module"></script>
 </head>
 <body>
   <div class="page">
@@ -31,11 +31,16 @@
             <div class="field"><label for="statpack">Statpack</label><select id="statpack"></select><a id="statpack-source" class="field-source" target="_blank" rel="noopener noreferrer">View statpack definition &#8599;</a></div>
           </div>
           <p id="pack-description" class="pack-description"></p>
+          <div class="weight-summary" aria-live="polite">
+            <span>Statpack weight: <strong id="statpack-weight"></strong></span>
+            <span>Build weight (no area buff): <strong id="base-weight"></strong></span>
+          </div>
+          <p class="pack-description">STR and SPD count double. Fortune counts zero. All other stats count once.</p>
           <div class="build-actions"><span class="formula">10 + race + job + statpack + age + choice</span><button id="share" class="button secondary" type="button">Copy build link</button></div>
         </section>
         <div class="view-tabs" role="group" aria-label="Calculator view"><button id="stats-tab" type="button" aria-pressed="true">Stats</button><button id="combat-tab" type="button" aria-pressed="false">Combat / DPS</button></div><div id="stats-view"><section class="results" aria-labelledby="result-title">
           <div class="section-head"><h2 id="result-title"><span class="step">02</span> Your stats</h2><span class="badge">LIVE CALCULATION</span></div>
-          <div class="table-wrap"><table class="stats-table"><caption class="sr-only">Base stats and separate area buff comparisons</caption><thead><tr><th scope="col">ATTRIBUTE</th><th scope="col">Base <small>No area buff</small></th><th scope="col" class="vigilant">Vigilant <small>Guardsman buff</small></th><th scope="col" class="warden">Warden <small>Woodsman buff</small></th></tr></thead><tbody id="stats-body"></tbody></table></div>
+          <div class="table-wrap"><table class="stats-table"><caption class="sr-only">Base stats and separate area buff comparisons</caption><thead><tr><th scope="col">ATTRIBUTE</th><th scope="col">Base <small>No area buff</small></th><th scope="col" class="vigilant">Vigilant <small>Guardsman buff</small></th><th scope="col" class="warden">Warden <small>Woodsman buff</small></th></tr></thead><tbody id="stats-body"></tbody><tfoot><tr class="weight-total"><th scope="row">Weighted total</th><td id="table-base-weight"></td><td id="table-vigilant-weight"></td><td id="table-warden-weight"></td></tr></tfoot></table></div>
           <div class="results-note"><span class="dot"></span><p>Buff columns are separate scenarios. Their bonuses are not stacked. Eligibility and area restrictions still apply in game.</p></div>
         </section>
         <section class="breakdown-section"><button id="breakdown-toggle" class="breakdown-toggle" type="button" aria-expanded="false" aria-controls="breakdown-panel"><span id="breakdown-label">See the stat breakdown</span><span class="chev" aria-hidden="true">&#9662;</span></button><div id="breakdown-panel" class="breakdown-panel" role="region" aria-labelledby="breakdown-label" hidden><div class="table-wrap"><table><caption class="sr-only">Individual contributions for each attribute</caption><thead><tr><th>Attribute</th><th>Starting</th><th>Race</th><th>Job</th><th>Statpack</th><th>Age</th><th>Species choice</th><th>Total</th></tr></thead><tbody id="breakdown-body"></tbody></table></div></div></section>

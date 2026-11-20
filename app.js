@@ -1,5 +1,5 @@
 import { initCombat, renderCombat } from './combat-ui.js?v=targeting-1';
-import { LABELS, calculate, display } from './calc.mjs';
+import { LABELS, calculate, display, weightedTotal } from './calc.mjs?v=weights-1';
 
 const $ = id => document.getElementById(id);
 const groups = { race: 'races', job: 'jobs', statpack: 'statpacks' };
@@ -69,6 +69,13 @@ function render() {
   const choice = raceChoices().find(x => x.id === chosen.choice);
   $('age-source').href = age.source;
   const rows = calculate(data, selected.race, selected.job, selected.statpack, age, choice);
+  $('statpack-weight').textContent = `${display(weightedTotal(selected.statpack.stats), true)} points`;
+  const totalFor = select => display(weightedTotal(Object.fromEntries(rows.map(row => [row.stat, select(row)]))));
+  $('base-weight').textContent = `${totalFor(row => row.base)} points`;
+  ['table-vigilant-weight', 'table-warden-weight'].forEach((id, i) => {
+    $(id).textContent = totalFor(row => row.buffs[i]);
+  });
+  $('table-base-weight').textContent = totalFor(row => row.base);
   $('stats-body').replaceChildren();
   $('breakdown-body').replaceChildren();
   for (const row of rows) {

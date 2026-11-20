@@ -19,3 +19,10 @@ export function calculate(data, race, job, pack, age = { stats: {} }, choice = n
     return { stat, parts, base, buffs: data.buffs.map(buff => add(base, buff.stats[stat] ?? 0)) };
   });
 }
+
+export function weightedTotal(stats) {
+  return add(...Object.keys(LABELS).map(stat => {
+    const weight = stat === 'fortune' ? 0 : ['strength', 'speed'].includes(stat) ? 2 : 1;
+    return range(stats[stat]).map(n => n * weight);
+  }));
+}
