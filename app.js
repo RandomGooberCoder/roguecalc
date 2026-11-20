@@ -1,7 +1,17 @@
 import { initCombat, renderCombat } from './combat-ui.js?v=targeting-1';
-import { LABELS, calculate, display, weightedTotal } from './calc.mjs?v=weights-1';
+import { LABELS, calculate, display, weightedTotal } from './calc.mjs?v=baseline-1';
 
 const $ = id => document.getElementById(id);
+const disclaimer = $('disclaimer');
+const disclaimerKey = 'ratwood-calculator:disclaimer-v2';
+let dismissed = false;
+try { dismissed = localStorage.getItem(disclaimerKey) === 'dismissed'; } catch { /* Storage may be disabled. */ }
+if (!dismissed) {
+  disclaimer.addEventListener('close', () => {
+    try { localStorage.setItem(disclaimerKey, 'dismissed'); } catch { /* The modal still closes. */ }
+  }, { once: true });
+  disclaimer.showModal();
+}
 const groups = { race: 'races', job: 'jobs', statpack: 'statpacks' };
 let data;
 let activeBuild = 'ratwood';
@@ -70,7 +80,7 @@ function render() {
   $('age-source').href = age.source;
   const rows = calculate(data, selected.race, selected.job, selected.statpack, age, choice);
   $('statpack-weight').textContent = `${display(weightedTotal(selected.statpack.stats), true)} points`;
-  const totalFor = select => display(weightedTotal(Object.fromEntries(rows.map(row => [row.stat, select(row)]))));
+  const totalFor = select => display(weightedTotal(Object.fromEntries(rows.map(row => [row.stat, select(row)])), data.base), true);
   $('base-weight').textContent = `${totalFor(row => row.base)} points`;
   ['table-vigilant-weight', 'table-warden-weight'].forEach((id, i) => {
     $(id).textContent = totalFor(row => row.buffs[i]);
