@@ -1,5 +1,5 @@
 import { initCombat, renderCombat } from './combat-ui.js?v=armor-catalog-1';
-import { LABELS, calculate, display, weightedTotal } from './calc.mjs?v=baseline-1';
+import { LABELS, calculate, display, weightedTotal, rankStatpacks } from './calc.mjs?v=optimizer-1';
 
 const $ = id => document.getElementById(id);
 const disclaimer = $('disclaimer');
@@ -70,6 +70,60 @@ function cell(tag, value, className = '') {
   if (className) el.className = className;
   return el;
 }
+function renderOptimizer() {
+  const controls = [...$('optimizer-priorities').querySelectorAll('select')];
+  const priorities = Object.fromEntries(controls.map(select => [select.dataset.stat, select.value]));
+  const ranked = rankStatpacks(data.statpacks, priorities, data.stats);
+  const showingAll = $('optimizer-all').checked;
+  $('optimizer-more').hidden = ranked.length <= 5;
+  $('optimizer-status').textContent = ranked.length
+    ? `Showing ${showingAll ? ranked.length : Math.min(5, ranked.length)} of ${ranked.length} statpacks.`
+    : 'Mark at least one stat as Max or Dump to get recommendations.';
+  const focusedPack = document.activeElement?.dataset.pack;
+  const entries = (showingAll ? ranked : ranked.slice(0, 5)).map(({pack, scores}) => {
+    const li = cell('li', '', 'optimizer-result');
+    const info = cell('div', '');
+    const scoreText = ['max', 'dump', 'neutral'].filter(k => Object.values(priorities).includes(k))
+      .map(k => `${k[0].toUpperCase() + k.slice(1)} ${display(scores[k], true)}`).join(' · ');
+    const mods = data.stats.flatMap(stat => {
+      const value = pack.stats[stat];
+      return value ? [`${LABELS[stat][0]} ${display(value, true)}`] : [];
+    });
+    info.append(cell('strong', pack.name), cell('p', scoreText, 'optimizer-score'),
+      cell('p', mods.join(' · ') || 'No numeric modifiers', 'optimizer-mods'));
+    const active = pack.id === chosen.statpack;
+    const button = cell('button', active ? 'Selected' : 'Use pack', 'button');
+    button.type = 'button';
+    button.dataset.pack = pack.id;
+    button.setAttribute('aria-label', active ? `${pack.name} selected` : `Use ${pack.name}`);
+    li.append(info, button);
+    return li;
+  });
+  $('optimizer-results').replaceChildren(...entries);
+  if (focusedPack) entries.find(li => li.lastElementChild.dataset.pack === focusedPack)?.lastElementChild.focus({preventScroll: true});
+}
+function initOptimizer() {
+  for (const [stat, [, name]] of Object.entries(LABELS)) {
+    const label = cell('label', name, 'field');
+    const select = document.createElement('select');
+    select.dataset.stat = stat;
+    select.setAttribute('aria-label', name);
+    for (const [value, text] of [['neutral', 'Neutral'], ['max', 'Max'], ['dump', 'Dump']]) {
+      select.add(new Option(text, value));
+    }
+    label.append(select);
+    $('optimizer-priorities').append(label);
+  }
+  $('pack-optimizer').addEventListener('change', renderOptimizer);
+  $('optimizer-results').addEventListener('click', event => {
+    const id = event.target.closest('button')?.dataset.pack;
+    if (!id || id === chosen.statpack) return;
+    chosen.statpack = id;
+    $('statpack').value = id;
+    render();
+    writeHash();
+  });
+}
 function render() {
   const selected = Object.fromEntries(Object.entries(groups).map(([key, group]) => [key, data[group].find(x => x.id === chosen[key])]));
   for (const key of Object.keys(groups)) $(key + '-source').href = selected[key].source;
@@ -121,6 +175,7 @@ function render() {
     detail.append(cell('td', display(row.base)));
     $('breakdown-body').append(detail);
   }
+  renderOptimizer();
   renderCombat(data, selected.job, rows, age);
 }
 function writeHash() {
@@ -183,6 +238,7 @@ async function loadBuild(id, useHash = false) {
 }
 async function init() {
   initCombat();
+  initOptimizer();
   $('breakdown-toggle').addEventListener('click', () => {
     const open = $('breakdown-panel').hidden;
     $('breakdown-panel').hidden = !open;

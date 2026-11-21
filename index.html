@@ -7,8 +7,8 @@
   <meta name="description" content="Build a Ratwood character and compare race, job, statpack, and area buff stats.">
   <title>Ratwood | Stat Calculator</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=armor-catalog-1">
-  <script src="app.js?v=armor-catalog-1" type="module"></script>
+  <link rel="stylesheet" href="style.css?v=optimizer-1">
+  <script src="app.js?v=optimizer-1" type="module"></script>
 </head>
 <body>
   <div class="page">
@@ -36,6 +36,16 @@
             <span>Build weight (no area buff): <strong id="base-weight"></strong></span>
           </div>
           <p class="pack-description">Only changes from the starting 10 count. STR and SPD count double; Fortune counts zero; all other stats count once.</p>
+          <details class="pack-optimizer" id="pack-optimizer">
+            <summary>Find the best statpacks</summary>
+            <fieldset><legend>Stat priorities</legend><div class="optimizer-priorities" id="optimizer-priorities"></div></fieldset>
+            <p class="pack-description">Max stats come first. Ties favor lower Dump stats, then higher Neutral stats. Each point counts equally here, and random rolls are ranked by their range midpoint. Non-stat perks aren’t scored.</p>
+            <div class="optimizer-actions">
+              <p id="optimizer-status" role="status" class="pack-description"></p>
+              <label id="optimizer-more" hidden><input type="checkbox" id="optimizer-all"> Show all statpacks</label>
+            </div>
+            <ol id="optimizer-results" class="optimizer-results"></ol>
+          </details>
           <div class="build-actions"><span class="formula">10 + race + job + statpack + age + choice</span><button id="share" class="button secondary" type="button">Copy build link</button></div>
         </section>
         <div class="view-tabs" role="group" aria-label="Calculator view"><button id="stats-tab" type="button" aria-pressed="true">Stats</button><button id="combat-tab" type="button" aria-pressed="false">Combat / DPS</button></div><div id="stats-view"><section class="results" aria-labelledby="result-title">

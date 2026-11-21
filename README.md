@@ -174,3 +174,7 @@ The race uses average-event approximations and fixed armor protection; it stops 
 The snapshot builder scans the upstream game tree for clothing types rather than relying on a list of item names. It resolves inherited values, named armor lists, inline ratings, and slot and coverage bitmasks. Both loadouts expose the available armor slots, including underlayers, masks, neckwear, bracers, and cloaks where available. Search filters the slot lists by name or type path without unequipping selected gear. Same-name variants carry a type-path suffix.
 
 The catalog is scoped to wearable clothing with static melee ratings and coverage. Shields are separate; creature skins, mount barding, and armor created or modified only at runtime are not simulated. Import summaries count definitions with unsupported or unresolved fields. Snapshot rebuilds use each upstream commit and automatically discover new qualifying pieces.
+
+### Statpack recommendations
+
+Open **Find the best statpacks** under the statpack selector and mark each stat Max, Neutral, or Dump. The ranking first maximizes the sum of Max modifiers, then minimizes the sum of Dump modifiers, then maximizes the sum of Neutral modifiers. It counts each stat point equally (including Fortune if prioritized); this does not change the separate weighted-total calculation. Ranged modifiers rank by midpoint while recommendations show their full ranges. Non-stat perks are not scored. Click **Use pack** to apply a recommendation to the current build and its share link.

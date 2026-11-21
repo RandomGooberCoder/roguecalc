@@ -26,3 +26,19 @@ export function weightedTotal(stats, baseline = 0) {
     return range(stats[stat] ?? baseline).map(n => (n - baseline) * weight);
   }));
 }
+
+// Prioritize Max stats first, then spend Dump stats to break ties. Keep the
+// remaining stats as healthy as possible without overriding either priority.
+export function rankStatpacks(packs, priorities, stats = Object.keys(LABELS)) {
+  if (!stats.some(stat => ['max', 'dump'].includes(priorities[stat]))) return [];
+  return packs.map(pack => {
+    const scores = {max: 0, dump: 0, neutral: 0};
+    for (const stat of stats) {
+      const priority = priorities[stat];
+      const [lo, hi] = range(pack.stats[stat]);
+      scores[priority === 'max' || priority === 'dump' ? priority : 'neutral'] += (lo + hi) / 2;
+    }
+    return {pack, scores};
+  }).sort((a, b) => b.scores.max - a.scores.max || a.scores.dump - b.scores.dump ||
+    b.scores.neutral - a.scores.neutral || a.pack.name.localeCompare(b.pack.name, 'en') || a.pack.id.localeCompare(b.pack.id, 'en'));
+}
